@@ -1,0 +1,37 @@
+name: James Colliander
+description: "Math, Research, Education"
+# url: http://colliand.com
+
+markdown: kramdown
+
+exclude: ["Gemfile", "Gemfile.lock"]
+
+destination: ../colliand-built
+
+permalink: /:year/:month/:day/:title/
+
+#disqus widget
+disqus:
+  shortname: 'colliand'
+  count: 5
+
+# jekyll-scholar
+scholar:
+  style: apa
+  locale: en
+
+  sort_by: none
+  order: ascending
+
+  source: ./_bibliography
+  bibliography: references.bib
+  bibliography_template: "%{reference}"
+  bibtex_filters: []
+
+  replace_strings: true
+
+  details_dir:    bibliography
+  details_layout: bibtex.html
+  details_link:   Details
+
+  query: "@*"
