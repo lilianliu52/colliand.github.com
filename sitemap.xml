@@ -3,56 +3,56 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">    
   <url>
     <loc>/</loc>
-    <lastmod>2014-01-21T22:13:37-05:00</lastmod>
+    <lastmod>2014-01-21T22:51:06-05:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   
   <url>
     <loc>/about/</loc>
-    <lastmod>2014-01-21T22:13:37-05:00</lastmod>
+    <lastmod>2014-01-21T22:51:06-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>/</loc>
-    <lastmod>2014-01-21T22:13:37-05:00</lastmod>
+    <lastmod>2014-01-21T22:51:06-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>/legal/</loc>
-    <lastmod>2014-01-21T22:13:37-05:00</lastmod>
+    <lastmod>2014-01-21T22:51:06-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>/research/</loc>
-    <lastmod>2014-01-21T22:13:37-05:00</lastmod>
+    <lastmod>2014-01-21T22:51:06-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>/service/</loc>
-    <lastmod>2014-01-21T22:13:37-05:00</lastmod>
+    <lastmod>2014-01-21T22:51:06-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>/sitemap.xml</loc>
-    <lastmod>2014-01-21T22:13:37-05:00</lastmod>
+    <lastmod>2014-01-21T22:51:06-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>/teaching/</loc>
-    <lastmod>2014-01-21T22:13:37-05:00</lastmod>
+    <lastmod>2014-01-21T22:51:06-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -164,13 +164,6 @@
   </url>
   
   <url>
-    <loc>/2012/04/06/A+Report-on-the-2012-N-S-E-R-C-Discovery-Grants-Results-for-Toronto-Math/</loc>
-    <lastmod>2012-04-06T00:00:00-04:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
     <loc>/2012/03/26/Anticipating-the-2012-N-S-E-R-C-Discovery-Grants-Competition-Results/</loc>
     <lastmod>2012-03-26T00:00:00-04:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -242,13 +235,6 @@
   
   <url>
     <loc>/2012/01/21/The-Lucky-Few-of-Waterloo-Part-2-Perimeter-Institute-Buys-Culture/</loc>
-    <lastmod>2012-01-21T00:00:00-05:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>/2012/01/21/The-Lucky-Few-of-Waterloo-Part+2-Perimeter-Institute-Buys-Culture/</loc>
     <lastmod>2012-01-21T00:00:00-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
