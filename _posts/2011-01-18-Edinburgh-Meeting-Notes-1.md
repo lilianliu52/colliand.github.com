@@ -9,8 +9,12 @@ tags : [notes, Edinburgh, numerics]
 <!-- -->
 
 
-These are notes from a meeting entitled <a href="http://www.nais.org.uk/NPDE2011/Speakers.php">Advanced Numerical Studies in Nonlinear PDEs</a> in Edinburgh, Scotland.
-<h1 id="waltercraigmcmaster:waterwaveinteractions">Walter Craig (McMaster): Water Wave Interactions</h1>
+These are notes from a meeting entitled 
+<a href="http://www.nais.org.uk/NPDE2011/Speakers.php">Advanced Numerical Studies in Nonlinear PDEs</a> 
+in Edinburgh, Scotland.
+
+<h1> Walter Craig (McMaster): Water Wave Interactions</h1>
+
 I’m an analyst but I’m going to talk about numerics and experiments as well as analysis. We will discuss the problem of water waves and then I’ll talk about two specific settings in which the theory has led to good and quite elegant numerics and the numerics have started to answer some questions.
 
 (joint work with P. Guyenne and <a href="http://www.math.toronto.edu/sulem">C. Sulem</a>)

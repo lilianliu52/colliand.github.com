@@ -11,10 +11,8 @@ Dean Roger Martin’s <a href="http://www.theglobeandmail.com/report-on-business
 Amazingly, he asserts:
 <blockquote>“What makes a country prosperous is not investment in science and technology.  
 It is businesses producing high paying jobs by having unique products and processes that a customer needs.”</blockquote>
-Who does he think creates those products and processes?  
-Business majors?  
-His observation will come as a shock to the Chinese, who are working hard to build a competitive modern economy by investing heavily their research resources in the basic sciences and engineering in their universities, not in business schools.  
-They know these investments will create the industries of the future, just as they have for the west in the past.  
+Who does he think creates those products and processes?  Business majors?  His observation will come as a shock to the Chinese, who are working hard to build a competitive modern economy by investing heavily their research resources in the basic sciences and engineering in their universities, not in business schools.  They know these investments will create the industries of the future, just as they have for the west in the past. 
+ 
 What is amazing about Martin’s claim is that virtually all of the “high paying jobs” in industries with “unique products and processes” – those leading edge industries like communications technology, pharmaceuticals, bio-technology, etc. that Martin so casually dismisses, have products that are the result of investment in university-based research in science and technology.  
 In the United States, Silicon Valley, which houses many of the companies he says are now led by CEOs with business degrees, was created by scientists and engineers from Stanford and the University of California.  
 Indeed, it would be difficult to identify a single industry today that was not based on a scientific or technological innovation of the past.  

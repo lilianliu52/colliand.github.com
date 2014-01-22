@@ -9,8 +9,6 @@ tags : [Opinion, Research Policy, Perimeter Institute]
 
 Dear James,
 
-&nbsp;
-
 Thank you for this opportunity to respond to your recent <a href="http://blog.math.toronto.edu/colliand/2012/01/21/the-lucky-few-of-waterloo-part-2-perimeter-institute-buys-culture/">blog posting</a> on Perimeter Institute and offer some clarifications.
 <ul>
 	<li>First, the comparisons of support for different institutions and programs presented in this posting mix total funding over time (including endowment contributions) with annual budgets and ignore substantial differences between their operations.  For example, Perimeter Institute currently houses over 140 full-time trainees and researchers (from Masters students to senior faculty) whereas to my knowledge the Fields Institute has none.</li>
@@ -24,10 +22,9 @@ In closing, let me emphasize that Perimeter Institute takes very seriously its c
 
 Sincerely,
 
-&nbsp;
+
 
 Neil Turok
 
-&nbsp;
 
 Director, Perimeter Institute for Theoretical Physics

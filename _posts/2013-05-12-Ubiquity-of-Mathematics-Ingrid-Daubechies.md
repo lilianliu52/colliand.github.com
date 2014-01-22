@@ -1,6 +1,7 @@
 ---
 layout: post
 author: James Colliander
+published: true
 tags : [video, ubiquity of mathematics]
 ---
 
