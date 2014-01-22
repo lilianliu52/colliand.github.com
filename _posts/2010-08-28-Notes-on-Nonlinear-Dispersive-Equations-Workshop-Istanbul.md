@@ -5,7 +5,9 @@ tags : [notes, Istanbul]
 ---
 
 
+
 During last week's <a href="http://imbm.org.tr/NDE2010.htm">NDE meeting in Istanbul</a>, I experimented and took real-time notes in <a href="http://fletcherpenney.net/multimarkdown/">MultiMarkDown</a> during the talks. If any of the speakers wish, I can post links to their presentations provided they send me a copy of their slides.  --J. Colliander
+
 <h1><a href="http://www.math.toronto.edu/colliand/">James Colliander</a> (<a href="http://www.math.toronto.edu">Toronto</a>)</h1>
 <h3>Almost sure well-posedness of the cubic nonlinear Schrödinger equation  below $L^2({\mathbb{T}})$</h3>
 I spoke about <a href="http://arxiv.org/abs/0904.2820">recent work</a> with <a href="http://www.math.toronto.edu/oh">Hiro Oh</a> . Here is a<a title="link" href="http://blog.math.toronto.edu/colliand/files/2010/08/2010_08_Colliander_Istanbul_Final.pdf"> link to my slides</a>.

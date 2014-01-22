@@ -4,9 +4,7 @@ category : lessons
 tags : [NSERC, Research Policy, 1508, Discovery Grants, Peer Review]
 ---
 
-<!--?xml version="1.0" encoding="UTF-8" ?-->
-
-<!--   Created by James Colliander on 2011-09-04.   Copyright (c) 2011 University of Toronto. All rights reserved.     -->
+<!-- -->
 
 Fifteen<sup>1</sup> faculty members from the Department of Mathematics at the University of Toronto submitted proposals to the 2012 NSERC Discovery Grants competition. Of these, one was a first time applicant (En), two (Ga, Ia) applied after a successful appeal of 2011 results, and one (Cd) was an appellant whose appeal was denied but could reapply because the 2011 award was for zero dollars. The first table below shows the 2012 results (in thousands of dollars per year) with 2010, 2011 award amounts for those researchers. The second table shows similar data for Toronto mathematicians in the 2011 competition, including the amounts for researchers (1d, 2d, 3d, 4d) whose appeals of 2011 results were rejected. The average for 2012 awards to Toronto mathematicians was 153% the average for 2011.
 <h3 id="averagegrantamounttorontomath"><a rel="attachment wp-att-1150" href="http://blog.math.toronto.edu/colliand/2012/04/06/a-report-on-the-2012-nserc-discovery-grants-results-for-toronto-math/2012competitionresults/"><img class="size-full wp-image-1150 alignnone" src="http://blog.math.toronto.edu/colliand/files/2012/04/2012CompetitionResults.png" alt="" width="224" height="411" /></a></h3>
