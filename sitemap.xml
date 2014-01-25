@@ -3,56 +3,56 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">    
   <url>
     <loc>/</loc>
-    <lastmod>2014-01-25T16:04:13-05:00</lastmod>
+    <lastmod>2014-01-25T16:09:28-05:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   
   <url>
     <loc>/about/</loc>
-    <lastmod>2014-01-25T16:04:13-05:00</lastmod>
+    <lastmod>2014-01-25T16:09:28-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>/</loc>
-    <lastmod>2014-01-25T16:04:13-05:00</lastmod>
+    <lastmod>2014-01-25T16:09:28-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>/legal/</loc>
-    <lastmod>2014-01-25T16:04:13-05:00</lastmod>
+    <lastmod>2014-01-25T16:09:28-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>/research/</loc>
-    <lastmod>2014-01-25T16:04:13-05:00</lastmod>
+    <lastmod>2014-01-25T16:09:28-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>/service/</loc>
-    <lastmod>2014-01-25T16:04:13-05:00</lastmod>
+    <lastmod>2014-01-25T16:09:28-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>/sitemap.xml</loc>
-    <lastmod>2014-01-25T16:04:13-05:00</lastmod>
+    <lastmod>2014-01-25T16:09:28-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>/teaching/</loc>
-    <lastmod>2014-01-25T16:04:13-05:00</lastmod>
+    <lastmod>2014-01-25T16:09:28-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -360,7 +360,7 @@
   </url>
   
   <url>
-    <loc>/2011/04/11/NSERC-Peer-Review-System-is-Broken-for-Mathematics/</loc>
+    <loc>/2011/04/11/N-S-E-R-C-Peer-Review-System-is-Broken-for-Mathematics/</loc>
     <lastmod>2011-04-11T00:00:00-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
