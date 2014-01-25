@@ -1,9 +1,10 @@
 ---
 layout: post
 author: James Colliander
-category : lessons
 tags : [censorship, Istanbul]
+comments: false
 ---
+
 
 
 Istanbul is amazing!
