@@ -1,0 +1,1240 @@
+---
+layout: post
+author: James Colliander
+published: true
+tags : [Notes, Scotland]
+---
+
+<!-- -->
+
+
+<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Vladimir_Arnold-1.jpg/200px-Vladimir_Arnold-1.jpg" alt="Vladimir Arnold" />
+
+I am at an interesting <a href="http://www.icms.org.uk/workshop.php?id=189">workshop</a> in Edinburgh entitled <strong>Dynamical systems and classical mechanics: a conference in celebration of <a href="http://en.wikipedia.org/wiki/Vladimir_Arnold">Vladimir Arnold</a> 1937 - 2010</strong>.
+Boris Khesin and <a href="http://www.math.psu.edu/tabachni/">Serge Tabachnikov</a> have coordinated a Tribute to Vladimir Arnold which will soon appear in consecutive issues of the <a href="http://www.ams.org/notices/201109/">Notices of the AMS</a>. These tributes were shared at the workshop and are also available here:
+<ul>
+	<li><a href="http://www.math.toronto.edu/khesin/papers/ArnoldFirst.pdf">Arnold1</a></li>
+	<li><a href="http://www.math.toronto.edu/khesin/papers/ArnoldSecond.pdf">Arnold2</a></li>
+</ul>
+I will post below my notes from the talks. I apologize, especially to the speakers and readers (if any), for errors and typos.
+<h1 id="welcome">Welcome</h1>
+<strong>Remarks at introduction of workshop by S. Kuksin:</strong>
+
+Kuksin highlights the openness of Arnold to discussions with students. A main message from Arnold “Mathematics must be interesting.”
+
+Small program changes: Lai-Sang Yang speaks on Thursday at 1630. Laurent Stolovich speaks on Friday at 930.
+
+Wednesday will have some short afternoon talks. Young people can either speak to me or Hakan Eliasson. We will make a page with a list of the talks.
+<h1 id="program">Program</h1>
+<h3 id="monday03october">Monday 03 October</h3>
+
+<hr />
+
+<h2 id="alexandershnirelmanhttp:sites.google.comsiteashnirelmanhomeconcordiauniversitysomeproblemsofthefluidmechanics"><a href="http://sites.google.com/site/ashnirelman/home">Alexander Shnirelman</a>, Concordia University, Some problems of the fluid mechanics</h2>
+<img src="http://www.mathstat.concordia.ca/Images/Shnirelman1.jpg" alt="Alexander Shnirlmen" />
+
+I am grateful and touched because of the invitation to speak at this conference. I had the influence of Arnold for several decades. I remember that the pace of sdiscoveries in his seminar was so fast. It reminds me a bit of the situation like 500 years ago. There was not enough time to examine in detail the discoveries as they developed. It is a bit similar to the discovery of continents.
+<h3 id="arnoldspresntationofbasicsofthefluiddynamics.">1. Arnold’s presntation of basics of the fluid dynamics.</h3>
+A lagrangian system whose configuariton space is a Lie group $G$ with unit element $e$. Take the kinetic energy defined by a right-invariant Riemanniain metric via
+$$
+E(u) = \frac{1}{2} \langle u , u \rangle = \frac{1}{2} (Au, u)$$
+where $A: H \rightarrow H^*$ is the <strong>inertia operator</strong>. ….oh my this is too fast to follow while typing.
+
+This is a survey of the Arnold approach to fluids. The critical points of the energy on each orbit are steady solutions.
+
+Example: $SO(3)$. Surfaces $S$ are ellipsoids. levels lines. stable points.
+
+We collapse to $n=2$. Take the quadratic form to be the $L^2$ norm. Discussing 2d Euler equation. Arnold called the surfaces <em>isorotated</em> velocity fields. There exists a unique stream function.
+
+The second variation of $E$ on $S$ at the point $u$ is given by the quadratic form
+$$
+\delta^2 E (\phi) = \int_M (\nabla \phi)^2 + \frac{\nabla \psi}{(\nabla \Delta \psi)} (\Delta \phi)^2 dx.
+$$
+The solution $u$ is called <strong>Arnold Stable</strong> if this form is either poisitive or negative definite. What is $\phi$ here? It is a perturbation of $\psi$ and he writes on the board $\delta \psi = [ \psi, \phi ]$ (but with curly brackets).
+<h3 id="difficultiesofthearnoldsapproach">2. Difficulties of the Arnold’s Approach</h3>
+<ol>
+	<li>The group $D$ is infinite-dimensional; its topology is usually stronger than topology defined by the Reimannian metric. Hence the existence and uniqueness of geodesics are not certain.</li>
+	<li>The surfaces $S$ may be nonsmooth, and the partition of $H$ into these surfaces may be locally nontrivial.</li>
+	<li>It is unclear whether the energy functional $E$ attains a maximum or a minimum on a given orbit.</li>
+</ol>
+<h3 id="groupasabanachmanifold">3. Group  as a Banach Manifold</h3>
+<strong>Theorem (Lichtenstein, Giunter, …):</strong>
+<ol>
+	<li>For any initial velocity $u_0 \in X$, where $X$ is one of the above spaces (e.g. Holder, Sobolev, …), there exists $T&gt;0$ and a unqique solution $u(x,t) \in X$ of the Euler equations with initial velocity $u_0$ defined for $|t| &lt; T$.</li>
+	<li>If $n=2, T = \infty$. (Volibner, Yudovic, Kato, ….)</li>
+</ol>
+Mentions Ebin-Marsden.
+<h3 id="mixingoperators.">4. Mixing operators.</h3>
+If a 2d domain $M$, the vorticity $\omega$ is transported by the flow; it is distorted and effectively missed. He considers a class of operators on $L^2$ given as integral kernel operators with positive kernel (so positive measures) and with marginals which are equal to 1.
+
+He defines a partial order in $L^2$: $f \ll g$ if $f = Kg$ for some $K \in {\bf{K}}$. Now we write $u \ll v$ for two vector fields $ u, v \in V$ if $ curl u \ll curl v$.
+
+By Zorn’s lemman, there exist a minimal flow wrt this ordering.
+
+<strong>Theorem</strong> Minimal flows are Arnold stable.
+
+Minimal flow is called <strong>energy excessive</strong> if $F’ \leq 0$; <strong>energy deficient</strong> if $F’ \geq 0$.
+<h3 id="long-timebehavioroftheflowmixingofvorticity">5. Long-time behavior of the flow; mixing of vorticity</h3>
+Natural conjecture: minimal flows form an attractor. However, this is <strong>wrong</strong>.
+
+Movie.
+
+Shows a 2d torus. Vorticity on square patches. After some transition period, the solution becomes more or less periodic plus a constant velocity drift. In this experiment, the flow converges to time periodic flow whih is not a stable configuration. More detailed experiments show that the final flow is quasiperiodic with more details. Even possible to find almost periodic. These are not stable flows. There exists a wider class of flows which are attracting.
+<h3 id="theevidenceofirreversibility:liapunovfunction.">6. The evidence of irreversibility: Liapunov function.</h3>
+Defines a Liapunov function. Existence of Liapunov function always shows that there is some kind of irreversibililty. Shows an elemtary example. For a free particle, we can consider $L(x, \dot{x}) = x \cdot \dot{x}$. (This is reminiscent of the Morawetz estimate.)
+
+The first Liapunov functional for the fluid was found by V. Yudovic (1973). The LF is given by $L = \omega \omega_x \omega_y$. It turns out this combination satisfies that its time derivative is given by a square $(\omega^2 \omega_x^2)|_\pi \geq 0$.
+<h3 id="generalizedminimalflow">7. Generalized minimal flow</h3>
+Suppose $u_0 \longmapsto u$. Let’s close the orbit of the evolution in $L^2$.
+
+<strong>Definition:</strong> A flow $u(t)$ with initial veloicty field $u_0$ is called a generalized minimal flow (GMF) if ….curl condition.
+
+slide changes fast.
+<h3 id="constructionofgmfbypseudoevolution">8. Construction of GMF by pseudoevolution</h3>
+A process is decribed which produces GMF’s from a given seed data using the curl ordering.
+
+<strong>Conjectures:</strong>
+<ol>
+	<li>The set $N$ is an attractor for the Euler equations in the ordinary sense.</li>
+	<li>GMG are either statiornay or qaiperiodic with at most countable set of periouds.</li>
+	<li>Stircktly speaking, we have not proven that the set $N$ is a a proper subset of $V$. e.g. there might exist flows which are not GMF.  (This is analogous to the Landau damoping recently proved for the Vlasov-Poisson equation by Villani.)</li>
+</ol>
+<h3 id="localregularityofpartitionintoisovorticalsurfaces">9. Local regularity of partition into isovortical surfaces</h3>
+The equation was addressed recently by V. Sverak and A. Choffrut (2010). Consider the distribution function for the vorticity
+$$
+\lambda (s) = {\mbox{mes}} [  x \in M : \omega (x) \leq s].
+$$
+
+<strong>Theorem (Sverak-Choffrut):</strong> Steady solutions close to a fixed Arnold stable one are in a smooth 1-1 correspondence with distribution functions $\lambda (s)$.
+
+The proof is difficult and based on Nash-Schwarz implicit function theorem.
+<h3 id="thestructureoftheexponentialmap.">10. The structure of the exponential map.</h3>
+<ul>
+	<li>Ebin-Marsden 1970</li>
+	<li>Ebin-Misiolek-Preston 2008</li>
+	<li>Misiolek 1993</li>
+</ul>
+<h2 id="johnmatherhttp:en.wikipedia.orgwikijohn_mather_28mathematician29princetonuniversitynearadoubleresonance"><a href="http://en.wikipedia.org/wiki/John_Mather_%28mathematician%29">John Mather</a>, Princeton University, Near a double resonance</h2>
+<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/John_N_Mather.jpg/220px-John_N_Mather.jpg" alt="John Mather" />
+
+(blackboard talk)
+
+I feel honored to speak here, especially since something I have been working on for a long time is called <em>Arnold Diffusion</em>. Some people speak about <em>the problem</em>. What is interesting to me is the program. Arnold posed many problems. There are two aspects that should be highlighted.
+<ol>
+	<li>They are very interesting.</li>
+	<li>There is a chance that we could do them.</li>
+</ol>
+Generic quasiergodicity of Hamiltonian systems….a famous problem attributed to Boltzmann. This problem seems incredibly hard and seems to be inaccessible. In contrast, there appears to be hope for Arnold diffusion.
+
+I apologize to those of you have heard this talk before. I want to speak about something that I announced in 2003 in Russian and it appeared in English in 2004. I announced some results at that time but, in the meantime I found some mistakes in the proof. I want to speak about corrections to those proofs.
+
+This is a question about small perturbations of integrable systems. Usually, people discuss this in the setting of the Hamiltonian form. I prefer to approach it using the Lagrangian (equivalent form) since my method of approach is variational.
+
+Lagrangian:
+$$L(\theta, \dot{\theta}, t) = l_0 (\dot{\theta}) + \epsilon P(\theta, \dot{\theta}, t)$$
+
+We consider here the case where $P(\theta, \dot{\theta}, t+1 ) =  P(\theta, \dot{\theta}, t)$.
+<ul>
+	<li>$\theta \in T^n$</li>
+	<li>$\dot{\theta} \in B^n \subset R^n $</li>
+</ul>
+We are looking for solutions of the Euler-Lagrange equation
+$$
+\frac{d}{dt} ( L_{\dot{\theta}} ) = L_\theta.
+$$
+Let’s assume that $d^2 l_0 &gt;0$. (This is a strong restriction; we’d rather like to do it under the assumption that the determinant of the Hessian is nonzero. A great deal of the theory is developed under that assumption. For the methods I use, I need this stronger condition.)
+
+The goal is to somehow show that the solutions go everywhere. That is too strong, but I can prove something along those lines in a special case.
+
+The Lagrangian I am looking at is a small perturbation of an integrable system. For the integrable system, the E-L equation is
+$$
+\frac{d}{dt} ( L_{\dot{\theta}} ) = 0.
+$$
+
+<strong>Arnold Question:</strong> Are the orbits confined or do some go everywhere? (This is a vague question; certainly Arnold was more precise.)
+
+In the case when $n=1$, the orbits are confined. This is a consequence of KAM theory. The KAM tori persist. There are Birkhoff regions of instability and the orbits are confined by the KAM tori.
+
+In the case $n&gt;1$, the expectation is that the orbits are not confined. There are results along these lines which show, in some cases, that this is the case. For the program we have in mind, we want to build methods which show this phenomena is somehow generic.
+
+In the case $n=2$ (this is what I had announced in 2003): Generically (assuming the positive Hessian part), the orbits are not confined.
+
+The methods that I use are variational. I want to say a little bit about those tools.
+
+Consider $U_1, U_2, \dots, U_k$ open non-void sets in $B^2$. The construction guides the orbit to only be allowed to move in certain ways. The trick is to choose the conditions in such a ways so that when you minimize within those conditions, the solution stays inside the open set and doesn’t get pushed off to the boundary. This is a method that I introduced in the past in studying twist maps. The conditions are really complicated so you need a guide to tell you what the conditions are. The basic guide involves something called <strong>Aubry sets</strong>. These are sets contained inside $T^2_\theta \times T_t$. The phase space consists of $T^2 \times B^2 \times T$ and the state space is $T^2 \times T$. The Aubry sets are defined by a global minimizing condition. What shall I say about them? First of all, it is useful to consider invariant probability measures for the Lagrangian system. Let $\mu$ be a probability measure on $T^2 \times B^2 \times T$. You can then define a cohomoology class $c \in H^1 (T^2)$. This allows you to define an average action:
+$$
+A_c (\mu) = \int_{T^2} L d\mu - c
+$$
+…..I don’t ususally write it this way….scratches it out and writes instead
+$$
+A_c (\mu) = \int_{T^2 \times B^2 \times T} (L (\theta, \dot{\theta}, t) - c \dot{\theta}) d\mu (\theta , \dot{\theta}, t).
+$$
+We can then define
+$$M_c = [~{\mbox{invariant probability measures that minimize}}~ A_c].$$
+The support of $M_C \subset T^2 \times B^2 \times T$ and the map turns out to be injective.
+
+Aubry set….defined by a minimizing condition.
+
+<strong>Theorem:</strong> $M_c \subset Au_c$.
+
+The conditions I build for the minimization process. First you have to know something about the Aubry sets, you can then state what the conditions are. The process was carried out successfully in the case of twist maps. I was able to prove that there could be wandering in the Birkhoff zones of instability. This procedure was also used by Cheng-Yan in the case of a priori unstable systems. They were able to prove a version of Arnold diffusion in these systems. One considers a rotator and a pendulum and take the product of the two. The diffusion is related to the unstable fixed point.
+
+…trouble typing…..discussion of double resonance, with strong so that the resonant linear combination arises with control on the integer prefactors by a constant.
+<h2 id="massimilianobertihttp:www.dma.unina.itbertiuniversityofnaplesfedericoiiquasiperiodicsolutionsofhamiltonianpdes"><a href="http://www.dma.unina.it/berti/">Massimiliano Berti</a>, University of Naples Federico II, Quasi periodic solutions of Hamiltonian PDEs</h2>
+(Similar to what I saw in France at <a href="http://blog.math.toronto.edu/colliand/2011/09/08/440/">Ile de Berder</a>, so I will watch rather than type…)
+
+There was some discussion afterwards between me, Massimiliano and Walter Craig. I suggested that Massimiliano’s improvement of Walter’s pseudodifferential result might be reconsidered in the setting of the $MMT_{\alpha, \beta}$ models introduced by Majda-McLaughlin-Tabak. These models are slightly more general and consider  parametrized $\alpha$-power dispersion relation with a $\beta$-smoothing operator inside the cubic nonlinearity. This might provide a generalized framework for investigating the relationship between dispersive smoothing and the derivative properties appearing in the nonlinearity. Admittedly, these are not directly physical models but the mathematical motivations for their study seem to keep appearing….
+<h2 id="andreiagrachevhttp:people.sissa.itagrachevsissatriestethelong-timebehaviourofdissipativesystems"><a href="http://people.sissa.it/~agrachev/">Andrei Agrachev</a>, SISSA Trieste, The long-time behaviour of dissipative systems</h2>
+<img src="http://profile.ak.fbcdn.net/hprofile-ak-snc4/41797_53295959808_4612_n.jpg" alt="Andrei Agrachev" />
+
+A natural mechanical system on a Riemannian manifold. Traectories are curves on this manifold. The kinetic energy is the usual Riemannian length. The potential energy is a function on the manifold.
+
+Hamiltonian $ = \frac{1}{2}|p|^2 + V(q)$
+where $p \in T_q^* M$ and $|p| = \max [ \langle p, \xi \rangle: \xi \in T_q M, |\xi | =1 ]$
+
+WE consider this system but with an isotropic dissipation:
+$$
+\dot{p} = - H_q - \alpha p, ~\alpha &gt; 0$$
+$$
+\dot{q} = H_p.
+$$
+
+Toy example: $M=R, V(q) = b q$. All solutions converge to one particular solution. Eventually, the particle moves with a fixed velocity. If we perturb the V a little bit, the phase portrait will be very similar. There will be a limiting profile and the structure will be very similar.
+
+Toy example: Pendulum. $V(q) = b \cos q, ~ \frac{\alpha^2}{4} &lt; |b|.$ Then, we don’t have limiting behavior like that beffore. We have instead a vortex. The dissipation brings the trajectory down to the minimum of the potential energy. However, when we have $
+\frac{\alpha^2}{4} &gt; |b|,$ we have a different limiting configuration. We obtain a limiting potential “gradient” flow on the circle.
+
+There is strong dissipation in life. The limitig dynamics of systems we observe, like a ship on the ocean, has a transitional period but eventually there is a balance.
+
+We try to view things using the Eulerian viewpoint.
+
+<strong>Definition:</strong> <em>Potential stationary flow</em> is a gradient vector field $\nabla u$ where $u \in C^2 (M)$ and $[d_q u: q \in M] \subset T^* M$ is an invariant submanifold of our system.
+
+In particular, $\dot{\gamma}(t) = \nabla_{\gamma(t)} u$ implies that $t \longmapsto (d_{\gamma(t)}u, \gamma(t))$ is a solution.
+
+<strong>Definition:</strong>
+The curvature of the Hamiltonian $H$ at $p \in T_q^* M$ is a self-adjoint linear operator from the cotangent bundle to the cotangent bundle defined by the formula
+$$
+R^H_{(p,q)} \xi \cal{R} (\xi, p)p + (\nabla_q^2 V) \xi, ~ \xi \in T_q^* M,
+$$
+where $\nabla$ is the covariant derivative and $\cal{R}$ is the Riemannian curvature.
+
+(This is a natural extension fromt he standard symplectic setting to the dissipative systems. Some interesting discussion…what is the connection….natural…only this kind of isotropic dissipative systems.)
+
+Assume that $M$ is complete, $\cal{R}$ and $\nabla^2 V$ are uniformly bounded. (This follows if $M$ is compact.) Let $\Phi_t$ be the flow on the cotangent bundle. We consider a strip defined by $\Omega_c = [ (p,q) \in T^*M: |p| \leq c]$.
+
+<strong>Theorem:</strong>
+<ul>
+	<li>If $R^H_{(p,q)} &lt; \frac{\alpha^2}{4} I, ~ \forall (p,q)$ such that $H(p,q) \leq \max V$, then $\exists$ a potential stationary flow $\nabla u$ such that
+$$
+\Phi_t (\Omega_c) \rightarrow [ d_q u : q \in M] ~{\mbox{as}}~ t \rightarrow + \infty$
+$$
+with an expoenetntial rate, $\forall c&gt;0$.</li>
+	<li>$[d_q u: q \in M]$ is a normally stable submanifold of $\Phi_t$.</li>
+	<li>If $M$ is compact and $R^H_{(p,q)} &lt; \frac{\kappa -1)\alpha^2}{\kappa^2} I$ then $ u \in C^k (M)$.</li>
+	<li>The map $(H,\alpha) \longmapsto u$ is continuous in the $C^2$-topology.</li>
+</ul>
+Smaller dissipation:
+When dissipation is smaller, we have some hopeful hints. Discussion is moving a bit fast for me to type….Markov process…not an invariant measure but the measures can be propagated…
+
+Interesting discussion about the use of measures in the presence of small dissipation limits as a device to probe the structure of the original Hamiltonian systems.
+
+Slides stop….he still has about 10 minutes. He tries to explain the proof. This discussion is reminiscent of a principal theme I will try to convey in my talk. Infinite dimensional systems might be viewed as the envelope system of limits of finite-d systems. When we study the infinite-d system, one strategy of attack is to identify convenient finite-d systems which limit on the infinite-d system. One possible source of these convenient systems might be through appropriate choices of isotropic dissipative systems, which truncate high frequencies.
+
+Some discussion striving to describe the “curvature” of a Hamiltonian system….family of vertical and horizontal Lagrangian distributions. Curvature of dissipative systems is easily accessed…..cheating a bit, but look in the paper for the details. Levi-Civita connection is tangent to the zero section.
+<h2 id="waltercraighttp:www.math.mcmaster.cacraigmcmasteruniversitythewaterwaveproblemasahamiltoniansystem"><a href="http://www.math.mcmaster.ca/craig/">Walter Craig</a>, McMaster University, The water wave problem as a Hamiltonian system</h2>
+<img src="http://www.math.mcmaster.ca/craig/Walter_01-03-02.jpg" alt="Walter Craig" />
+
+I thought I would speak a bit about Arnold’s influence on my mathematical life. We were given his Mathematical Methods book in graduate school. His perspective has pervaded our approach to problems.
+
+(joint work with Catherine Sulem; along with Alessandro Selvitella and Yun Wang)
+
+<strong>Outline:</strong>
+<ul>
+	<li>Two ODEs</li>
+	<li>Euler’s equations</li>
+	<li>Zakharov’s Hamiltonian</li>
+	<li>Partial Differential equations as Hamiltonian systems</li>
+	<li>Birkhoff Normal Forms</li>
+	<li>Implications of the normal form</li>
+	<li>The KdV scaling limit</li>
+</ul>
+<h3 id="twoodes">Two ODEs</h3>
+$$
+\dot{z} = z^2, z(0) = \epsilon
+$$
+versus
+$$
+\dot{w} = w^3, w(0) = \epsilon
+$$
+…..ack slide changed and I missed the point.
+<h3 id="eulersequations">Euler’s equations</h3>
+Newton’s laws, Eulerian coordinates, incompressible fluid. We work on a pre-Columbian model of the earth.
+
+Free surface water waves. We imagine that the velocity field is irrotational (oceanographers do this) so we can recast this as a potential flow. The bottom is not a sponge, so no penetration and we assume that the fluid velocity has no normal component at the bottom.
+
+Free surface conditons: Kinetic BC at the top; Bernoulli condition.
+
+Hamiltonian systems: Zakharov 1968. This was a poorly understood paper which has emerged as being very important.
+
+Goals: explain this fact; use it to understand the PDEs.
+<h3 id="partialdifferentialequationsashamiltoniansystems">Partial Differential equations as Hamiltonian systems</h3>
+<h3 id="zakharovshamiltonian">Zakharov’s Hamiltonian</h3>
+The energy functional $H= K + P$ so it should be
+$$
+H = \int \int_{-h}^{\eta(x)} \frac{1}{2} |\nabla \phi |^2 dy dx + \int_x \frac{g}{2} \eta^2 dx.
+$$
+
+This is pretty clear but the difficulty is what are the choices of variables?
+
+Zakharov’s choice:
+$$ z = (\eta(x), \xi(x) = \phi(x, \eta(x))).$$
+That is $\phi = \phi[\eta, \xi] (x,y).$
+
+In these coordinates, we can realize the PDE for Euler flow for the free surface as a Hamiltonian system in Darboux coordinates. The subtlety is how to differentiate the Hamiltonian wrt the canonical coordinates.
+
+Other Hamiltonian PDEs:
+
+Boussinesq system; KdV equation; NLS; …
+
+Dirichlet-Neumann oeprator:
+<ul>
+	<li>Laplace’s equation on the fluid domain $-h &lt; y &lt; \eta(x)$.
+$$
+\xi(x) \longmapsto \phi(x, y) \longmapsto N \cdot \nabla \phi (1 + |\nabla_x \eta |^2)^{1/2} = G(\eta) \xi (x).
+$$</li>
+	<li>In Zakharov’s coordinates, we can express the Hamiltonian in terms of the D-N operator $G$ as
+$$ H(\eta, \xi) = \int \frac{1}{2} \xi G(\eta) \xi \frac{g}{2} \eta^2 dx.$$</li>
+	<li>The water wave system rewritten:
+$$ \partial_t \eta = G(\eta) \xi ,$$
+$$ \partial_t \xi = -g \eta - {\mbox{grad}}_\eta K. $$
+(This discussion is closely related to a variational formula of Hadamard from 1911, 1916)</li>
+</ul>
+<strong>Lemma (Properties of the Dirichlet-Neumann operator):</strong>
+A singular integral operator $G(\eta)$ related to the Green’s function.
+<ol>
+	<li>Hermitian symmetric.</li>
+	<li>$G(\eta) \geq 0$ and $G(\eta) 1 = 0$.</li>
+	<li>$G(\eta): H^1_\xi \rightarrow L^2_\xi$ is analytic in $\eta$ for $\eta \in C^1$ [using a theorem of Christ-Journé (1987)]:
+$$ G(\eta) \xi = G^{(0)} \xi + G^{(1)}…$$</li>
+</ol>
+ack….slide changed.
+
+Conservation Laws:
+<ul>
+	<li>Mass is conserved. Mass is $\int \eta dx.$</li>
+	<li>Momentum is conserved. Momentum is $\int \eta \partial_x \xi dx.$</li>
+	<li>Energy is conserved.</li>
+</ul>
+(Poisson bracket calculations are quite direct.)
+
+Taylor Expansion of the Hamiltonian:
+
+From analyticity, we can expand around the stationary zero solution using the Taylor expansion of $G$.
+
+Flow of the Harmonic oscillator. He is considering here the linearized problem and showing that we can explictly solve this problem using Fourier/superposition methods. We encounter a Fourier series with rotating phases. The typical solution is almost periodic.
+
+Basic facts:
+<ul>
+	<li>The flow preserves the (linearized) energy.</li>
+	<li>Actions are preserved. (This is the moment map.) Therefore, all Sobolev norms are preserved.</li>
+	<li>Phases involve linearly in time.</li>
+</ul>
+Basic Questions:
+
+Add in the perturbations. Do any of those orbits persist? This turns out to be quite hard. In fact, it is challenging to show that any of them persist. The progress on these questions have been made using KAM theory. We know that there exist periodic solutions.
+<ul>
+	<li>Do there exist quasiperiodic or almost periodic solutions?</li>
+	<li>Given a point $z^0$ in some phase space. Does the flow exist in M? This is hard.</li>
+	<li>Does it exist globally in time? This is basically open, although there are some recent advances. Do we have stability? Do we have a Nekhoroshev stability property?</li>
+	<li>Can you make the actions grow? Weak turbulence. Growth of Sobolev norms?</li>
+</ul>
+<h3 id="birkhoffnormalforms">Birkhoff Normal Forms</h3>
+Fix the dimension to $d=2$, so we have $x \in R$. We restrict to the periodic-in-$x$ case. We want to perform canonical transformations to move the Hamiltonian into a normal form at least in some neighborhood of the origin.
+
+Conditions:
+<ul>
+	<li>Make the transformation canonical.</li>
+	<li>Make the new Hamiltonian have the same linearization plus only resonant terms up to some order with a new truncation/residual error.</li>
+	<li>If $Z^{(3)} = 0$, we will have a chance to get longer existence intervals based on the analogy of the first ODEs at the beginning of the talk.</li>
+</ul>
+This transformation process is called the reduction to Birkhoff normal form.
+
+<strong>Theorem (Craig-Sulem 2009):</strong>
+
+Let $d=2$ (and $h = + \infty$) and fix $r&gt;3/2$. Then, there exists a neighborhood of the ball at the origin in $H^r$ on which we have a Birkhoff normal form which kills off the quadratic nonlinear terms resulting a cubic equation.
+
+<strong>Note:</strong> This transformation mixes the variables $\eta$ and $\xi$.
+
+Outline of the proof:  flying slides…..cohomological equation turns out to be a linear equation. THere are no nonzero $m=3$ resonances. It turns out to be rather challenging to show that the flow of the vector field exists.
+<h3 id="implicationsofthenormalform">Implications of the normal form</h3>
+Long time existence theorem. Work in progress.
+
+We should be able to build solutions that last for time intervals on the order of $\epsilon^{-2}$. I want this time so that I can study the NLS limit of the water wave equation. On this time scale, we would like to have a nice justification. This justification requires the desired long time existence result.
+
+Wu 2009: Small Sobolev data lasts for exponentially long times.
+
+Germain-Masmoudi-Shatah 2009:
+
+For $d=3$, small Sobolev data exist globally in time.
+
+<strong>The difference is that I am on a compact domain. Wu is in a dispersive situation.</strong>
+
+Nathan Totz &amp; Sijue Wu have done the NLS limit in the non-periodic case. Schneider-Wayne also have results in this direction.
+<h3 id="thekdvscalinglimit">The KdV scaling limit</h3>
+pretty fast slide switching….but nice moves. He shows how the KdV Hamiltonian can emerge from the water wave Hamiltonian. Now perform the above sequence of transformations on the Birkhoff normal form for water waves. In the limit as the small parameter goes to zero, the water wave Hamiltonian collapses to the KdV Hamiltonian.
+<h3 id="tuesday04october">Tuesday 04 October</h3>
+
+<hr />
+
+<h2 id="yannbrenierhttp:math.unice.frbrenieruniversityofnicefromincompressiblefluidstodust"><a href="http://math.unice.fr/~brenier/">Yann Brenier</a>, University of Nice, From incompressible fluids to dust</h2>
+<img src="http://www.cas.uio.no/research/images/0809/yannb.jpg" alt="Yann Brenier" />
+
+It is a great honor for me to be here. I would like to discuss two issues that were familiar to V.I. Arnold. We saw fluids discussed yesterday in Shnirelman’s talk. Dust is a singularity of the Hamilton-Jacobi equation. (Nepecmponcka perestroika)
+
+First part: euler equations and minimizing geodesics for volume preserving maps
+<ol>
+	<li>Euler equations of incompressible fluid mechanics</li>
+	<li>Leas action principles</li>
+	<li>Geometric analysis issues</li>
+	<li>Minimizing geodesics: existence and uniqueness results for the pressure gradient</li>
+</ol>
+Euler’s Equation: Geometric Definition.
+
+The fluid is moving inside a box denoted by $D$. We consider incompressible motion. This is viewed as a time dependent map $M_t: D \rightarrow D$. Points in $D$ are called $a$. $M_t$ is viewed as a map in the Hilbert space $H = L^2 (D, R^d)$, valued in the subset $VPM(D)$ of all Lebesgue measure-preserving maps.
+
+Solutions of theEuler equatiosn, introduced in 1755, correspond to those curves $t \rightarrow M_t \in VPM (D)$ for which there exists a time dependent scalar function $p_t$ called the “pressure field” defined on D such that
+$$
+\frac{d^2}{dt^2}M_t + (\nabla p_t) \circ M_t =0
+$$
+where $\nabla$ is the gradient operator on $R^d$ (wrt Euclidean norm).
+
+The Principle of Least Action.
+
+<strong>Theorem:</strong> Assume $D$ convex. The $(M_t, p_t)$ be asolution of the E equations, with constant $\lambda$ such that
+$$
+\sum \frac{\partial^2 p_t}{\partial_i \partial_j} \xi_i \xi_j \leq \lambda |\xi|^2
+$$
+Then $M_t$ is the unique minimizer, among all curves along $VPM(D)$ that conincide with $M_t$ at the endpoints $t = t_0, t=t_1$ of the following action
+$$
+\frac{1}{2} \int_{t_0}^{t_1} \int_D | \frac{dM_t (x)}{dt}|^2 dx dt.
+$$
+
+In other words, such a curve is nothing but a (constant speed) geodesic along $VPM(D)$ wrt metric induced by $H = L^2 (D, R^d)$.
+
+Arnold 1966, Ebin-Marsden 1970, Arnold-Khesin book 1998.
+
+<strong>The Dual Action</strong>
+
+Minimizing the actrion can be written as a saddle point problem, just by using a time-dependent Lagrange multiplier to relzs
+$$
+\inf_M \sup_p \int_{t_0}^{t_1} \int_D [\frac{1}{2}  | \frac{dM_t (x)}{dt}|^2 - p_t (M_t (x)) + p_t (x) ] dx dt.
+$$
+This is trivially bounded fro below by
+$$
+\sup_p \inf_M (same)
+$$
+which naturally leads to a dual least action priciple.
+
+<strong>Theorem:</strong> Using exactly the same conditions ($D$ convex and $(t_1 - t_0)^2 \lambda &lt; \pi^2$, the pressure $p$ is the unique maximizer of the <em>concave dual action</em>
+$$
+I[p] = \int_D J_p (M_{t_0} (x), M_{t_1} (x)) dx + \int_{t_0}^{t_1} \int_D p_t (x) dx dt,
+$$
+where
+$$
+J_p (y,z) = \inf \int_{t} ( \frac{1}{2} |\frac{d\xi_t}{dt}|^2 - p_t (\xi_t)) dt
+$$
+where the infimum is taken over all curves $\xi_t \in D$ such that $\xi_{t_0} = y \in D, \xi_{t_1} = y \in D$.
+
+The proof is elementary and follows from 1d Poincaré inequality.
+<h3 id="geometricanalysisissues1">Geometric Analysis Issues 1</h3>
+<ol>
+	<li>Density of diffeomorphisms in $VPM(D)$. $SDiff(D)$ is the set of volume preserving orientation preserving diffeomorphisms. This is more refined than the $VPM(D)$ condition. For $d \geq 2$, it turns out that $VPM$ is the $L^2$ closure of $SDiff$. The identification of the closure of $SDiff (D)$ for the a prior finer geoesic distance induced by $L^2$ is a much more difficult issue. For simple (say contractile) domains $D$, this closure is still $VPM(D)$ for $d \geq 3$ (but defintely not for $d=2$) as show by Shnirelman in his land mark paper (Math USSR Sb 1985). These results have striking consequences: in particular maps of form
+$$ M(x) = (h(x_1), x_2, x_3)
+$$ where $h$ is any Lebesgue-measure preserving map of the unit interval, are in the closure of $SDiff([0,1]^3)$. (Thus, even though we are interested in volume preserving maps, we have to open our eyes to all Lebesgue measure preserving map of the unit interval. This is a much much richer class than $SDiff$!)</li>
+	<li>Density of permutations in $VPM(D)$. Another interesting subset of $VPM([0,1]^3)$ is made of all “permutations” of all dyadic divisions of the unit cube in sub-cubes of equal volumes. You divide the buce into dyadic sub-cubes, like a Rubick’s cube. To every permutation, you define a permutation which shuffles the cubes. It turns out that the union of these permutations taken over all scales defines a dense set of maps in $VPM$! He shows some remarkable gifs where dust appears related to the orientation reversal.</li>
+	<li>Geodesic completeness. Big issue….global well-posedness of E.</li>
+	<li>Minimizing Geodesics. (Shnirelman Math USSR Sb 1986) The 3d case turns out to be “easy” with a crucial use of the convex structure of the dual problem. The case $d=2$ is clearly linked to symplectic geometry and seems extremely difficult: a fascinating strategy has been developed by Shnirelman, by adding braid constraints to the minimization problem, which certainly deserves further investigations.</li>
+</ol>
+<strong>Approximate Minimizing Geodesics:</strong>
+
+fast slide…The existence of such approximations is in no way trivial and is a consequence of a key density result due to Shnirelman (GAFA 1994).
+
+<strong>Main Theorem:</strong> Let us assume $D$ to be convex, with $ d \geq 3$, fix $t_0 = 1, ~ t_1 = 1$ and consider maps $M_0, M_1 \in VPM (D)$. Then there is aunique pressure gradient $\nabla p_t$ such that for all $\epsilon$-minimizing geodesics, we have in the sense of distributions
+$$ \frac{d^2 M_t^\epsilon}{dt^2} \circ (M^\epsilon_t)^{-1} + \nabla p_t \rightarrow 0, \epsilon \rightarrow 0.$$
+
+Yann insists that this has “nothing to do with geodesic completeness”. I am confused…..
+
+<strong>Minimizing Geodesics: Final Comments</strong>
+<ol>
+	<li>Uniqueness of the pressure gradient. This is a remarkable feature of the theory. There is no equivalent result for finite-d configuration spaces such as $SO(3)$,on which geodesic curves (for appropriate metrics) correspond to the motion of solid bodies in classical mechanics. WE believe this strange phenomenon to be the consequence of the “hidden convexity” of the problem in dimension 3 and more.</li>
+	<li>Limited regularity of the pressure gradient.</li>
+</ol>
+Some references.
+<h3 id="secondpart:fromincompressiblefluidstodust">Second Part: From incompressible fluids to dust</h3>
+<ol>
+	<li>Gravitating particles as a natural approximation of Euler incompressible fluids
+….fast slides…..jet lag….fascinating….Yann is a fast thinker…</li>
+</ol>
+<strong>Penalization of the Euler Action</strong>
+
+Use a penalty method to try to approximate “geodesics” on discrete sets using permutations.
+
+Monge-Ampere (instead of Poisson) nonlinear correction to the classical Newton gravitation.
+<h2 id="rafaeldelallavehttp:www.math.gatech.eduusersrll6georgiainstituteoftechnologyarnolddiffusionina-prioriunstablehamiltoniansystemsofhighdimension"><a href="http://www.math.gatech.edu/users/rll6">Rafael de la Llave</a>, Georgia Institute of Technology, Arnold diffusion in a-priori unstable Hamiltonian systems of high dimension</h2>
+<img src="http://www.mittag-leffler.se/pictures/presentations/0910s/llave-10s.jpg" alt="Rafael de la Llave" />
+
+(joint work with Delshams, de la Llave, T.M. Seara)
+
+(Related collaborators: Elisaget Canalias, Marian Gidea, Gemma Huguet, Vadim Kaloshin, …)
+
+Instability for a priori unstable Hamiltonian systems
+
+We consider a periodic in tim perturbation of $n$ pendula and a $d$-dimensional rotor described by non-autonomous Hamitonian,
+$$
+H(p,q, I, \phi, t , \epsilon) = P(p,q) + h(I) + \epsilon Q (p,q, I, phi, t, \epsilon)
+$$
+with $$P(p,q) = \sum P_j (p_j, q_j), ~ P_j = \pm (\frac{1}{2} p_j^2 + V_j (q_j)).
+$$
+
+Elemntary and regularity assumptions.
+<ul>
+	<li>H1: Assume that the functions $h, V_j, Q$ are $C^r$ in their corresponing domains with $ r \geq r_0$ sufficiently large.</li>
+	<li>H2: Assume that the potentials $V_j$ have non-degenerate local maxima, say at $q_j = 0$, each of which gives rise to a homoclinc orbit of the pendulum $P_j$: They are penduli, they have critical points and have homoclinc connections.
+<blockquote>“The enemies to this problem are the KAM and the Nekoroshev. Of course, they are my friends in other talks…”</blockquote>
+</li>
+	<li>H3: The mapping $I \rightarrow \omega(I) = …$ ack slide change.</li>
+	<li>H4: The function $Q$ is assumed to be a trigonometric polynomial. (This can be removed)</li>
+</ul>
+Remark: [Delshams-Llave-S06], [Delshams-Huguet09], [Gidea-Llave06].
+
+Melnikov Potential:
+
+Poncare-Arnold-Melnikov. This basically measures the effect of the perturbation on a homoclinic orbit at first order. (Big integral….too long to type this fast.)
+<ul>
+	<li>H5: Assume that the system of equations
+$$
+\frac{\partial}{\partial \tau} L(\tau, I, \phi, s) = 0
+$$ admits a nondegenerate solution. This allows us to eliminate the $\tau$ in terms of the other variables.</li>
+</ul>
+Poincaré reduced function
+<ul>
+	<li>H6:</li>
+	<li>H7: $Q$ satisfies some nondegeneracy assumptions.</li>
+	<li>H8: You don’t want the resonances to be flat.</li>
+</ul>
+….I can’t really keep up….so I will just watch.
+
+Tenyson 83 Probed many mechanisms of diffusion by observing numerically.
+
+Chirikov 82
+<h2 id="vadimkaloshinhttp:terpconnect.umd.eduvkaloshiuniversityofmarylandhausdorffdimensionofoscillatorymotionsforthreebodyproblems"><a href="http://terpconnect.umd.edu/~vkaloshi/">Vadim Kaloshin</a>, University of Maryland, Hausdorff dimension of oscillatory motions for three body problems</h2>
+<img src="http://owpdb.mfo.de/photoSmall?id=14304" alt="Vadim Kaloshin" />
+
+(blackboard talk)
+
+I have a deep admiration of V.I. Arnold. He was a “god of mathematics and still is.” Here is a list of topics that have occupied my interest for research. They are all explicitly linked with ideas of Arnold.
+<ol>
+	<li>My undergraduate thesis was on a topic called <em>prevalence</em>, a notion of probability one in infinite dimensional spaces. My project emerged from Arnold’s note that one could understand genericity through this notion.</li>
+	<li>Hilbert-Arnold Problem. This was my first problem I studied with Ilyashenko. This was motivated by the 2nd part of Hilbert 16th problem. You look at a family of vector fields on $x \in S^2, ~ \epsilon \in B^k$. You consider $\dot{x} = v(x, \epsilon)$. Generic fanily of $C^\infty$ v. fields has $LC(\epsilon) &lt; \infty.$</li>
+	<li>Growth of the number of periodic points. $M$ is a compact manifold. You look at $f: M \rightarrow M; f \in Diff (M)$. You look at $P_n (f) = {\mbox{Number}} [x: f^n x = x]$. How quickly $P_n(f)$ generically?</li>
+	<li>Arnold Diffusion.</li>
+</ol>
+As you can see, most of my research is either inspired by or directly leads from questions suggested by Arnold as interesting directions.
+
+Qualitative analysis of 3-body problem. Let $q_i \in R^d, ~ d =2,3$ are point masses. Each point has mass $m_i$. The Newton law then gives the dynamical law
+$$
+m_i \frac{d^2}{dt^2} q = - \sum m_i m_j \frac{q_i - q_j}{|q_i - q_j |^3}.
+$$
+
+Kepler motions:
+
+2 Body problem (2BP).
+$m_0 q_0 + m_1 q_1 = 1$.
+$$
+H(q, \dot{q}) = \frac{\dot{q}^2}{2} - \frac{1}{|q|}
+$$
+Three cases for the 2BP:
+<ul>
+	<li>$H&lt;0$ either circular or elliptic.</li>
+	<li>$H=0$ parabolic; escapes to infinity with zero velocity.</li>
+	<li>$H&lt;0$ hyperbolic; escapes to infinity with nonzero velocity.</li>
+</ul>
+Three Body Problem: (Sun-Jupiter-Comet)
+
+Four types of motion:
+<ul>
+	<li>B: $\sup_{\pm t&gt;0} |q_i (t)| &lt; K &lt; + \infty$</li>
+	<li>Parabolic: escapes to infinity with zero velocity at infinity.</li>
+	<li>Hyperbolic: escapes to infinity with nonzero velocity at infinity.</li>
+	<li>Oscillatory: $\limsup_{t \rightarrow \infty} |q_i (t)| = \infty; ~ \liminf_{t \rightarrow \infty} |q_i (t)| &lt; + \infty $.</li>
+</ul>
+What kind of behavior is possible in the future? What kind of behavior is possible in the past?
+
+A famous result of (missed the names…) showed that there are solutions with any of these four behaviors in either direction of time infinity.
+
+Shows a table. He reports that every one of the boxes (except one) in the table have been shown to have positive measure. He will focus on the case whether the situation with oscillatory motions in the past and in the future. We want to know whether this event has positive measure or not. There was a conjecture of Kolmogorov: He conjectured that this was expected to have measure zero.
+
+Shows two papers by Alexeev. The French version has no attribution to Kolmogorov. The English version has attribution to Kolmogorov. Katok says you should attribute this to Kolmogorov. The English version was published after his death.
+
+(joint work with A. Gonodetski; <a href="http://terpconnect.umd.edu/~vkaloshi/papers/HD-Sept2011.pdf">preprint</a>)
+
+Kolmogorov conjecture: $Mes OS = 0$.
+
+Main Result 1. Often 2 degree of freedom 3 body problem have Hausdorff Dimension maximal possible.
+
+<strong>Leading Idea:</strong> Build a “fat” Cantor set $\Lambda \ni \infty$ with ergodic dynamics.
+
+If one could produce an ergodic component with positive measure, one could perhaps prove a counterxample to Kolmogorov’s conjecture.
+
+Second version of the main result:
+
+Remark: 2 degrees of freedom Hamiltonian dynamics locally reduces to a 2 dimensional area preserving map. My analysis will concern those maps since they have some advantages, for example I can draw pictures.
+
+Newhouse domains in dissipative setting. Suppose $f:M^2 \rightarrow M^2$. Suppose $f$ has a homoclinic tangency (HT). If $f$ has a saddle point then $f^k p = p$ such that unstalbe and stable manifolds satisfy….. RETURN HERE….Newhouse domains…..
+
+Main Result 2: 2 dof 3BPs have Newhouse domains.
+
+Remark: Duarte proved a conservative Newhouse phenomenon. (20 year interval between Newhouse and Duarte.)
+
+Newhouse domains give rise to striking dynamical examples.
+
+1st Model (Sitnikov): There is a beautiful book by Moser which gives an example of oscillatory motions. You have two bodies $q_0, q_1$ in elliptic orbits with eccentricity $e$. The masses $m_0 = m_1 = 1.$ The third body $q_2 = (0,0,z)$ lies on the $z$ axis.
+$$
+H(t, z, \dot{z}) = \frac{\dot{z}^2}{2} - \frac{1}{\sqrt{z^2 + r_e^2 (t)}}.
+$$
+
+<strong>Theorem 1 (GK):</strong> $\exists$ open nonvoid $\cal{N} \subset (0,1)$ such that for a generic $e \in \cal{N}$ we have $HD(OS) = 3$. $\cal{N}$ is a subset of a Newhouse domain.
+
+2nd Model (Restricted planar circular 3BP): $m_2 = 0$ (restricted, comet). $q_0, q_1$ move in circular orbits. Motions are planar. In a rotating frame, these masses are fixed. Set $m_0 + m_1 =1$ and choose $m_0 = \mu, ~ m_1 = 1 - \mu$. The parameter $\mu$ is called the <em>mass ratio</em>. Form the so called Jacobi constant $J(x,y, \dot{x}, \dot{y}) = \frac{\dot{x}^2 + \dot{y}^2}{2} - [\frac{  {x}^2 + {y}^2}{2} + \frac{1-\mu}{d_0} + \frac{\mu}{d_1}]$.
+
+(Here $d_0$ represents the distance from $q_0$ to $q_2$ measured in the rotating frame. $d_1$ relative to $q_1$. )
+
+<strong>Theorem 2 (GK):</strong> $\exists ~ J_0$ such that $\forall ~ J &gt; J_0$ then $\exists ~ \cal{N}<em>J \subset (0,1)$ with property generic $\mu \in \cal{N}</em>J$ and $HD(OS \cap J(…) = J^*) = 3.$
+
+Meta Theorem. Let $[H_\delta]$ be a 1-parameter family of Hamiltonian systems of 2 dof (or 1.5 dof) satisfy Hypothesis:
+<ul>
+	<li>H1: As $\delta \rightarrow 0$, the limiting Hamiltonian $H_0$ is integrable with a separatrix loop.</li>
+	<li>H2: For $\delta \neq 0$, we want the separatrix to split tranversally.</li>
+	<li>H3: Melnikov function satisfies a certain open condition.</li>
+</ul>
+Then for a generic $\delta$ in an open nonempty set, $H_\delta$ has a hyperbolic (nonzero Lyapunov exponent) set of HD = 3.
+
+Ideas from proof (Sitnikov):
+
+$e = 0, ~ H = \frac{\dot{z}^2}{2} - \frac{1}{\sqrt{z^2 + 0.25}}$. He draws a picture in the $(z, \dot{z})$-plane and identifies the region $H&lt;0$ and the region $H&gt;0$ and highlights the “separatrix loop”. He glues the points at infinity at $ z = \pm \infty$ to highlight this as a separatrix loop. Constructing oscillatory motions corresponds to building orbits that come arbitrarily close to this point.
+
+$C^2 - \lambda$ - Lemma…. why do we need this? We need quadratic tangency. This is an explicit system so we can’t use genericity.
+<h2 id="marcchaperonhttp:www.math.jussieu.frchaperonuniversitparis7generalisedhopfbifurcations"><a href="http://www.math.jussieu.fr/~chaperon/">Marc Chaperon</a>, Université Paris 7, Generalised Hopf bifurcations</h2>
+<img src="http://owpdb.mfo.de/photoSmall?id=13280" alt="Marc Chaperon" />
+
+It’s a great honor to be here. I admired Vladimir Arnold very much. We liked each other. What I will speak about appears in the MMF v11(3) in memory of Arnold. The reason I became a mathematician was because of Thom but the reaosn why I persisted was probably because of ARnold. It was amazing how much energy he had. When he came to Paris, he knew more about it than I did, more than most natives. He was some kid of wunderkind and remained so his whole life.
+
+Motivation: interest in the coupling of oscillators.
+
+Chenciner-Iooss 1979
+
+….I’m a bit tired so stopped typing.
+<h2 id="antonzorichhttp:perso.univ-rennes1.franton.zorichuniversityofrenneslyapunovexponentsofthehodgebundle"><a href="http://perso.univ-rennes1.fr/anton.zorich/">Anton Zorich</a>, University of Rennes, Lyapunov exponents of the Hodge bundle</h2>
+<img src="http://perso.univ-rennes1.fr/anton.zorich/Anton_Homepage_1.jpg" alt="Anton Zorich" />
+
+(joint work with Alex Eskin and Maxim Kontsevich)
+
+I am jealous towards my colleagues. I can’t claim this work was motivated by work of Arnold. But I can report that he was constantly interested in this topic. I enormously regret that, now that the story is complete, I can not tell it to Arnold.
+
+Motivations. Consider a billiard in the plane with $Z^2$-periodic rectangular obstacles.
+
+<strong>Theorem (Delcroiz, Hubert, Lelivre 2011):</strong> For almost all parameters of the problem, the billiard trajectory ecapes to infinity with a rate of $t^{2/3}$.
+
+How can we capture this $2/3$? The obstacles that can appear in this story must involve rectangles.
+
+Exponents like this have appeared in work by Giovanni Forni.
+
+Geometric interpretation of multiplicative ergodic theorem:
+
+Consider a vector bundle endowed with a flat connecton over a manifold $X^n$. Having a flow on the base, we can take a fiber of the vector bundle and transport it along a trajectory of the flow. When the trajectory comes close to the starting poitn, we identify the fibers using the connection and we get a linear transformation of the fiber. The multiplicative ergodic theorem says that when the flow is ergodic a “matrix of mean monodromy” along the flow.
+
+Moduli spaces of Abelian differentials.
+
+Abstract version and a concrete version…..slides are pretty dense and mving a bit fast.
+
+Teichmuller discs.
+
+Teichmuller geodesic flow:
+
+Teichmuller geodesic flow acts in the modulie space of pairs (complex structure, holomorphic quadratic differential.) Away from the zeros of a quadratic differential $q$ one can find a local coordinate $z$ on the underlying Riemann surface in which $q = (dz)^2$. This distinguished local coordinates defines a flat metric $|dz|^2$, which has a canonical singularities at the points where the quadratic differential has zeroes. Teichmuller geodesic flow acts as a uniform contraction in teh vertical direction and unform expansion in the horizongal direction.
+
+(This is like <a href="http://en.wikipedia.org/wiki/Asteroids_%28video_game%29">Asteroids</a> on a much richer surface than the 2-torus!)
+
+The unraveled quotient space can be viewed as a polygon with parallel sides identified. There are some rich combinatorics available by cutting and regluing.
+
+Hodge bundle and Gauss-Manin connection:
+
+This reduces things down to $g-1$ Lyapunov exponents. To compute these exponents appear to be out of reach in most every dynamical system.
+
+Siegel-Veech constant:
+
+Closed regular geodesics on flat surfaces appear in families of parallel closed geodesics sharing the same lenght. Every such family fills a mximal cylinder having conical points on each of the boundary components. Denote by $N_{area} (S, L)$ the sum of areas of all cylinders spanned by geodesics of length at most $L$.
+
+<strong>Theorem (Veech-Vorobets):</strong> For every $SL(2, R)$-invariant finite ergodic measure the following ratio is constant (ie.e does not depend on the value of a positive parameter L):
+$$
+\frac{1}{\pi L^2} \int N_{area} (S, L) d\nu_1 = c_{area} (d\nu_1 ).
+$$
+(The integration here is over the entire family of flat surfaces. Here $\nu_1$ is the invariant measure on the space of these surfaces.)
+
+The constant $c_{area}$ is called the Siegel-Veech constant.
+
+Eskin-Masur have a similar theorem for fixed $S$ where you take the limit $L \rightarrow \infty$.
+
+What happens for the torus? For most of the tori, you can’t find closed small geodesics. However, inside the family of flat tori, there are some with very narrow cylinders with closed geodesics.
+
+Eskin-Masur-AZ
+
+Eskin-Okounkov computed the volumes explicitly.
+
+<strong>Main Theorem:</strong> The sum of the Lyapunov exponents can be expressed as a sum of two (explicitly computable) constants.
+
+<a href="http://en.wikipedia.org/wiki/Vadim_Knizhnik">V. Knizhnik</a>
+
+This stuff is amazing, truly beautiful. But, I can’t keep up with the typing….
+
+Big advance by Eskin-Mirzakhani is in redaction.
+<h3 id="wednesday05october">Wednesday 05 October</h3>
+
+<hr />
+
+<h2 id="jacquesfjozhttp:www.ceremade.dauphine.frfejozuniversitparis-dauphineobservatoiredeparisdiffusionalongmeanmotionresonanceintherestrictedthree-bodyproblem"><a href="http://www.ceremade.dauphine.fr/~fejoz/">Jacques Féjoz</a>, Université Paris- Dauphine &amp; Observatoire de Paris, Diffusion along mean motion resonance in the restricted three-body problem</h2>
+<img src="http://www.cantere-lirica.com/index_fichiers/instrumentistes_fichiers/jacques-fejoz-small2.jpg" alt="Jacques Féjoz" />
+
+(blackboard talk)
+
+(<a href="http://terpconnect.umd.edu/~vkaloshi/papers/Elliptic-Diffusion.pdf">joint work w M. Guardia, V. Kaloshin and P.Roldan</a>)
+
+This work would not exist w/o the marvelous 1964 paper of Arnold. This talk is closely related to the talk that Rafael gave yesterday and also to Vadim’s talk. I will try to concentrate on other aspects.
+
+In the solar system, there is one priviledged place where we should look for instabilities. It is called the <strong>Asteroid Belt</strong>. It is located between Mars and Jupiter. Dust particles in this part of the solar system never condensed to form additional planets. Instead, there remain nearly 2 million particles ranging from microscopic to larger asteroids, some having a size of a few hundred kilometers in diameter. If you look to the current distribution of the asteroids in this belt, it gives a quite precise idea about the stability and instability zones between Jupiter and Mars.
+
+In 1857, an American mathematician and astronomer named Daniel Kirkwood observed that there are gaps inside the belt where there are basically no asteroids and other zones where there are lots of asteroids. These gaps correspond to orbital resonances with Jupiter. Since the orbital frequency can be read off from Kepler’s third law….he draws a graph with vertical axis as the number of asteroids and the horizontal axis is the semi-major axis between the Mars and Jupiter radii. He highlights a gap appearing at the zone located in 3:1 resonance with the Jupiter orbit. Why are there these gaps? The conjectural explanation is that an asteroid is in resonance with Jupiter (which has a mass of about 1/1000 of the mass of the sun) then the eccentricity will be unstable. If the eccentricity goes through large variations, then its perihelon will be at size $a(1 - e)$ from the sun. Therefore, the asteroid will get closer and closer to Mars. Due to this very close encounter with Mars, the dynamics will transform so that the principal force acting on it will be due to gravity from Mars rather than with the sun. In this talk, I would like to focus on the first step in this scenario. Namely, why should the eccentricity vary a lot when the asteroid is in resonance with the Jupiter orbit?
+
+Planar restricted 3-body problem: Sun, Jupiter, Asteroid. <em>Restricted</em> means we take the limit when $m_{asteroid} = 0$. Practically speaking, this means that we imagine the Sun and Jupiter take place along the 2 body motion and they are not influenced by the motion of the asteroid. Let’s normalize two things. Set $\mu = mass_{jupiter}$ and the mass of the Sun is $1 - \mu$.
+
+There are 3 “small” parameters.
+<ul>
+	<li>The mass of Jupiter $\mu \rightarrow 0$. The asteroid motion collapses then to an integrable 2 body problem.</li>
+	<li>The eccentricity $e_0$ of Jupiter. This parameter is slightly more subtle. The limiting dynamics as $e_0 \rightarrow 0$ is not integrable. We then obtain the circular restricted problem in which the two primary objects orbit on a circle centered at the center of mass. The problem restricts from 2.5 dof down to 2 dof.</li>
+	<li>Semimajor axis $a$ of the Asteroid. When we let $a$ go to zero, or to infinity, we encounter 2 body problems. In one limit, the Sun dominates the asteroid motion and Jupiter is irrelevant. In the other limit, the asteroid essentially sees the gravity of a combined mass of the Jupiter and Sun.</li>
+</ul>
+In the problem inside our solar system:
+<ul>
+	<li>$ \mu = \frac{1}{1000}$</li>
+	<li>$a = (\frac{p}{q})^{2/3}$. This implies that the periods of the asteroid and Jupiter satisfy $ \frac{T}{T_j} = \frac{p}{q}$.</li>
+	<li>We will restrict attention to $0 &lt; e_0 \ll 1$. This allows us to view the problem as a singular perturbation of the restricted circular problem. There is also a computational reason for doing this. Part of the proof will require some numerical computations. Our strategy was to make these calculations as simple and convincing as we possibly could. All the numerical computations are done on the circular problem and boil down to checking for zeros of a one variable function. A final reason is that the real eccentricity of Jupiter is $\frac{1}{20}$. There is hope that we could in fact claim our theorem for the real value. This will require some quantifications which in principle we could extract.</li>
+</ul>
+<strong>Theorem:</strong> Set $\mu = \frac{1}{1000}$. Fix $\frac{p}{q} = 7$ (chosen for incidental reasons; we expect this can be relaxed; so this asteroid is outside of Jupiter corresponding more closely with Uranus….nice discussion). Assume $0 &lt; e_0 \ll 1$. There exists a solution and a time T with $e(0) &lt; e_{min} = 0.48$ and $e(T)&gt; e_{max} = 0.67$ and all the while the asteroid radius $a(t) \thicksim (\frac{p}{q})^{2/3}$. Thus we have a $(p:q)$ orbital resonance with Jupiter.
+
+What is the time scale of $T$? Conjecturally, we have $T \thicksim - \frac{\ln \mu e_0}{\mu^{3/2} {e_0}}$.
+
+What are the units of time? Year of Jupiter.
+
+<strong>Circular Problem:</strong>
+
+$$
+H = \frac{|p|^2}{2} - \frac{1}{|q|} + \frac{1}{|q|} - [ \frac{1-\mu}{|q + \mu|} - \frac{\mu}{|q - (1 -\mu)|}].
+$$
+This formulation views the principal force as provided by a fictitious mass at the origin perturbed by the separation of the Jupiter and Sun masses.
+
+<strong>Delaunay Coordinates (written in notation of Poincaré):</strong> $(L, l, G, g) $
+<ul>
+	<li>$L = \sqrt{a}$</li>
+	<li>$G = \sqrt{a}\sqrt{1 - e^2}$ (angular momentum)</li>
+	<li>$g$ is an angle to Jupiter.</li>
+	<li>$l$ is the angle of the asteroid advanced past Jupiter.</li>
+</ul>
+If we set $\mu =0$, the perturbing term vanishes and we are left with a degenerate 2BP. Understanding this limit does not bring much light to the problem.
+
+Assume $\mu &gt;0$. The first natural idea is to average out the fast orbital angle remaining inside this Hamiltonian. This involves first making a change of variable. The averaging process leads to an integral. This is a transcendent process. However, when $e_0, e \ll 1$, you can use the Laplace coefficients to make some computations by hand. However, this computation is not much help because we are interested in proving diffusion in the eccentricities. This calculation does give some intuition which suggests that the perturbation looks generic and the degeneracy observed in teh $\mu =0$ limit is broken.
+
+<strong>Fact (Numerical):</strong> There exists a normally hyperbolic cylinder foliated by periodic orbits $\gamma_e$, $0.48 &lt; e &lt; 0.67$. This is related to an idea of R. Moeckel from the late 90s. He draws some surfaces intersecting and explains that there are some small splitting issues requiring high precision arithmetics. We limited our attention to higher eccentricities to avoid these issues. Morally, the larger value of eccentricity the faster the diffusion. As we go above $0.67$ we get closer to the Euler relative equilibrium $L_{1,2}$.
+
+In order to lower the number of dimensions, it is perhaps a good idea to consider a Poincaré return map to $[g = 0]$. This means we are looking at what happens every time the ellipse of the asteroid is aligned along the line connecting the Sun and Jupiter. He draws a helix of 7 levels high above an ellipse. Then he slices the helix with a vertical plane and identifies the intersection points as 7 normally hyperbolic invariant cylinders. It is now time to introduce the analogs of the “inner” and “outer” maps that Rafael introduced in the more general case yesterday.
+
+OK, mostly pictures now….
+
+Discussion: There is no steepness in this Hamiltonian so Nekoroshev’s theorem does not apply.
+<h2 id="boriskhesinhttp:www.math.toronto.edukhesinuniversityoftorontooptimaltransportandgeodesicsondiffeomorphismgroups"><a href="http://www.math.toronto.edu/khesin/">Boris Khesin</a>, University of Toronto, Optimal transport and geodesics on diffeomorphism groups</h2>
+<img src="http://www.math.toronto.edu/khesin/gifs/borek.jpg" alt="Boris Khesin" />
+
+(blackboard talk)
+
+(joint work with J. Lennels, G. Misiolek, S. Preston)
+
+Plan:
+<ul>
+	<li>Euler equation on $SDiff$. Otto’s calculus.</li>
+	<li>$SDiff \subset Diff$ (numerous applications in optimal transportation)</li>
+	<li>$L^2$ and $H^1$ metrics.</li>
+</ul>
+<h3 id="i.arnoldsapproachtotheeulerequation">I. Arnold’s approach to the Euler equation</h3>
+This was discussed in Shnirelman and Brenier’s talks so I can perhaps be brief.
+
+Definition:
+Consider $v$ to be a velocity field on a manifold $(M, (,))$ which is divergence free. The Euler equation is then given as
+$$
+\partial_t v + (v \cdot \nabla) v = - \nabla p, ~ \nabla \cdot v = 0.
+$$
+Here $\nabla$ is the covariant derivative. If there is a boundary, we assume that $v$ is parallel to $\partial M$.
+
+Draws a picture and identifies the Lie algebra $g$ at the identity. He explains how to use Lie algebra transportation along a geodesic in $G$.
+
+<strong>Theorem (Arnold, Bombshell in the 60s):</strong> The Euler equation may be viewed as a the geodesic equation on $G = SDiff (M)$ (the group of volume presernving differomorphisms) w.r.t right invariant energy $L^2$-metric given on $g = Lie(G)$ by
+$$
+E(v) = \frac{1}{2} \int_M (v,v) \mu.
+
+<strong>Remark:</strong> Other groups and energies give Euler top, Kirchoff equations for motion of rigid body in a fluid, KdV, Camassa-Holm, MHD, Landau-Lifschitz equation, …
+<h3 id="ii.geometryoffulldiffeogroup">II. Geometry of full diffeo group</h3>
+This is the point of view rather common in optimal transport. This discussion unifies these two perspectives.
+
+Consider $Diff$, the group of diffeomorphisms on $M$. Inside this group, we have the subgroup of volume preserving diffeomorphisms $SDiff$. The notion of $SDiff$ requires the volume form. Ebin-Marsden. He views $Diff$ as a space of fibers over the space of densities. Once you specify the volume form, this induces the fibration over the densities. Fibers $=F_\nu = [g \in Diff: g_* \mu = \nu]$.
+
+$\exists$ “natural” $L^2$-type metric on $Diff$ for flat $M$:
+$$
+l^2 [g(t, \cdot)] = \int_0^1 ( \int_M (\partial_t g, \partial_t g) \mu) dt.
+$$
+
+Remark: $\forall ~M$,
+
+$$
+(v \circ g, v \circ g)<em>{L^2} = \int</em>M (v \circ g, v \circ g)_{g(x)} \mu(x).
+$$
+
+Properties:
+<ul>
+	<li>Not right invariant on $Diff$</li>
+	<li>Is right invariant on $SDiff$, because the Jacobian term arising from the change of variables disappears.</li>
+	<li>“flat” for a flat $M$: $Diff \thicksim L^2 [ g(x)]$…pre-Hlibert.</li>
+	<li>geodesics in $Diff(M) \iff $ solutions of the Burgers equation:
+$$
+\partial_t g (t,x) = v(t, g(t,x)); ~ \partial_t v + (v \cdot \nabla) v = 0. (*)
+$$
+This differs from the Euler equation since the right side is zero. It also does not require the zero divergence condition.This formulation appears in the paper of Ebin-Marsden.</li>
+	<li>Geodesics which are orthogonal to $SDiff \iff $ potential solutions $v_0 = \nabla \phi$.</li>
+</ul>
+The proof of (*) follows from the chain rule and the fact we are considering geodesics.
+$$ 0 = \partial_t^2 g = \partial_t (v(t, g(t,x)))$$
+$$ = (\partial_t v + (v \cdot \nabla v))(t, g(t,x))$$.
+
+Remark: Geodesics on $SDiff$ are constrained within the larger family $Diff$ to remain on the subgroup. This requires imposing a force to keep the evolution within $SDiff$. This force is the pressure.
+
+What I am describing right now is called <em>Otto’s Calculus</em> which arose in the study of optimal transportation.
+
+Remark: It turns out there is a natural metric on the space of densities. We can introduce a measurement of the cost to move one density $\mu$ to another $\nu$. The natural metric is called the <em>Wasserstein-Kantorovich</em> $L^2$-metric on densities:
+$$
+dist(\mu, \nu) = \inf_{g_* \mu = \nu } \int_M |x - g(x)|^2 \mu(x).
+$$
+This is the cost of transporting $\mu$ to $\nu$.
+
+<strong>Theorem (F. Otto):</strong>
+$$(Diff, L^2) \longmapsto (Densities, dist)$$
+is a Riemannian submersion.
+
+<strong>Corollary:</strong> Geodesics in the space of densities starting at $\mu$ are in 1:1 correspondence with horizontal geodesics in $Diff$ starting at the identity.
+
+This is the picture behind the scenes driving the proofs of many theorems.
+
+<strong>Applications:</strong>
+<ul>
+	<li>Conjugate points along the base of densities correspond to focal points inside the space $Diff$. P. Lee, A. Agrachev and a former student (I missed the name…)</li>
+	<li>Asymptotic Directions $\iff$ geodesics with higher than ususal $(\epsilon^3)$-tangency.
+<strong>Theorem:</strong> Asymptotic directions to $SDiff$ must satisfy
+$$\nabla \cdot v = 0,$$
+$$ \nabla \cdot (v \cdot \nabla) v = 0.$$
+(These are called the Bao-Ratiu equations and arise naturally from this perspective.)</li>
+</ul>
+<strong>Theorem (K-Misiolek):</strong> For $M$ of dimension 2 (surface), ${\overline{K}} \neq 0, ~ \forall x \in M$ there do not exist asymptotic directions. (For $K &gt; 0$ this result was called <a href="http://www.jstor.org/stable/52683">Palmer’s theorem</a>.)
+
+So asymptotic directions are “rare.”
+
+What happens if we consider slightly more general metrics instead of $L^2$. Recently, there was interest in $H^1$ metrics so let me say a few words about that.
+<table><col align="left"></col> <col align="right"></col> <col align="right"></col> <col align="right"></col> 
+<thead>
+<tr>
+<th>dimension</th>
+<th>1</th>
+<th>2</th>
+<th>3</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">$SDiff$</td>
+<td align="right">Rot</td>
+<td align="right">$H(x,y)$</td>
+<td align="right">$[Jac = 1]$</td>
+</tr>
+<tr>
+<td align="left">Density</td>
+<td align="right">$[\hat{f}(x)]$</td>
+<td align="right">$[f(x,y)]$</td>
+<td align="right">$[f(x,y,z)]$</td>
+</tr>
+</tbody>
+</table>
+<h3 id="iii.h1-right-invariantmetricsondiff">III. $H^1$-(right-invariant) metrics on $Diff$</h3>
+<a href="http://www.math.toronto.edu/khesin/papers/curvatures1109.1816v1.pdf">article</a>
+
+$$
+(v,v)<em>{H^1} = a \| v \|</em>{L^2}^2 + b \| \delta v^\flat \|<em>{L^2}^2 + c \| d v^\flat \|</em>{L^2}^2
+$$
+
+where $ v \in Vect \rightarrow v^\flat \in \Omega^1 (M)$. So, we have terms involving $\nabla \cdot v$ and another involving $curl v$, etc.
+
+<strong>Theorem:</strong> The Euler-Arnold equations are
+
+$(n = 1)$
+<ul>
+	<li>$b = 0 \implies$ Burgers (KdV for Virasaro)</li>
+	<li>$a = b = 1 \implies $ Camassa-Holm equation: $v_t - v_{txx} = -3 v v_x + 2 v_x v_{xx} + v v_{xxx} $\nabla \cdot</li>
+	<li>$a=0 \implies$ Hunter-Saxton equation: $u_{txx} = - 2 u_x u_{xx} - u u_{xxx}$</li>
+</ul>
+For other $n$, one can write the corresponding equation. Various other equations arise such as Euler-$\alpha$ and many others….
+
+There exists one metric which has nicer properties than others.
+<h3 id="ivh1-metricondensities">IV $H^1$-metric on Densities</h3>
+$(a = c = 0, b = \frac{1}{4} \neq 0)$. So, we are considering the metric $\| v \|_{\dot{H}^1}^2 = \frac{1}{4} \int |\nabla \cdot u |^2 \mu.$
+
+<strong>Theorem:</strong> For any compact $M$ there exists an isometry $\Phi: Densities \rightarrow U \subset S_\rho^\infty$ (an infinite dimensional sphere) where $\rho = \sqrt{vol(M)}$.
+
+Remark: The dimension 1 case was observed by Lennels. At first, we thought this was a special case but turns out to be general and produces some nice insights.
+<ul>
+	<li>Geodesics on densities are great circles on the sphere.</li>
+	<li>They are solutions of a high dimensional Hunter-Saxton equation (completely integrable system)</li>
+</ul>
+<strong>Proof:</strong> $\Phi: \eta \in Diff \rightarrow f = \sqrt{Jac (\eta)}$. Then
+$$
+\int_M f^2 \mu = \int_M (Jac (\eta)) \mu = \int_{\eta(M)} \mu = vol(M)$.
+$$
+This very metric on the sphere arised earlier in probability theory and is known as the Hellinger distance, aka Fisher-Rao metric. All these objects come together from this point of view.
+
+<a href="http://www.math.toronto.edu/khesin/papers/1105.0643.pdf">article</a>
+<h2 id="bassamfayadhttp:www.math.univ-paris13.frfayadbimjcnrssmoothlinearizationofcommutingcirclediffeomorphisms"><a href="http://www.math.univ-paris13.fr/~fayadb/">Bassam Fayad</a>, IMJ CNRS, Smooth linearization of commuting circle diffeomorphisms</h2>
+<img src="http://www.mittag-leffler.se/pictures/presentations/0910s/fayad-10s.jpg" alt="Bassam Fayad" />
+
+(blackboard talk)
+
+My work was completely influenced by Arnold’s papers and ideas. I had very close friends who were his students. They were completely venerating hi. I like to think that I am representing them here. They are two. These students report that what they miss most is long discussions with Arnold who had patience and knowledge and he fills you with interest.
+
+I work on small denominators.
+
+Mixing tori. Impossible on $T^2$. He drew a cube representing a 3-torus. The statement was not so explicit.
+
+He connects this to the original motivation of Kolmogorov which revolved around an interest in finding mixing.
+
+Circle Diffeomorphisms:
+
+$$
+f(\theta) = \theta + \tilde{\alpha} + \phi(\theta)
+$$
+
+$\rho (f) = \alpha$ is the (irrational) rotation number.
+
+Denjoy theory. If $f \in C^2$ then $ f = h R_\alpha h^{-1}$ where $h$ is a homeomorphism of the circle.
+
+What is the regularity of the homeomorphism?
+
+Siegel. Arnold.
+
+Arnold showed that if $\alpha$ is Diophantine and $f$ is close to $R_\alpha$ then $ f $ is analytic and $h$ is analytic.
+
+What is diophantine?
+<ul>
+	<li>$\alpha \in DC (\gamma, \tau)$ if $ |\alpha - \frac{p}{q}| &gt; \frac{\gamma}{q^{2 +\tau}}$</li>
+	<li>Best approximations. $\| k \alpha \| = \inf_l | k\alpha - l|$. The sequence of best approximations is defined by
+$$ \| q_n \alpha \| &lt; \| q \alpha \|$$
+for all $ q &lt; q_{n+1}, ~q \neq q_n$.</li>
+</ul>
+Linearized equation:
+
+$\phi (x) = \psi (x + \alpha ) - \psi (x)$.
+
+The <strong>global problem</strong> remained open and was conjected by Arnold. Even without the closeness condition, Arnold conjectured that the rotation number being diophantine was all that was required to ensure the analyticity of the homeomorphism.
+
+Herman 1976 ($H$-class of numbers), Yoccoz 1981 (all Diophantine numbers)
+
+If $f = h R_\alpha h^{-1}$ with $h$ a homeomorphism and $\alpha$ is irrational and you have $f \circ g = g \circ f$ then $g = h R_{\rho{g}} h^{-1}$. (My quotation of the Qualifiers might be wrong here….be CAREFUL….)
+
+Why does commutation imply higher regularity, more rigidity? The idea emerges from a paper by Moser 1981 who proved KAM smooth linearization of $f,g$ commuting if $(\alpha, \beta) \in SDC$
+
+$(\alpha, \beta)$ are SDC (Simultaneous Diophantine Condition) if $\max(\|k \alpha\|, \| k \beta \|) \geq \frac{\gamma}{k^\nu}$.
+
+Applying these techniques, you can show: If $(\alpha, \beta) \notin SDC$ then $\exists ~ (f,g)$ commuting then $h$ is not absolutely continuous.
+
+<strong>Theorem (K. Khanin, F):</strong> $(\alpha, \beta) \in SDC$ and $ f \circ g = g \circ f$ in $Diff^\infty \implies h \in Diff^\infty$.
+<a href="http://annals.math.princeton.edu/2009/170-2/p16">KF Paper: Annals 2009</a>
+
+Very clever pivots in a case-by-case analysis. Some pigeon holes. Make friends with your enemy.
+<h3 id="thursday06october">Thursday 06 October</h3>
+
+<hr />
+
+<h2 id="chong-qingchengnanjinguniversityonewaytocrosscompleteresonance">Chong-Qing Cheng, Nanjing University, One way to Cross Complete Resonance</h2>
+Nice introductory discussion of Arnold Diffusion, placing the principal settings studied so far in context. Mentions that there is a “definition” of <em>Arnold Diffusion</em> in v3 of Arnold’s book.
+
+Some nice pictures suggesting the mechanism.
+
+A big issue to overcome is that there are uncountably many barrier functions. One way is to study the regularity. This will impliy the finiteness of the Hausdorff dimension.
+
+Resonance path. KAM iteration at complete resonant point. Very nice pictures of the Aubry set!
+
+Interesting discussion following the talk between Cheng and Mather, comparing their respective strategies.
+<h2 id="jameselliscollianderuniversityoftorontohamiltonianpdes">James Ellis Colliander, University of Toronto, Hamiltonian PDEs</h2>
+I spoke so I didn’t type.
+<h2 id="arturavilahttp:w3.impa.bravilaimjcnrsglobaltheoryofonefrequencyschrdingeroperators"><a href="http://w3.impa.br/~avila/">Artur Avila</a>, IMJ, CNRS,  Global theory of one frequency Schrödinger operators</h2>
+<img src="http://www.claymath.org/fas/research_fellows/Avila/artur.jpg" alt="Artur Avila" />
+
+(blackboard talk)
+
+This topic can be introduced in several ways. I try to present this work in a way that is connected to the work of Arnold.
+
+KAM-persistence of quasiperiodic motion.
+
+One theorem of Arnold: $f$ analytic diffeo of $T = R/Z$ orientation preserving has a rotation number $\rho$.
+
+<strong>Theorem:</strong> If $\rho$ is Diophantine and $f$ is close to translation then $f$ is linearizable (analytically conjugated to tranlation).
+
+He also makes a conjecture. This should be global. This means that the hypothesis “f close to translation” should not be necessary. This was proved by Herman in a breakthrough work introducing new techniques, and eventually completely resolved by Yoccoz. These results are now understood in a new framework called <em>renormalization</em>.
+
+What is the situation in higher dimensions? Not every $T^2$ has a notion of translation number. Suppose we have a diffeo that has a rotation number and is close to translation. What can be said? In higher dimensions, the local theorem survives. Herman asked: which aspect of the global theorem will survive? It’s a paper of Herman with a very long title…
+<blockquote>“Une méthode pour minorer les exposants de Lyapounov et quelques exemples montrant le caractère local d’un théorème d’Arnolʹd et de Moser sur le tore de dimension 2.”</blockquote>
+Example:
+
+$$(x,y) \longmapsto (x + \alpha, A(x) \cdot y)$$
+
+$A(x)$ will be some projective action. In particular, I will imagine that $A(x) \in SL(2;R)$. So, I am viewing the second coordinate as an element of $PR^2$.
+
+$A(x)$ is a matrix ($E - \lambda v(x), -1$) (top row) and (1,0) in bottom row. Here the parameters are $E \in R$, $v$ is a trig polynomial, $\lambda &gt;0$.
+
+Rotation number?
+
+In the first slot, it is clear that the number is $\alpha$. In the second slot, it depends on all the parameters. It turns out that in this case, it is well-defined and is montonic wrt $E$. Diffeos of the circle have those regions called Arnold Tongues and there are similar structures here…rationality condition…draws a Cantor-like set. He draws a “vertical curve” in the $(E, \lambda)$ plane and along that curve we have $\rho = constant$.
+
+<strong>Theorem (<a href="http://retro.seals.ch/digbib/view?rid=comahe-003:1983:58::30">Herman</a>):</strong>
+<ul>
+	<li>$\lambda \ll 1$, KAM works</li>
+	<li>$\lambda \gg 1$, Lyapunov exponent $LE &gt;0$. Independent of E</li>
+</ul>
+$(\alpha, A)^n = (n \alpha, A_n)$. $A_n (x) = A(x + (n-1) \alpha) … A(x)$.
+
+$$L = \lim \frac{1}{n} \int \ln \| A_n (x ) \| dx \geq 0. $$
+
+If $(\alpha, A)$ is conjugate to translation then $LE = 0$.
+
+OK, so what is the obstruction to globalization? IS $LE$ the only obstruction to conjugacy?
+
+$LE = 0$, continuity argument. Goldstein-Schlag, <a href="http://www.springerlink.com.myaccess.library.utoronto.ca/content/g0046660260825x3/">Bourgain-Jitormskaya</a>
+
+At the endpoint of the supremum of the good parameter, we can not have analytic conjugacy. What broke down? You might think it is just that we lose analyticity. But this turns out to not be the case because in this context topological conjugacy $\implies$ analytic conjugacy. So, it is possible to have $LE =0$ while losing even the topological conjugacy.
+
+$A$ is analytic, extends to a neighborhood $[|\Im x | &lt; \epsilon]$. $A_n (x)$ is defined on the same neighborhood. Maybe the LE changes a bit as we move off the real axis? You see that if $(\alpha, A)$ is analytic conjugate to translation then this kind of complexified LE
+$$
+\lim \frac{1}{n} \int_{Im x = a} \ln \| A_n (x) \| dx = 0.
+$$
+is still zero. Now, you have some kind of necessary condition that is implied by analytic conjugacy.
+
+<strong>Theorem:</strong> $(\alpha, \rho)$ diophantine. $(\alpha, A)$ is analytically conjugate to translation $\iff ~ LE =0$ for $|\Im x|$ sufficiently small.
+
+The method of proof of this theorem is quite interesting, but I won’t do that right now. You can’t just apply KAM theorem. It is closer to a different theorem. You need an a priori bound on the renormalization. In fact, you have that the complexified LE is behaving subexponentially…lots of work to be done to get conjugacy. What I want to do instead is to connect with the title of the talk.
+
+$l^2 (Z)$
+
+$
+(Hu)<em>n =  u</em>{n+1} + u_{n-1} + v(n \alpha ) u_n.
+$
+
+$$ v: T \rightarrow R, ~ analytic.
+$$
+
+$$ Hu = Eu. $$
+
+This generates a one-parameter family of cocycles. $H \iff $ one-parameter family of cocycles. Those cocycles have been studied a lot for similar reasons why dynamicists should interested in cocycles. They are the simplest class with $LE&gt;0$, are consistent with KAM theory, and have rich dynamical behavior (e.g transition from absolutely continuous and discrete spectra, etc.)
+
+(spectrum should usually be thought to be a Cantor set, similar to the situation of those Arnold tongues.)
+
+<strong>Local Theories:</strong>
+
+When $v$ is small. This is often quantified by writing $\lambda v$ with $\lambda$ small. This was developed by Dinaburg-Sinai, Eliasson, Bourgain, Jitormiriskaya, Avila, Fayad, Krikorian, …. From the beginning, it started with $\lambda$ small so that you can apply KAM theory. An end conclusion here is that the spectral measures are absolutely continuous. <em>sigh</em>… What does this imply? You start with some state that lives in this lattice and you let it evolve. What happens here is that it spreads at the fastest possible transport. This is called ballistic motion, so it moves like the free problem.
+
+Eliasson: not the same speed?….Avila:….in average over time, you can see that it is the same speed whenever there is continuous spectrum. Eliasson:….oh you time average, I see…. Craig:….seems you need some smoothnes. Avila:..(eagerly)….which kind of smoothness do you need? Craig:….need to integrate by parts. Avila:….I have some weak smoothness. Craig:….maybe can help. Avila:…I expect it will help but don’t know how to use it yet.
+
+When $\lambda \gg 1$, there is a different theory. Sinai, Frohlic-Spencer, Eliasson, Bourgain, Goldstein, Schlag. This theory corresponds to the situation where $LE &gt; 0$. (Typically…some almost every conditions), the spectral measure is pure point. This means that the infinite matrix is diagonalizable and the quantum dynamics is quasiperiodic. It is known that the eigenfunctions decay exponentially, so they are better localized than required by $L^2$. Two approaches to this: KAM and more recent interactive techniques like renormalization. With Bourgain, Goldstein, Schlag, new nonperturbative techniques developed based upon the assumption that $LE &gt;0$. It might be possible to understand the dynamics across the entire parameter space.
+
+He draws an egg. He draws a line along the egg representing strength of nonlinearity. When the nonlinearity is small, we KAM-like behavior. Both regions can be shown to be open. When the nonlinearity is big, we $LE &gt;0$. The egg has an “region” in between. Does that intermediate region have a non-empty interior?
+
+Natural global questions:
+<ul>
+	<li>What is the behavior of typical one frequency Schrodinger operator?</li>
+	<li>In particular, is there an influence of other behaviors of cocycles?</li>
+	<li>You might be optimistic and hope to prove there is some kind of phase transition between the KAM-like and $LE &gt;0$ regimes?</li>
+	<li>Describe the phase transition as “interface-like”? This would go in the direction of showing that there are not these other types of dynamics of cocycles.</li>
+</ul>
+This was basically blocked for some time. But, recently, well maybe not recently, it was in 2008, there emerged some new ideas to approach these questions. Large parts of the emerging program have been carried out.
+
+Center your attention on $LE$ and its dependence upon parameters. It’s good to get some kind of target to focus your attention upon. There will be three regimes:
+<ul>
+	<li>Supercritical: $LE &gt;0$ (leads to localization; point spectrum)</li>
+	<li>Critical: otherwise</li>
+	<li>Subcritical: $LE = 0$ in a complex neighborhood $[|Im x| &lt; \epsilon]$. (show that it is KAM-like; AC spectrum)</li>
+</ul>
+The main parts of the program. Study the critical “interface”. Study how it intersects one-parameter families and so on. This would be a kind of geometric approach to begin to understand the dynamics across the parameter space.
+
+What parts are completed? Several parts…..here is a main theorem.
+
+<strong>Theorem:</strong> $H$ is a typical one-frequency Schrödinger operator. $H = H_+ \oplus H_-$. $\sigma(H_+) \cap \sigma(H_+) = \emptyset$. $H_+ $ is supercritical, localization. $H_-$ is subcritical and KAM-like, AC spectrum.
+
+What about the growth of critical energies?  There are no critical energies. This is a bit surprising. As I said before, I had a picture moving up from the KAM region and we encounter a transition point. It would be natural to expect that you will face a critical energy. This turns out to not be the case. The critical interface has zero measure, a kind of Cantor set, inside a codimension 1 subspace. This means it won’t intersect a typical one-parameter family. All this takes place inside the geometric analysis of the parameter space.
+
+$\alpha$ diophantine, subcritical is $KAM$-like. Even thought I don’t have the conjugacy, I still have good control on the dynamics. This is the concept of almost-reducibiilty.
+
+What is the meaning of typical? $\alpha$ is almost every. We also have $v$. What’s a zero measure set in infinite dimensions? It involves some kind of concept called <em>prevalence</em> and Gaussian measures. My good set of $v$’s has the following property:
+$\forall ~ v_0, $ for almost every $\lambda_n \in [-1, 1]^Z$ then $v_0 + \sum \lambda_n^{\epsilon_n} e^{2 \pi i n \cdot x}$ where $\epsilon_n = \frac{1}{(n!)^2}$.
+<h2 id="mikhailsevryukrussiaacademyofsciencesthereversiblecontext2inkamtheoryforlowerdimensionaltori">Mikhail Sevryuk, Russia Academy of Sciences,  The reversible context 2 in KAM theory for lower dimensional tori</h2>
+A review of KAM theory. “Meta-reason” for the ubiquity of invariant tori carrying conditionally periodic motions: any finite dimensional connected compact Abelian Lie group is a torus.
+
+Various structures (contexts):
+<ul>
+	<li>Hamiltonian</li>
+	<li>reversible</li>
+	<li>volume preserving</li>
+	<li>dissipative (no structure at all)</li>
+</ul>
+Key advances highlighted here.
+<ul>
+	<li>Moser 1966</li>
+	<li>Herman 1988</li>
+</ul>
+<h2 id="lai-sangyoungnewyorkuniversitytowardasmoothergodictheoryforinfinitedimensionalsystems">Lai-Sang Young, New York University, Toward a smooth ergodic theory for infinite dimensional systems</h2>
+<img src="http://owpdb.mfo.de/photoSmall?id=11977" alt="Lai-Sang Young" />
+
+(Scanned hand-written marker slides! Cool….we party like its 1999!)
+
+Aim of larger project:
+<ul>
+	<li>Extend finite-d nonuniform hyperbolic theory (=ergodic theory of chaotic systems) to $\infty$-d</li>
+	<li>New phenomena</li>
+	<li>include settings related to some PDEs. (principles should include nonempty set of PDEs.)</li>
+</ul>
+The body of finite-d stuff that I have in mind does not include Hamiltonian systems. Instead, we are looking at problems which include some dissipation. So the invariant sets we are looking at are like attractors, etc.
+
+Today’s talk:
+<ol>
+	<li>Reduction to finite-d via $W^c$-inf and $W^\epsilon$-foliations. Upshot: notion of “a.e.” initial conditions in $\infty $ dimensions.</li>
+	<li>Example of strange attractors from Hopf bifiurcation + forcing. Illustration of how to leverage finite-d techniques</li>
+	<li>Lyapunov exponents, periodic orbits and horseshoes for semiflows on Hilbert spaces (extend Katok’s results for finite-d diffeos.)</li>
+</ol>
+Some background info:
+
+Givne an evolutionary PDE, view this as an “ode” on a function space. I want to see it as a dynamical system.
+
+$$
+\frac{du}{dt} + Au = F(u)
+$$
+where $u \in X, ~ A $ is a linear operator, $F$ is the nonlinear part.
+
+To define (smooth) dynamical system, need $(X, \| \cdot \|)$ such that
+<ol>
+	<li>$u(0) \in X \implies u(t) \in X ~ \forall t \geq 0$,</li>
+	<li>$ t \longmapsto u(t), ~ t \geq 0$, continuous,</li>
+	<li>Smoothness of the time-t map $f^t : (X, \| \cdot \|) \longmapsto (X, \| \cdot \|)$ which maps $ u(0)  \longmapsto u(t)$.</li>
+</ol>
+for nonunif hyperbolic theory, generally require $C^{1 + \alpha}$.
+
+Model setting:
+
+$X$ is a Banach space. $A$ is an operator on $X$. Assume $A$ is “sectorial” or self-adjoint w eigenvalues on $[a, \infty)$.
+
+Q: Can I just think of $A = \Delta$? A: Yes. (OK, I’ll think that way….knowing that there are generalizations.)
+
+A sample result:
+
+<strong>Theorem (Henry ~80):</strong> …
+
+Discussion….skip it….just know that we are not talking about an empty set.
+
+“Solution” means mild solution.
+<h3 id="i.reductionviacentermanifoldshttp:en.wikipedia.orgwikicenter_manifold">I. Reduction via <a href="http://en.wikipedia.org/wiki/Center_manifold">center manifolds</a></h3>
+$W^c$ can be local, global, or “medium size”
+
+Constantin-Foias-Nicolanenko 86, Chow, Sell, Mallet-Paret, Lu, …
+
+Think of $f$ as the time one flow-map associated to this dynamical system on $X$.
+
+(A1) Reference Splitting: $X = E^c \oplus E^s$, closed subspace, not invariant.
+(A2) Absorbing “slab”: $\forall ~ R ~ \exists ~ R’$ such that $f( E^c \times B^s (0,R)) \subset E^c \times B^s (o, R’)$.
+(A3) INvariant cones ….lots written on slide here, can’t keep up with that. Some nice pictures to explian what is going on.
+
+$E^s$ is vertical, $E^c$ is horizontal.
+
+….questions….is the center manifold infinite dimensional?…..this is just the setting. I’ll be precise about the theorems soon.
+
+some spectral assumptions.
+
+<strong>Theorem 1 (Existence of $W^c$):</strong> $\exists ~ ! ~ W^c = graph(h^c), ~ h^c : E^c \rightarrow E^s, ~C^{1+\alpha}$, invariant.
+
+<strong>Theorem 2 (Existence of $W^s$ foliations):</strong> slide slid up…..
+
+<strong>Theorem 3 (Absolute continuity of $W^s$-foliations):</strong> (Zeng Lian, Chongchun Zeng, LSY): Assume $dim(W^c) &lt; \infty. Then $W^s$-foliation is absolutely continuous.
+
+Strange Attractors arsising from periodically forced Hopf bifurcations.
+
+(joint work w. Kening Lu and Qiudong Wang)
+
+Result for ODE in 2D $\rightarrow $ Corresponding equation for evolution equation in Hilbert space $\rightarrow $ Application to a specific PDE.
+
+We have an unforced system with a parameter which is undergoing a “generic” supercritical Hopf bifurcation at $\mu = 0$.
+<ul>
+	<li>$\mu &lt; 0$</li>
+	<li>$ \mu = 0$</li>
+	<li>$ \mu &gt; 0$.</li>
+</ul>
+Normal form. Introduce the <em>twist number</em>, expressed in terms of coefficients appearing in the normal form.
+
+Forced system. Periodically, we kick it and then let it relax. It doesn’t have to be a kick. It just needs to relax in between the applications of the forcing.
+
+<strong>Theorem (LWY):</strong> …I read it rather than type it…. there is some number you can calculate that as to be pretty big. We have a big kick period. Then you have a strange attractor with complicated dynamics. The attractor has an SRB measure.
+
+An SRB measure is an important concept in finite-d and is the first challenge to bring it to infinite dimensions. If you look at a Hamiltonian system with flowmap $\phi_t$. Let $m$ be the Liouville measure. Assume ergodic. Then $\forall$ cts $g$ we find
+$$
+\frac{1}{T} \int_0^T g( \phi_t) x dt \rightarrow \int g dm
+$$
+for $m-a.e.$ x. (Birkhoff Ergodic Theorem)
+
+Now suppose you have an attractor. (Sinai-Ruelle-Bowen). An invariant measure $m$ is called SRB or <em>physical measure</em> if the same convergence takes place for <strong>Lebesgue</strong>-a.e. In this setting $m$ is completely singular compared to the ambient Lebesgue measure. This is considered to be the analog of the Liouville theorem for dissipative systems.
+
+I am claiming that these attractors support these measures.
+
+Example, nice pictures.
+
+Kick can be quite general.
+
+…
+<h3 id="lyapunovexponentsandwuws-manifolds">Lyapunov exponents and $W^u, ~ W^s$-manifolds</h3>
+Ruelle, Mané, Thieullen 80s, Lian-Lu (later)
+
+Cocycle set up. Biggest differences w. finite-d:
+<ol>
+	<li>$\Phi (x)$ generally not onto (possibly 1:1)</li>
+	<li>“Essential spectrum” - Lyapunov exponent is not defined.</li>
+</ol>
+Kuratowski measure of noncompactness.
+
+Extension of Katok’s results….moving a bit fast here.
+<h3 id="friday06october">Friday 06 October</h3>
+
+<hr />
+
+(Alas, my flight departure time will force me to miss out on hearing these talks.)
+<h2 id="laurentstolovitchhttp:www.math.univ-toulouse.frstolocnrsuniversitdenicesmoothgevreynormalformsofvectorfieldsnearafixedpoint"><a href="http://www.math.univ-toulouse.fr/~stolo/">Laurent Stolovitch</a>, CNRS, Université de Nice,  Smooth Gevrey normal forms of vector fields near a fixed point</h2>
+<img src="http://www.math.univ-toulouse.fr/~stolo/img/ls12-12.jpg" alt="Laurent Stolovitch" />
+<h2 id="claudeviterbohttp:www.math.polytechnique.frviterboecolenormalesuprieuresymplectichomogenization"><a href="http://www.math.polytechnique.fr/~viterbo/">Claude Viterbo</a>, Ecole Normale Supérieure, Symplectic Homogenization</h2>
+<img src="http://www.math.polytechnique.fr/~viterbo/viterbo2.jpg" alt="Claude Viterbo" />
+<h2 id="anatolyneishtadthttp:www.lut.ac.ukdepartmentsmapeopleneishtadt.htmlloughboroughuniversityaveragingpassagesthroughresonancesandcapturesintoresonanceindynamicsofchargedparticles"><a href="http://www.lut.ac.uk/departments/ma/people/neishtadt.html">Anatoly Neishtadt</a>, Loughborough University Averaging, passages through resonances, and captures into resonance in dynamics of charged particles</h2>
+<img src="http://www.lut.ac.uk/departments/ma/photos/Neishtadt-large.jpg" alt="Anatoly Neishtadt" />
