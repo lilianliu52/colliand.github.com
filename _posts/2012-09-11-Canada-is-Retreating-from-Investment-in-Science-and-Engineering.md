@@ -2,6 +2,7 @@
 layout: post
 author: James Colliander
 tags : [opinion, research policy, NSERC]
+comments: false
 ---
 
 

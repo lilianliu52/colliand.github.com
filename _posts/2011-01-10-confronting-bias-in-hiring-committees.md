@@ -2,6 +2,7 @@
 layout: post
 category : lessons
 tags : [bias, hiring, Rotman, Michigan, MIT]
+comments: false
 ---
 
 

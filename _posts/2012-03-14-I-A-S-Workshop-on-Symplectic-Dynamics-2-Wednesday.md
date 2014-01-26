@@ -2,6 +2,7 @@
 layout: post
 category : lessons
 tags : [Notes, USA, IAS]
+comments: false
 ---
 <!---->
 

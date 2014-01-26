@@ -3,6 +3,7 @@ layout: post
 author: James Colliander
 published: true
 tags : [Notes]
+comments: false
 ---
 
 

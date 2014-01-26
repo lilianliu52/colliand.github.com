@@ -2,6 +2,7 @@
 layout: post
 category : lessons
 tags : [NSERC, Research Policy, Vannevar Bush, Basic Research, Budget 2012]
+comments: false
 ---
 <!-- -->
 

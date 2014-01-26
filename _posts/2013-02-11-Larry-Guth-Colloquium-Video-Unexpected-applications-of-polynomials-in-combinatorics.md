@@ -2,6 +2,7 @@
 layout: post
 author: James Colliander
 tags : [notes, video, colloquium]
+comments: false
 ---
 
 &nbsp;

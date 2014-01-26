@@ -2,6 +2,7 @@
 layout: post
 category : lessons
 tags : [Research Policy, Perimeter Institute]
+comments: false
 ---
 &nbsp;
 

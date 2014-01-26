@@ -2,6 +2,7 @@
 layout: post
 author: James Colliander
 tags : [video, ubiquity of mathematics]
+comments: false
 ---
 <!-- -->
 

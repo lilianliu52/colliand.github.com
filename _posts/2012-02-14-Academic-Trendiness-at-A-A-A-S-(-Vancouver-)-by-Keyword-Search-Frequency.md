@@ -2,6 +2,7 @@
 layout: post
 category : lessons
 tags : [Notes, AAAS]
+comments: false
 ---
 &nbsp;
 

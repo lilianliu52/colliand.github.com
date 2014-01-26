@@ -2,6 +2,7 @@
 layout: post
 category : lessons
 tags : [NSERC, Research Policy, Vannevar Bush, Rotman]
+comments: false
 ---
 
 <!-- -->

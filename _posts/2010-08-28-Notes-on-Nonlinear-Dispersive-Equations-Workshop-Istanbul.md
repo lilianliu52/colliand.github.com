@@ -2,6 +2,7 @@
 layout: post
 category : lessons
 tags : [notes, Istanbul]
+comments: false
 ---
 
 <!-- -->

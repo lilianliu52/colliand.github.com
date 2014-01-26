@@ -2,6 +2,7 @@
 layout: post
 category : lessons
 tags : [notes, Edinburgh, numerics]
+comments: false
 ---
 
 

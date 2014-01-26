@@ -2,6 +2,7 @@
 layout: post
 category : lessons
 tags : [Research Policy, NSERC, Discovery Grants, David Naylor, RD Panel]
+comments: false
 ---
 
 <!-- -->

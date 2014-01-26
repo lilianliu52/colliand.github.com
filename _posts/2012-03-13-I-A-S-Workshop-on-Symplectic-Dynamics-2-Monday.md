@@ -2,7 +2,9 @@
 layout: post
 category : lessons
 tags : [Notes, USA, IAS]
+comments: false
 ---
+
 <!--   Created by James Colliander on 2011-09-04.   Copyright (c) 2011 University of Toronto. All rights reserved.     -->
 
 I'm participating in a workshop at the Institute for Advanced Study on Symplectic Dynamics. This is part of the special concentration this year organized by Helmut Hofer. I'll try to write notes on the talks I hear. Apologies to the speakers for typos and misquotations.... Comments (pending approval) are open for suggestions and edits.
