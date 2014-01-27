@@ -19,10 +19,11 @@ icons: true
 *	[MathSciNet » Colliander](http://www.ams.org.myaccess.library.utoronto.ca/mathscinet/search/publications.html?pg1=IID&s1=605594) (requires MathSciNet access) 
 *	[MathSciNet » Profile](http://www.ams.org.myaccess.library.utoronto.ca/mathscinet/search/author.html?mrauthid=605594) (requires MathSciNet access) 
 *	[Microsoft » Colliander](http://academic.research.microsoft.com/Author/2662533/james-colliander)
- 
-<!-- 
+
+
+
 ### Bibliography
 
-> Note to the reader: The list below is generated automatically from a bibtex file exported from MathSciNet. I have not figured out how to parse the mathematical notation properly yet. --J. Colliander -->
+
 
 {% bibliography %}

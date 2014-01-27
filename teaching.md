@@ -31,7 +31,7 @@ icons: true
 ### Former Graduate Students
 
 *	[Brian Pigott, PhD 2011](http://www.math.toronto.edu/bpigott/Brian_Pigott.html), [Thesis](https://tspace.library.utoronto.ca/handle/1807/31899) (now at [Wake Forest](http://www.math.wfu.edu/Faculty/Pigott.html)).
-*	[Geordie Richards, PhD 2012](http://www.math.rochester.edu/people/faculty/grichar5/), [Thesis](https://tspace.library.utoronto.ca/handle/1807/32973) (now at [http://www.math.rochester.edu/ Rochester]).
+*	[Geordie Richards, PhD 2012](http://www.math.rochester.edu/people/faculty/grichar5/), [Thesis](https://tspace.library.utoronto.ca/handle/1807/32973) (now at [Rochester](http://www.math.rochester.edu/) ).
 *	Ian Zwiers, PhD 2010, [Thesis](http://www.math.ubc.ca/~zwiers/content/Zwiers-CubicNLSRingBlowup_thesisVersion.pdf) (now at [AECL](http://www.aecl.ca/en/home/default.aspx)).
 
 ### Current Postdocs
