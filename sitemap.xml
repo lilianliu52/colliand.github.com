@@ -3,60 +3,67 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">    
   <url>
     <loc>http://colliand.com/</loc>
-    <lastmod>2014-04-28T17:42:17-04:00</lastmod>
+    <lastmod>2014-04-28T17:57:26-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   
   <url>
     <loc>http://colliand.com/about/</loc>
-    <lastmod>2014-04-28T17:42:17-04:00</lastmod>
+    <lastmod>2014-04-28T17:57:26-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://colliand.com/</loc>
-    <lastmod>2014-04-28T17:42:17-04:00</lastmod>
+    <lastmod>2014-04-28T17:57:26-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://colliand.com/legal/</loc>
-    <lastmod>2014-04-28T17:42:17-04:00</lastmod>
+    <lastmod>2014-04-28T17:57:26-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://colliand.com/research/</loc>
-    <lastmod>2014-04-28T17:42:17-04:00</lastmod>
+    <lastmod>2014-04-28T17:57:26-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://colliand.com/service/</loc>
-    <lastmod>2014-04-28T17:42:17-04:00</lastmod>
+    <lastmod>2014-04-28T17:57:26-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://colliand.com/sitemap.xml</loc>
-    <lastmod>2014-04-28T17:42:17-04:00</lastmod>
+    <lastmod>2014-04-28T17:57:26-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://colliand.com/teaching/</loc>
-    <lastmod>2014-04-28T17:42:17-04:00</lastmod>
+    <lastmod>2014-04-28T17:57:26-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
+  
+  <url>
+    <loc>http://colliand.com/2014/04/28/I-am-joining-P-I-M-S-and-U-B-C-math/</loc>
+    <lastmod>2014-04-28T00:00:00-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
   
   <url>
     <loc>http://colliand.com/2013/05/12/Ubiquity-of-Mathematics-Ingrid-Daubechies/</loc>
