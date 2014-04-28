@@ -5,7 +5,6 @@ tags : [notes, Istanbul]
 comments: false
 ---
 
-<!-- -->
 
 During last week's 
 <a href="http://imbm.org.tr/NDE2010.htm">NDE meeting in Istanbul</a>, I experimented and took real-time notes in 
