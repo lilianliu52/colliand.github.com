@@ -41,7 +41,7 @@ icons: true
 ### Education Technology
 
 * 	Founder/CEO, [Crowdmark](http://crowdmark.com): an education technology company that provides an online collaborative grading platform.
-*	Cofounder, Toronto math wiki
+*	Cofounder, [Toronto math wiki](http://wiki.math.toronto.edu/TorontoMathWiki/index.php/Main_Page)
 * 	Cofounder, [Escalator.utoronto.ca](http://welcome.escalator.utoronto.ca/home/)
 *	Cofounder, [Huron Street Public School Website](https://tdsb-huron.escalator.utoronto.ca/home/)
 *	Cofounder, [Huron Astronomy Club](https://tdsb-huron.escalator.utoronto.ca/home/astroclub/)
@@ -49,7 +49,8 @@ icons: true
 
 ### Outreach
 
-*	5/13 Ubiquity of Mathematics Videos
+*	6/14 [Forest Hill Public School (Grade 8)](http://colliand.com/calculus/)
+*	5/13 [Ubiquity of Mathematics Videos](https://www.youtube.com/playlist?list=PLMPrcFkBL4h0MnUCol3Cf5GIU3rM5xmPg)
 *	2/13 Forest Hill Public School (Grade 8)
 *	4/12 Peel District School Board (VROC Grades 9{10)
 *	1/12 University of Toronto Schools (Grades 7{9)
