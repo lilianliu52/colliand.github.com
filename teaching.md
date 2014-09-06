@@ -24,27 +24,28 @@ icons: true
 ### Current Graduate Students
 
 * [Yannis Angelopoulos](http://www.math.toronto.edu/cms/angelopoulos-ioannis/)
-* [Jordan Bell](http://individual.utoronto.ca/jordanbell/)
 * [David Reiss](http://www.math.toronto.edu/cms/reiss-david/)
 * [Kyle Thompson](http://www.math.toronto.edu/~k3thomps/index.html)
 
 ### Former Graduate Students
 
-*	[Brian Pigott, PhD 2011](http://www.math.toronto.edu/bpigott/Brian_Pigott.html), [Thesis](https://tspace.library.utoronto.ca/handle/1807/31899) (now at [Wake Forest](http://www.math.wfu.edu/Faculty/Pigott.html)).
+*	[Brian Pigott, PhD 2011](http://www.math.toronto.edu/bpigott/Brian_Pigott.html), [Thesis](https://tspace.library.utoronto.ca/handle/1807/31899) (now at [Wofford College](http://www.wofford.edu/mathematics/)).
 *	[Geordie Richards, PhD 2012](http://www.math.rochester.edu/people/faculty/grichar5/), [Thesis](https://tspace.library.utoronto.ca/handle/1807/32973) (now at [Rochester](http://www.math.rochester.edu/)).
 *	Ian Zwiers, PhD 2010, [Thesis](http://www.math.ubc.ca/~zwiers/content/Zwiers-CubicNLSRingBlowup_thesisVersion.pdf) (now at [AECL](http://www.aecl.ca/en/home/default.aspx)).
 
 ### Current Postdocs
 
-* [Arick Shao](http://www.math.toronto.edu/cms/shao-chung-tse-arick/)
+(none during 2014-2015)
 
 ### Former Postdocs
+
 
 * [ Pieter Blue](http://www.maths.ed.ac.uk/~pblue/)
 * [Daniel Egli](http://www.math.toronto.edu/cms/egli-daniel/ )
 * [Magdalena Czubak](http://www.math.binghamton.edu/czubak/research/index.html)
 * [Tadahiro Oh](http://www.maths.ed.ac.uk/~toh/)
 * [Sarah Raynor](http://users.wfu.edu/raynorsg/)
+* [Arick Shao](http://www.imperial.ac.uk/AP/faces/pages/read/Home.jsp?person=c.shao)
 * [Gideon Simpson](http://drexel.edu/math/contact/facultyDirectory/GideonSimpson/)
 * [Nikos Tzirakis](http://www.math.uiuc.edu/~tzirakis/)
 * [J. Douglas Wright](http://www.math.drexel.edu/~jdoug/)

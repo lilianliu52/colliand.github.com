@@ -52,13 +52,13 @@ icons: true
 *	6/14 [Forest Hill Public School (Grade 8)](http://colliand.com/calculus/)
 *	5/13 [Ubiquity of Mathematics Videos](https://www.youtube.com/playlist?list=PLMPrcFkBL4h0MnUCol3Cf5GIU3rM5xmPg)
 *	2/13 Forest Hill Public School (Grade 8)
-*	4/12 Peel District School Board (VROC Grades 9{10)
-*	1/12 University of Toronto Schools (Grades 7{9)
-*	11/11 St. Andrews Junior School (Grades 7{9)
+*	4/12 Peel District School Board (VROC Grades 9-10)
+*	1/12 University of Toronto Schools (Grades 7-9)
+*	11/11 St. Andrews Junior School (Grades 7-9)
 *	8/11 Classroom Adventures in Mathematics Summer Institute (teachers)
-*	3/11 March Math in Engineering Camp (Grades 7{12)
+*	3/11 March Math in Engineering Camp (Grades 7-12)
 *	1/11 Bloor Collegiate High School TOPS Program
-*	11/10 Jarvis Collegiate High School (Grades 9{12)
+*	11/10 Jarvis Collegiate High School (Grades 9-12)
 *	10/10 Albert Campbell Collegiate (Grade 10)
 *	2/10 Huron Street Public School (Grade 2)
 
