@@ -17,8 +17,7 @@ I am the Founder/CEO of <a href="http://crowdmark.com">Crowdmark Inc.</a> Crowdm
 ### Contact
 
 * 	email » colliand@math.toronto.edu  
-* 	phone » +1 (416) 978 3645
-* 	office: BA6244
+* 	phone » +1 (416) 887 4833
 * 	[department » Colliander](http://www.math.toronto.edu/cms/colliander-james/)
 *	[Toronto math wiki » Colliander](http://wiki.math.toronto.edu/TorontoMathWiki/index.php/User:Colliand)
 
