@@ -27,7 +27,7 @@ icons: true
 
 
 *	Academic Service
-	* 	[CMS Director - Ontario](http://math.ca/Docs/commlist.html#cjmcmb-board )
+	* 	[CMS Director - Ontario (2009 - 2013)](http://math.ca/Docs/commlist.html#cjmcmb-board )
 	*	[CMS Research Committee](http://cms.math.ca/Docs/commlist.html#resc)
 	*	[ Chair, CMS Doctoral Prize Selection Committee (2009-2011)](http://cms.math.ca/Docs/commlist.html#resc)
 	* 	Member, [Math-NSERC Liaison Committee](http://nmlc.math.ca/blog/ Math-NSERC)

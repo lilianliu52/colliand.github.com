@@ -3,6 +3,7 @@ layout: post
 author: James Colliander
 tags : [personal, math]
 comments: true
+title: I am Joining PIMS and UBC Math
 ---
 
 
