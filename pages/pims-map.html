@@ -56,7 +56,7 @@ function setMarkers(map, locations) {
   // increase in the X direction to the right and in
   // the Y direction down.
   var image = {
-    url: 'icons/pims_icon.png',
+    url: '../../assets/images/pims_icon.png',
     // This marker is 20 pixels wide by 32 pixels tall.
     size: new google.maps.Size(22, 30),
     // The origin for this image is 0,0.
@@ -79,7 +79,7 @@ function setMarkers(map, locations) {
     var marker = new google.maps.Marker({
         position: myLatLng,
         map: map,
-        // icon: image,
+        icon: image,
         // shape: shape,
         title: site[0],
         zIndex: site[3]
