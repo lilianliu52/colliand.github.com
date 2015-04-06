@@ -3,7 +3,7 @@ author: James Colliander
 title: flowchart
 excerpt:
 layout: page
-permalink: /calculus/
+<!-- permalink: /calculus/ -->
 robots: noindex
 ---
 
