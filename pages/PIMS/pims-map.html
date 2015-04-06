@@ -15,6 +15,8 @@
     <script>
 // The following example creates complex markers to indicate the PIMS sites. 
 
+// Code here was modified from this helpful source: https://developers.google.com/maps/documentation/javascript/examples/icon-complex
+
 function initialize() {
   var mapOptions = {
     zoom: 5,
@@ -32,18 +34,18 @@ function initialize() {
  * other.
  */
 var sites = [
-  ['Alberta', 53.5265547, -113.5247901, 4],
-  ['Calgary', 51.0800659, -114.1279513, 5],
-  ['UBC', 49.266211, -123.255297, 3],
-  ['Manitoba', 49.8113004, -97.1333081, 2],
-  ['Lethbridge', 49.6785429, -112.8596358, 1],
-  ['Saskatchewan', 52.1297876, -106.6377417, 6],
-  ['Washington', 47.656938, -122.30539, 7],
-  ['Portland State', 45.5111799, -122.6845159, 8],
-  ['PIMS', 49.263107,-123.252042, 9],
-  ['Regina', 50.4173063, -104.5916318, 10],
-  ['Victoria', 48.4646058, -123.314469, 11],
-  ['SFU', 49.2773958, -122.9161574, 12]
+  ['University of Alberta', 53.5265547, -113.5247901, 4, 'Charles Doran'],
+  ['University of Calgary', 51.0800659, -114.1279513, 5, 'Clifton Cunningham'],
+  ['UBC', 49.266211, -123.255297, 9, 'James Colliander'],
+  ['University of Manitoba', 49.8113004, -97.1333081, 2, 'TBA'],
+  ['University of Lethbridge', 49.6785429, -112.8596358, 1, 'Amir Akbary'],
+  ['University of Saskatchewan', 52.1297876, -106.6377417, 6, 'Raj Srinivasan'],
+  ['University of Washington', 47.656938, -122.30539, 7, 'Christopher Hoffman'],
+  ['Portland State University', 45.5111799, -122.6845159, 8, 'Marek Elzanowski'],
+  ['PIMS', 49.263107,-123.252042, 3, 'Martin Barlow'],
+  ['University of Regina', 50.4173063, -104.5916318, 10, 'Donald W. Stanley'],
+  ['University of Victoria', 48.4646058, -123.314469, 11, 'Anthony Quas'],
+  ['Simon Fraser University', 49.2773958, -122.9161574, 12, 'Nils Bruin and Peter Hoff'],
 ];
 
 function setMarkers(map, locations) {
@@ -57,7 +59,7 @@ function setMarkers(map, locations) {
   // increase in the X direction to the right and in
   // the Y direction down.
   var image = {
-    url: '../../assets/images/pims_icon.png',
+    url: 'icons/pims_icon.png',
     // This marker is 20 pixels wide by 32 pixels tall.
     size: new google.maps.Size(22, 30),
     // The origin for this image is 0,0.
@@ -82,7 +84,7 @@ function setMarkers(map, locations) {
         map: map,
         icon: image,
         // shape: shape,
-        title: site[0],
+        title: site[0] + "\n" + "Site Director:" + " " + site[4],
         zIndex: site[3]
     });
   }
