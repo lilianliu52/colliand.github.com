@@ -1,6 +1,6 @@
 ---
 author: James Colliander
-title: index
+title: Pages
 excerpt:
 layout: page
 <!-- permalink: /flowchart/ -->
@@ -8,7 +8,7 @@ robots: noindex
 ---
 
 * [flowchart](./flowchart)
-* [calculus](./calculus.html)
+* [calculus](./calculus)
 * [pims-map](./pims-map)
 
 
