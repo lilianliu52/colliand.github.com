@@ -1,6 +1,6 @@
 ---
 layout: page
-title: J. Colliander
+title: 
 ---
 
 
