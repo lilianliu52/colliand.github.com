@@ -4,9 +4,10 @@ title:  "Crowdmark Testing Stories"
 date:   2015-05-05
 categories: crowdmark testing flowcharts
 robots: noindex
+comments: false
 ---
 
-<script src="https://cdn.rawgit.com/knsv/mermaid/0.3.0/dist/mermaid.full.js"></script>
+<script src="https://cdn.rawgit.com/knsv/mermaid/0.4.0/dist/mermaid.full.js"></script>
 
 
 
