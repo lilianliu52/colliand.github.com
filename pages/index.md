@@ -9,6 +9,6 @@ robots: noindex
 
 * [flowchart](./flowchart)
 * [calculus](./calculus)
-* [pims-map](./pims-map)
+* [pims-map](./PIMS/pims-map)
 
 
