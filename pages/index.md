@@ -7,11 +7,10 @@ layout: page
 robots: noindex
 ---
 
-### PIMS
+
 
 * [flowchart](./flowchart)
 * [calculus](./calculus)
 * [pims-map](./PIMS/pims-map)
 
-### CM
 

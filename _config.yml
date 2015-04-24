@@ -2,7 +2,7 @@ name: James Colliander
 description: "Math, Research, Education"
 url: http://colliand.com
 
-markdown: kramdown
+markdown: redcarpet
 
 exclude: ["Gemfile", "Gemfile.lock"]
 
