@@ -33,6 +33,20 @@ function initialize() {
   // var map = new google.maps.Map(document.getElementById('map-canvas'),
       // mapOptions);
 
+// 1f77b4 #1f77b4     10 colors
+// ff7f0e #ff7f0e
+// 2ca02c #2ca02c
+// d62728 #d62728
+// 9467bd #9467bd
+// 8c564b #8c564b
+// e377c2 #e377c2
+// 7f7f7f #7f7f7f
+// bcbd22 #bcbd22
+// 17becf #17becf
+
+
+
+
   // Define the LatLng coordinates for the polygon's path.
   var triangleCoords = [
     new google.maps.LatLng(53.5265547, -113.5247901),
@@ -44,10 +58,10 @@ function initialize() {
   // Construct the polygon.
   GeometryPhysicsCRG = new google.maps.Polygon({
     paths: triangleCoords,
-    strokeColor: '#FF0000',
+    strokeColor: '#1f77b4 ',
     strokeOpacity: 0.8,
     strokeWeight: 2,
-    fillColor: '#FF0000',
+    fillColor: '#1f77b4 ',
     fillOpacity: 0.35
   });
 
@@ -67,10 +81,10 @@ function initialize() {
   // Construct the polygon.
   AbelianVarietiesCRG = new google.maps.Polygon({
     paths: AVCRGCoords,
-    strokeColor: '#FF0000',
+    strokeColor: '#ff7f0e',
     strokeOpacity: 0.8,
     strokeWeight: 2,
-    fillColor: '#FF0000',
+    fillColor: '#ff7f0e',
     fillOpacity: 0.35
   });
 
