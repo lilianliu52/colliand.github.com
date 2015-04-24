@@ -3,7 +3,7 @@
   <head>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
-    <title>Geometry and Physics CRG</title>
+    <title>PIMS CRG</title>
     <style>
       html, body, #map-canvas {
         height: 100%;
@@ -33,20 +33,6 @@ function initialize() {
   // var map = new google.maps.Map(document.getElementById('map-canvas'),
       // mapOptions);
 
-// 1f77b4 #1f77b4     10 colors
-// ff7f0e #ff7f0e
-// 2ca02c #2ca02c
-// d62728 #d62728
-// 9467bd #9467bd
-// 8c564b #8c564b
-// e377c2 #e377c2
-// 7f7f7f #7f7f7f
-// bcbd22 #bcbd22
-// 17becf #17becf
-
-
-
-
   // Define the LatLng coordinates for the polygon's path.
   var triangleCoords = [
     new google.maps.LatLng(53.5265547, -113.5247901),
@@ -58,10 +44,10 @@ function initialize() {
   // Construct the polygon.
   GeometryPhysicsCRG = new google.maps.Polygon({
     paths: triangleCoords,
-    strokeColor: '#1f77b4 ',
+    strokeColor: '#1f77b4',
     strokeOpacity: 0.8,
     strokeWeight: 2,
-    fillColor: '#1f77b4 ',
+    fillColor: '#1f77b4',
     fillOpacity: 0.35
   });
 
@@ -89,6 +75,75 @@ function initialize() {
   });
 
   AbelianVarietiesCRG.setMap(map);
+
+
+
+  var APDECRG;
+
+  var APDECoords = [
+    new google.maps.LatLng(53.5265547, -113.5247901),
+    new google.maps.LatLng(49.2773958, -122.9161574),
+    new google.maps.LatLng(49.266211, -123.255297),
+    new google.maps.LatLng(53.5265547, -113.5247901)
+  ];
+
+  // Construct the polygon.
+  APDECRG = new google.maps.Polygon({
+    paths: APDECoords,
+    strokeColor: '#2ca02c',
+    strokeOpacity: 0.8,
+    strokeWeight: 2,
+    fillColor: '#2ca02c',
+    fillOpacity: 0.35
+  });
+
+  APDECRG.setMap(map);
+
+
+  var AAGTCRG;
+
+  var AAGTCRGCoords = [
+    new google.maps.LatLng(51.0800659, -114.1279513),
+    new google.maps.LatLng(50.4173063, -104.5916318),
+    new google.maps.LatLng(47.656938, -122.30539),
+    new google.maps.LatLng(48.4646058, -123.314469),
+    new google.maps.LatLng(49.266211, -123.255297),
+    new google.maps.LatLng(51.0800659, -114.1279513)
+  ];
+
+  // Construct the polygon.
+  AAGTCRG = new google.maps.Polygon({
+    paths: AAGTCRGCoords,
+    strokeColor: '#d62728',
+    strokeOpacity: 0.8,
+    strokeWeight: 2,
+    fillColor: '#d62728',
+    fillOpacity: 0.35
+  });
+
+  AAGTCRG.setMap(map);
+
+
+  var ACCRG;
+
+  var ACCRGCoords = [
+    new google.maps.LatLng(49.2773958, -122.9161574),
+    new google.maps.LatLng(52.1297876, -106.6377417),
+    new google.maps.LatLng(49.266211, -123.255297),
+    new google.maps.LatLng(49.2773958, -122.9161574)
+  ];
+
+  // Construct the polygon.
+  ACCRG = new google.maps.Polygon({
+    paths: ACCRGCoords,
+    strokeColor: '#9467bd',
+    strokeOpacity: 0.8,
+    strokeWeight: 2,
+    fillColor: '#9467bd',
+    fillOpacity: 0.35
+  });
+
+  ACCRG.setMap(map);
 }
 
 
@@ -120,11 +175,24 @@ function setMarkers(map, locations) {
   // where the origin of the image (0,0) is located
   // in the top left of the image.
 
+
+// 1f77b4 #1f77b4     10 colors
+// ff7f0e #ff7f0e
+// 2ca02c #2ca02c
+// d62728 #d62728
+// 9467bd #9467bd
+// 8c564b #8c564b
+// e377c2 #e377c2
+// 7f7f7f #7f7f7f
+// bcbd22 #bcbd22
+// 17becf #17becf
+
+
   // Origins, anchor positions and coordinates of the marker
   // increase in the X direction to the right and in
   // the Y direction down.
   var image = {
-    url: '../../../assets/images/pims_icon.png',
+    url: 'icons/pims_icon.png',
     // This marker is 20 pixels wide by 32 pixels tall.
     size: new google.maps.Size(22, 30),
     // The origin for this image is 0,0.
