@@ -89,25 +89,25 @@
   <div class="row">
     <div class="col-lg-10 col-offset-1">
 
-      <h2 id="flowchart">flowchart</h2>
+      <h2>flowchart</h2>
 
 
       <script src="https://cdn.rawgit.com/knsv/mermaid/0.4.0/dist/mermaid.full.js"></script>
 
-<h3 id="crowdmark-assessment-creation">Crowdmark Assessment Creation</h3>
+<h3>Crowdmark Assessment Creation</h3>
 
 <div class="mermaid">
 graph TB
-    A((Start)) --&gt;|Enter Title| B{Select Type}
-    B --&gt;|Administered| D(Template)
-    B --&gt;|Assigned| H(Template)
-    D ---|Double-sided?<br />Upload Template| E(Enrollments)
-    E --&gt;|Enter Emails<br />Extra Assessments?| F(Generate PDF)
-    F --&gt;|Download PDF| G((Dashboard))
-    H --&gt;|Upload Template| I(Details)
-    I --&gt;|Due Date<br />Lateness Penalty<br />Optional Note| J(Enrollments)
-    J --&gt;|Enter Emails| K(Distribute)
-    K --&gt; G
+    A((Start)) -->|Enter Title| B{Select Type}
+    B -->|Administered| D(Template)
+    B -->|Assigned| H(Template)
+    D ---|Double-sided?<br>Upload Template| E(Enrollments)
+    E -->|Enter Emails<br>Extra Assessments?| F(Generate PDF)
+    F -->|Download PDF| G((Dashboard))
+    H -->|Upload Template| I(Details)
+    I -->|Due Date<br>Lateness Penalty<br>Optional Note| J(Enrollments)
+    J -->|Enter Emails| K(Distribute)
+    K --> G
     style A fill:#8bc341,stroke:#333,stroke-width:2px;
     style G fill:#8bc341,stroke:#333,stroke-width:2px;
     style B fill:#0091d6,stroke:#333,stroke-width:2px;
@@ -117,26 +117,26 @@ graph TB
     style E fill:#009bc7,stroke:#333,stroke-width:2px;
 </div>
 
-<h3 id="how-to-grade">How to grade?</h3>
+<h3>How to grade?</h3>
 
 <div class="mermaid">
 graph TB
-    A(Dashboard) --&gt;|Click| B(Start Grading)
-    B --&gt; C&gt;Grading Grid] 
-    C --&gt;|Click| E(Grading tips)
-    E --&gt;|Read tips<br />|G(Click closes tips)
-    C --&gt;|Click| F[Question Tile]
-    F --&gt; H((Grading Interface))
-    H --&gt;|z or Click|J(Pen Mode)
-    J --&gt; K(Press mouse<br />down to draw)
-    H --&gt;|Click or V|L(Comment Mode)
-    H --&gt;|Click or x| M(X Mode)
-    H --&gt;|Click or c| N(Check Mode)
-    H --&gt;|Keypad or numbers| O(Enter Score)
-    J --&gt;|double-click|L
-    L --&gt;|Click| P(Markdown/Mathjax<br />comment text)
-    M --&gt;|Click| Q(Drop X)
-    N --&gt;|Click| R(Drop Checkmark)
+    A(Dashboard) -->|Click| B(Start Grading)
+    B --> C>Grading Grid] 
+    C -->|Click| E(Grading tips)
+    E -->|Read tips<br>|G(Click closes tips)
+    C -->|Click| F[Question Tile]
+    F --> H((Grading Interface))
+    H -->|z or Click|J(Pen Mode)
+    J --> K(Press mouse<br>down to draw)
+    H -->|Click or V|L(Comment Mode)
+    H -->|Click or x| M(X Mode)
+    H -->|Click or c| N(Check Mode)
+    H -->|Keypad or numbers| O(Enter Score)
+    J -->|double-click|L
+    L -->|Click| P(Markdown/Mathjax<br>comment text)
+    M -->|Click| Q(Drop X)
+    N -->|Click| R(Drop Checkmark)
     style A fill:#867cb8,stroke:#333,stroke-width:0px;
     style B fill:#8bc341,stroke:#333,stroke-width:0px;
     style E fill:#ccf,stroke:#f66,stroke-width:2px,stroke-dasharray: 5, 5;
@@ -150,33 +150,32 @@ graph TB
  
 </div>
 
-<h3 id="add-student-metadata">Add student metadata</h3>
+<h3>Add student metadata</h3>
 
 <div class="mermaid">
 graph TB
-     A(Dashboard) --&gt;|Click| B(Students)
-    B --&gt;|Click| D(Upload metadata)
-    D --&gt;|Select CSV file| B
+     A(Dashboard) -->|Click| B(Students)
+    B -->|Click| D(Upload metadata)
+    D -->|Select CSV file| B
     style A fill:#867cb8,stroke:#333,stroke-width:2px;
     style B stroke:#333,stroke-width:2px;
     style D fill:#40a8c3,stroke:#333,stroke-width:2px;
  
 </div>
 
-<h3 id="invite-grading-team">Invite Grading Team</h3>
+<h3>Invite Grading Team</h3>
 
 <div class="mermaid">
 graph TB
-     A(Dashboard) --&gt;|Click| B(Grading Team)
-    B --&gt;|Click| D(&amp;#8853 Invite)
-    D ---|Enter Emails<br />Select Role<br />Click| E(Invite)
-    E --&gt; B
+     A(Dashboard) -->|Click| B(Grading Team)
+    B -->|Click| D(&#8853 Invite)
+    D ---|Enter Emails<br>Select Role<br>Click| E(Invite)
+    E --> B
     style A fill:#867cb8,stroke:#333,stroke-width:2px;
     style B stroke:#333,stroke-width:2px;
     style D fill:#40a8c3,stroke:#333,stroke-width:2px;
     style E fill:#009bc7,stroke:#333,stroke-width:2px;
 </div>
-
 
 
     </div>
@@ -207,5 +206,5 @@ graph TB
 
 </body>
 </html>
-<!--  GitHub Powered! | Generated 2015-05-05 03:19:02 -0400 -->
+<!--  GitHub Powered! | Generated 2015-05-05 03:25:21 -0400 -->
 

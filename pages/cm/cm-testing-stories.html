@@ -100,57 +100,58 @@
     <div class="entrybody">
         <script src="https://cdn.rawgit.com/knsv/mermaid/0.4.0/dist/mermaid.full.js"></script>
 
-<h2 id="setup-x-user-contexts">0. Setup X User Contexts</h2>
+<h2>0. Setup X User Contexts</h2>
 
 <p><strong>Roles</strong>  </p>
 
 <ul>
-  <li>Student</li>
-  <li>Uploader</li>
-  <li>Grader</li>
-  <li>Facilitator</li>
-  <li>Owner</li>
+<li>Student</li>
+<li>Uploader</li>
+<li>Grader</li>
+<li>Facilitator</li>
+<li>Owner</li>
 </ul>
 
 <p><strong>Browsers</strong></p>
 
 <ul>
-  <li>Chrome</li>
-  <li>Firefox</li>
-  <li>IE</li>
-  <li>Safari</li>
+<li>Chrome</li>
+<li>Firefox</li>
+<li>IE</li>
+<li>Safari</li>
 </ul>
 
 <p><strong>Operating Systems</strong></p>
 
 <ul>
-  <li>Apple</li>
-  <li>Linux</li>
-  <li>Windows</li>
+<li>Apple</li>
+<li>Linux</li>
+<li>Windows</li>
 </ul>
 
 <p><strong>Crowdmark Configuration</strong></p>
 
 <ul>
-  <li>LTI</li>
-  <li>Stand-alone</li>
+<li>LTI</li>
+<li>Stand-alone</li>
 </ul>
 
 <p>Our testing should explore the <strong>Roles X Browsers X Operating Systems X Configuration</strong> space of contexts.</p>
 
-<hr />
-<hr />
+<hr>
 
-<h2 id="assigned-assessment-creation-testing-list">1. Assigned Assessment Creation Testing List</h2>
+<hr>
+
+<h2>1. Assigned Assessment Creation Testing List</h2>
 
 <div class="mermaid">
 graph TB
-    A((Start)) --&gt;|1. Enter Title| B{2. Select Type}
-    B --&gt;|3. Assigned| H(Template)
-    H --&gt;|4. Upload Template| I(Details)
-    I --&gt;|5. Due Date<br />6. Lateness Penalty<br />7. Optional Note| J(Enrollments)
-    J --&gt;|8. Enter Emails| K(Distribute)
-    K --&gt;|9. Click to send| G(10. Dashboard)
+    A((Start)) -->|1. Enter Title| B{2. Select Type}
+    B -->|3. Assigned| H(Template)
+    H -->|4. Upload Template| I(Details)
+    I -->|5. Due Date<br>6. Lateness Penalty<br>7. Optional Note| J(Enrollments)
+    J -->|8. Enter Emails| K(Distribute)
+    K -->|9. Click to send| G(10. Dashboard)
     style A fill:#8bc341,stroke:#333,stroke-width:2px;
     style G fill:#8bc341,stroke:#333,stroke-width:2px;
     style B fill:#0091d6,stroke:#333,stroke-width:2px;
@@ -159,33 +160,34 @@ graph TB
   
 </div>
 
-<hr />
+<hr>
 
 <ol>
-  <li>Type <em>title</em> in <code>New Assessment Name</code> Field</li>
-  <li>Select type <code>Assigned</code> (see <code>Administered</code> in Section 2.)</li>
-  <li>Click to start Assigned Wizard</li>
-  <li>Upload <em>assigned template</em></li>
-  <li>Enter <code>Due Date</code></li>
-  <li>Enter <code>Lateness Penalty</code></li>
-  <li>Enter <code>Optional Note</code> to include with assigned email invitations</li>
-  <li>Enter <em>email addresses</em></li>
-  <li>Distribute assigned emails</li>
-  <li>Click to return to Dashboard</li>
+<li>Type <em>title</em> in <code>New Assessment Name</code> Field</li>
+<li>Select type <code>Assigned</code> (see <code>Administered</code> in Section 2.)</li>
+<li>Click to start Assigned Wizard</li>
+<li>Upload <em>assigned template</em></li>
+<li>Enter <code>Due Date</code></li>
+<li>Enter <code>Lateness Penalty</code></li>
+<li>Enter <code>Optional Note</code> to include with assigned email invitations</li>
+<li>Enter <em>email addresses</em></li>
+<li>Distribute assigned emails</li>
+<li>Click to return to Dashboard</li>
 </ol>
 
-<hr />
-<hr />
+<hr>
 
-<h2 id="administered-assessment-creation-testing-list">2. Administered Assessment Creation Testing List</h2>
+<hr>
+
+<h2>2. Administered Assessment Creation Testing List</h2>
 
 <div class="mermaid">
 graph TB
-    A((Start)) --&gt;|1. Enter Title| B{2. Select Type}
-    B --&gt;|3. Administered| D(Template)
-    D ---|4. Double-sided?<br />5. Single-sided?<br />6. Upload Template| E(Enrollments)
-    E --&gt;|7. Enter Emails<br />8. Extra Assessments?| F(Generate PDF)
-    F --&gt;|9. Download PDF<br />10. Return to Dashboard| G((Dashboard))
+    A((Start)) -->|1. Enter Title| B{2. Select Type}
+    B -->|3. Administered| D(Template)
+    D ---|4. Double-sided?<br>5. Single-sided?<br>6. Upload Template| E(Enrollments)
+    E -->|7. Enter Emails<br>8. Extra Assessments?| F(Generate PDF)
+    F -->|9. Download PDF<br>10. Return to Dashboard| G((Dashboard))
     style A fill:#8bc341,stroke:#333,stroke-width:2px;
     style G fill:#8bc341,stroke:#333,stroke-width:2px;
     style B fill:#0091d6,stroke:#333,stroke-width:2px;
@@ -193,44 +195,45 @@ graph TB
     style E fill:#009bc7,stroke:#333,stroke-width:2px;
 </div>
 
-<hr />
+<hr>
 
 <ol>
-  <li>Type <em>title</em> in <code>New Assessment Name</code> Field</li>
-  <li>Select type <code>Administered</code> (see <code>Assigned</code> in Section 1.)</li>
-  <li>Click to start Administered Wizard</li>
-  <li>Toggle radio button to select <code>double-sided</code> </li>
-  <li>Toggle radio button to select <code>single-sided</code> (Repeat entire workflow.)</li>
-  <li>Upload <em>administered template</em></li>
-  <li>Enter <em>email addresses</em></li>
-  <li>Select <em>number</em> of extra assessments</li>
-  <li>Download printable PDF file</li>
-  <li>Click to return to Dashboard</li>
+<li>Type <em>title</em> in <code>New Assessment Name</code> Field</li>
+<li>Select type <code>Administered</code> (see <code>Assigned</code> in Section 1.)</li>
+<li>Click to start Administered Wizard</li>
+<li>Toggle radio button to select <code>double-sided</code> </li>
+<li>Toggle radio button to select <code>single-sided</code> (Repeat entire workflow.)</li>
+<li>Upload <em>administered template</em></li>
+<li>Enter <em>email addresses</em></li>
+<li>Select <em>number</em> of extra assessments</li>
+<li>Download printable PDF file</li>
+<li>Click to return to Dashboard</li>
 </ol>
 
-<hr />
-<hr />
+<hr>
 
-<h2 id="how-to-grade-testing-list">3. how to grade testing list</h2>
+<hr>
+
+<h2>3. how to grade testing list</h2>
 
 <div class="mermaid">
 graph TB
-    A(Dashboard) --&gt;|1. Click| B(Start Grading)
-    B --&gt; C&gt;Grading Grid] 
-    C --&gt;|2. Click| E(Grading tips)
-    E --&gt;|Read tips<br />|G(3. Click closes tips)
-    C --&gt;|4. Click| F[Question Tile]
-    F --&gt; H((Grading Interface))
-    H --&gt;|5. Click or 6. z|J(Pen Mode)
-    J --&gt; K(7. Press mouse<br />down to draw)
-    H --&gt;|9. Click or 10. V|L(Comment Mode)
-    H --&gt;|14. Click or 15. x| M(X Mode)
-    H --&gt;|17. Click or 18. c| N(Check Mode)
-    H --&gt;|20. Keypad or 21. numbers| O(Enter Score)
-    J --&gt;|8. double-click|L
-    L --&gt;|11. Click| P(12. Markdown/13. Mathjax<br />comment text)
-    M --&gt;|16. Click| Q(Drop X)
-    N --&gt;|19. Click| R(Drop Checkmark)
+    A(Dashboard) -->|1. Click| B(Start Grading)
+    B --> C>Grading Grid] 
+    C -->|2. Click| E(Grading tips)
+    E -->|Read tips<br>|G(3. Click closes tips)
+    C -->|4. Click| F[Question Tile]
+    F --> H((Grading Interface))
+    H -->|5. Click or 6. z|J(Pen Mode)
+    J --> K(7. Press mouse<br>down to draw)
+    H -->|9. Click or 10. V|L(Comment Mode)
+    H -->|14. Click or 15. x| M(X Mode)
+    H -->|17. Click or 18. c| N(Check Mode)
+    H -->|20. Keypad or 21. numbers| O(Enter Score)
+    J -->|8. double-click|L
+    L -->|11. Click| P(12. Markdown/13. Mathjax<br>comment text)
+    M -->|16. Click| Q(Drop X)
+    N -->|19. Click| R(Drop Checkmark)
     style A fill:#867cb8,stroke:#333,stroke-width:0px;
     style B fill:#8bc341,stroke:#333,stroke-width:0px;
     style E fill:#ccf,stroke:#f66,stroke-width:2px,stroke-dasharray: 5, 5;
@@ -245,159 +248,186 @@ graph TB
 </div>
 
 <ol>
-  <li>Click <code>Start Grading</code> Button</li>
-  <li>Click <code>Grading tips</code> button</li>
-  <li>Click to close tips</li>
-  <li>Click <code>Question tile</code> to enter Grading Interface</li>
-  <li>Test Pen Mode entry with <em>z</em></li>
-  <li>Test pen Mode entry with <em>click on pen</em>
+<li>Click <code>Start Grading</code> Button</li>
+<li>Click <code>Grading tips</code> button</li>
+<li>Click to close tips</li>
+<li>Click <code>Question tile</code> to enter Grading Interface</li>
+<li>Test Pen Mode entry with <em>z</em></li>
+<li>Test pen Mode entry with <em>click on pen</em>
 7 Press mouse down to draw in pen mode</li>
-  <li>Test double-click to enter comment box</li>
-  <li>Test Comment Mode entry with <em>click</em></li>
-  <li>Test Comment Mode entry with <em>v</em></li>
-  <li>Click to open text box</li>
-  <li>Enter <em>Markdown</em> to test markdown parsing</li>
-  <li>Enter <em>TeX</em> to test Mathjax parsking</li>
-  <li>Test X mode entry with click</li>
-  <li>Test X mode entry with <em>x</em></li>
-  <li>Test drop of X with click</li>
-  <li>Test Checkmark mode entry with click</li>
-  <li>Test Checkmark mode entry with <em>c</em></li>
-  <li>Test drop of Checkmark with click</li>
+<li>Test double-click to enter comment box</li>
+<li>Test Comment Mode entry with <em>click</em></li>
+<li>Test Comment Mode entry with <em>v</em></li>
+<li>Click to open text box</li>
+<li>Enter <em>Markdown</em> to test markdown parsing</li>
+<li>Enter <em>TeX</em> to test Mathjax parsking</li>
+<li>Test X mode entry with click</li>
+<li>Test X mode entry with <em>x</em></li>
+<li>Test drop of X with click</li>
+<li>Test Checkmark mode entry with click</li>
+<li>Test Checkmark mode entry with <em>c</em></li>
+<li>Test drop of Checkmark with click</li>
 </ol>
 
-<hr />
-<hr />
+<hr>
 
-<h2 id="hover-states-in-grading-interface-testing-list">4. Hover States in Grading Interface testing list</h2>
+<hr>
+
+<h2>4. Hover States in Grading Interface testing list</h2>
 
 <div class="mermaid">
 graph TB
-    A&gt;Grading Grid] --&gt;|1. hover| B[Question Tile]
-    A --&gt;|2. hover| C(Grader Avatar)
+    A>Grading Grid] -->|1. hover| B[Question Tile]
+    A -->|2. hover| C(Grader Avatar)
     style B stroke:#333,stroke-width:2px;
  
 </div>
 
-<hr />
+<hr>
 
 <ol>
-  <li>Confirm email hover tip on grading team <code>avatars</code>.</li>
-  <li>Confirm email hover tip behavior on <code>question tiles</code>. (Graders don’t see anything, facilitators see email hover tip. Depends on whether the assessment containing the tile has been matched to a student’s identity.)</li>
+<li>Confirm email hover tip on grading team <code>avatars</code>.</li>
+<li>Confirm email hover tip behavior on <code>question tiles</code>. (Graders don&#39;t see anything, facilitators see email hover tip. Depends on whether the assessment containing the tile has been matched to a student&#39;s identity.)</li>
 </ol>
 
-<hr />
-<hr />
+<hr>
 
-<h2 id="add-student-metadata-testing-list">5.  Add student metadata testing list</h2>
+<hr>
+
+<h2>5.  Add student metadata testing list</h2>
 
 <div class="mermaid">
 graph TB
-    A(Dashboard) --&gt;|1. Click| B(Students)
-    B --&gt;|2. Click| D(Upload metadata)
-    D --&gt;|3. Select CSV file| B
+    A(Dashboard) -->|1. Click| B(Students)
+    B -->|2. Click| D(Upload metadata)
+    D -->|3. Select CSV file| B
     style A fill:#867cb8,stroke:#333,stroke-width:2px;
     style B stroke:#333,stroke-width:2px;
     style D fill:#40a8c3,stroke:#333,stroke-width:2px;
  
 </div>
 
-<hr />
+<hr>
 
 <ol>
-  <li>Click to enter <code>Students</code></li>
-  <li>Click the button to Upload metadata</li>
-  <li>Select <em>CSV file with student metatdata</em></li>
+<li>Click to enter <code>Students</code></li>
+<li>Click the button to Upload metadata</li>
+<li>Select <em>CSV file with student metatdata</em></li>
 </ol>
 
-<hr />
-<hr />
+<hr>
 
-<h2 id="invite-grading-team-testing-list">6. Invite Grading Team Testing List</h2>
+<hr>
+
+<h2>6. Invite Grading Team Testing List</h2>
 
 <div class="mermaid">
 graph TB
-    A(Dashboard) --&gt;|1. Click| B(Grading Team)
-    B --&gt;|2. Click| D(+ Invite)
-    D ---|3. Enter Emails<br />4. Select Role<br />5. Click| E(Invite)
-    E --&gt; B
+    A(Dashboard) -->|1. Click| B(Grading Team)
+    B -->|2. Click| D(+ Invite)
+    D ---|3. Enter Emails<br>4. Select Role<br>5. Click| E(Invite)
+    E --> B
     style A fill:#867cb8,stroke:#333,stroke-width:2px;
     style B stroke:#333,stroke-width:2px;
     style D fill:#40a8c3,stroke:#333,stroke-width:2px;
     style E fill:#009bc7,stroke:#333,stroke-width:2px;
 </div>
 
-<hr />
+<hr>
 
 <ol>
-  <li>Click to enter <code>Grading Team</code></li>
-  <li>Click <code>+ Invite</code></li>
-  <li>Enter <em>Emails for new team members</em></li>
-  <li>Select <em>role</em> for new team members</li>
-  <li>Click <code>Invite</code></li>
+<li>Click to enter <code>Grading Team</code></li>
+<li>Click <code>+ Invite</code></li>
+<li>Enter <em>Emails for new team members</em></li>
+<li>Select <em>role</em> for new team members</li>
+<li>Click <code>Invite</code></li>
 </ol>
 
-<hr />
-<hr />
+<hr>
 
-<h2 id="saving-of-evaluations-testing-list">7. Saving of Evaluations Testing List</h2>
+<hr>
 
-<p>collisions<br />
-next ungraded<br />
-order of operations<br />
-cancel score<br />
-multiple evaluations??<br />
+<h2>7. Saving of Evaluations Testing List</h2>
+
+<p>collisions<br>
+next ungraded<br>
+order of operations<br>
+cancel score<br>
+multiple evaluations??<br>
 deletion of comments 
 deletion of annotations</p>
 
-<hr />
-<hr />
+<hr>
 
-<h2 id="export-scores-file-as-csv-testing-list">8. Export Scores File as CSV Testing List</h2>
+<hr>
 
-<hr />
-<hr />
-<p>## 9. Results Section Testing List</p>
+<h2>8. Export Scores File as CSV Testing List</h2>
 
-<hr />
-<hr />
-<p>## 10. Delete Assessment Testing List</p>
+<hr>
 
-<hr />
-<hr />
-<p>## 11. Question Setup Testing List</p>
+<hr>
 
-<hr />
-<hr />
-<p>## 12. Send Grades to Students</p>
+<h2>9. Results Section Testing List</h2>
 
-<hr />
-<hr />
-<p>## 13. Student Upload Assigned Testing List</p>
+<hr>
 
-<hr />
-<hr />
-<p>## 14. Student Receives Scores Email Testing List</p>
+<hr>
 
-<hr />
-<hr />
-<p>## 15. Upload Assessments Testing List</p>
+<h2>10. Delete Assessment Testing List</h2>
 
-<hr />
-<hr />
-<p>## 16. Fix Scan Errors Testing List</p>
+<hr>
 
-<hr />
-<hr />
-<p>## 17. Resend Assigned Assessment Invitation Email Testing List</p>
+<hr>
 
-<hr />
-<hr />
-<p>## 18. Send Support Message Using Envelope Icon Testing list</p>
+<h2>11. Question Setup Testing List</h2>
 
-<hr />
-<hr />
-<p>## 19. Access Support Knowledge Base with Question Mark Icon Testing List</p>
+<hr>
+
+<hr>
+
+<h2>12. Send Grades to Students</h2>
+
+<hr>
+
+<hr>
+
+<h2>13. Student Upload Assigned Testing List</h2>
+
+<hr>
+
+<hr>
+
+<h2>14. Student Receives Scores Email Testing List</h2>
+
+<hr>
+
+<hr>
+
+<h2>15. Upload Assessments Testing List</h2>
+
+<hr>
+
+<hr>
+
+<h2>16. Fix Scan Errors Testing List</h2>
+
+<hr>
+
+<hr>
+
+<h2>17. Resend Assigned Assessment Invitation Email Testing List</h2>
+
+<hr>
+
+<hr>
+
+<h2>18. Send Support Message Using Envelope Icon Testing list</h2>
+
+<hr>
+
+<hr>
+
+<h2>19. Access Support Knowledge Base with Question Mark Icon Testing List</h2>
 
     </div>
 
@@ -432,5 +462,5 @@ deletion of annotations</p>
 
 </body>
 </html>
-<!--  GitHub Powered! | Generated 2015-05-05 03:19:02 -0400 -->
+<!--  GitHub Powered! | Generated 2015-05-05 03:25:21 -0400 -->
 

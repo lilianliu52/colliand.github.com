@@ -15,10 +15,8 @@
 
   
   <meta name="description" content="<!--  -->
-
 "/>
   <meta property='og:description' content="<!--  -->
-
 "/>
   
 
@@ -106,33 +104,34 @@
         <!--  -->
 
 <h1>Galina Perelman: 2 soliton collision in NLS</h1>
-<p><script type="math/tex">
-i \psi_t = - \psi_{xx} + F(|\psi|^2) \psi, ~ x \in R
-</script>
+
+<p>$$
+i \psi<em>t = - \psi</em>{xx} + F(|\psi|^2) \psi, ~ x \in R
+$$
 where $F(\xi) = -2 \xi + O (\xi^2), ~ \xi \rightarrow 0.$</p>
 
 <p>This family of equations has solitary wave solutions
-<script type="math/tex">
+$$
 e^{i \theta(x,t) \phi (x - b(t), E)}
-</script>
+$$
 where $\theta(x,t) = \omega t + \gamma + v \frac{x}{2}, ~b(t) =vt + c$ (all reall parameters). The profile $\phi$ is the associated ground state, which is $C^2$, decays exponentially, is even, …</p>
 
-<p>If I set $\epsilon^2 = E$ and write $\phi(y, \epsilon^2) = \epsilon \hat{\phi}(\epsilon, \epsilon).$ We have then that $\hat{\phi}(z, \epsilon) = \phi_0 (z) + O(\epsilon^2)$ where $\phi_0$ is the standard soliton for cubic NLS. A calculation shows that
-<script type="math/tex">\| \phi(\cdot, \epsilon^2) \|_{H^1} = O(\epsilon^{1/2}).</script> Let’s collect the parameters $\sigma = (\beta, E, b, v) \in R^4.$</p>
+<p>If I set $\epsilon^2 = E$ and write $\phi(y, \epsilon^2) = \epsilon \hat{\phi}(\epsilon, \epsilon).$ We have then that $\hat{\phi}(z, \epsilon) = \phi<em>0 (z) + O(\epsilon^2)$ where $\phi</em>0$ is the standard soliton for cubic NLS. A calculation shows that
+$$| \phi(\cdot, \epsilon^2) |_{H^1} = O(\epsilon^{1/2}).$$ Let’s collect the parameters $\sigma = (\beta, E, b, v) \in R^4.$</p>
 
 <p>The question I’d like to address:</p>
 
-<p><strong>Question:</strong> As $t \rightarrow -\infty$, suppose that $\psi(t) = w(\cdot, \sigma_0 (t)) + w(\cdot, \sigma_1 (t)) + o_{H^1} (1)$. Because of the galilean invariance we can arrange so that $\sigma_0$ does not move and we assume that $v_1 &gt; 0$. So, we can arrange this data to have completely decoupled solitons as $t \rightarrow - \infty$. The question is then to understand the soliton collision and also what happens afterwards.</p>
+<p><strong>Question:</strong> As $t \rightarrow -\infty$, suppose that $\psi(t) = w(\cdot, \sigma<em>0 (t)) + w(\cdot, \sigma</em>1 (t)) + o<em>{H^1} (1)$. Because of the galilean invariance we can arrange so that $\sigma</em>0$ does not move and we assume that $v_1 &gt; 0$. So, we can arrange this data to have completely decoupled solitons as $t \rightarrow - \infty$. The question is then to understand the soliton collision and also what happens afterwards.</p>
 
 <p><strong>Perturbative regime:</strong>
-<script type="math/tex">\epsilon^2 = E_1 \ll 1, E_0 \thicksim 1, v_1 \thicksim 1.</script></p>
+$$\epsilon^2 = E<em>1 \ll 1, E</em>0 \thicksim 1, v_1 \thicksim 1.$$</p>
 
-<p><strong>Collision Scenario:</strong></p>
+<p><strong>Collision Scenario:</strong>
 <ol>
-	<li>$w(\cdot, \sigma_0 (t))$ is ‘preserved’.</li>
-	<li>$w(\cdot, \sigma_1 (t))$ splits into two outgoing waves of the cubic NLS. The splitting is controlled by the linearized operator associated to the large soliton $w_{\sigma_0}$.</li>
+    <li>$w(\cdot, \sigma<em>0 (t))$ is ‘preserved’.</li>
+    <li>$w(\cdot, \sigma</em>1 (t))$ splits into two outgoing waves of the cubic NLS. The splitting is controlled by the linearized operator associated to the large soliton $w<em>{\sigma</em>0}$.</li>
 </ol>
-<p>Collision: $|t| \lesssim \epsilon^{-1-\delta}, ~ \delta &gt; 0$.
+Collision: $|t| \lesssim \epsilon^{-1-\delta}, ~ \delta &gt; 0$.
 pre-interaction: $t leq - \epsilon^{-1-\delta}$
 post-interaction: $t leq - \epsilon^{-1-\delta}$</p>
 
@@ -140,17 +139,7 @@ post-interaction: $t leq - \epsilon^{-1-\delta}$</p>
 
 <p>Long wide soliton to the left of a big soliton at the origin before the collision. After the collision the small soliton splits into two waves, one moving left and one moving right. The big soliton at the origin is drawn not centered at the origin.</p>
 
-<table>
-  <tbody>
-    <tr>
-      <td>$s = s(\frac{v_1}{2}), r = r (\frac{v_1}{2})$ where $s(k), r(k)$ are the translation and reflection coefficients of the linearized operator corresponding to $w(\cdot, \sigma_0 (t))$. Here we have $</td>
-      <td>s</td>
-      <td>^2(k) +</td>
-      <td>r</td>
-      <td>^2 (k) =1$. The only trace of nonlinearity appears in the phase.</td>
-    </tr>
-  </tbody>
-</table>
+<p>$s = s(\frac{v<em>1}{2}), r = r (\frac{v</em>1}{2})$ where $s(k), r(k)$ are the translation and reflection coefficients of the linearized operator corresponding to $w(\cdot, \sigma_0 (t))$. Here we have $|s|^2(k) + |r|^2 (k) =1$. The only trace of nonlinearity appears in the phase.</p>
 
 <p>This phenomena has been observed before by <a href="http://arxiv.org/abs/math/0608510">Holmer-Mazuola-Zworski</a> and earlier by physicists.
 H-M-Z conisdered the cubic NLS with an external delta potential. For small incoming solitons, they have observed the small soliton splitting caused by the Dirac function potential.</p>
@@ -163,30 +152,21 @@ $\exists !$ ground state.</p>
 
 <p>Linearization around $w(x, \sigma(t)) = e^{i\theta} \phi(x - b(t), E)$. We substitute $\psi = w + f$ and expand to obtain the following equation for $f$:</p>
 
-<script type="math/tex; mode=display">
+<p>$$
 i {\bf{f}}_t = L(E) {\bf{f}}.
-</script>
+$$</p>
 
 <p>Here ${\bf{f}}$ is a (column) vector $(f, \overline{f})$.
-<script type="math/tex">
-L(E)= (-\partial_y^2 + E) \sigma_3 + V(E).
-</script>
-Here $\sigma_3$ is the Pauli matrix and $V$ is a certain matrix involving $V_1 = F(\phi^2) + F’ (\phi^2) \phi^2$ and $V_2 = F’ (\phi^2) \phi^2$.</p>
+$$
+L(E)= (-\partial<em>y^2 + E) \sigma</em>3 + V(E).
+$$
+Here $\sigma<em>3$ is the Pauli matrix and $V$ is a certain matrix involving $V</em>1 = F(\phi^2) + F’ (\phi^2) \phi^2$ and $V_2 = F’ (\phi^2) \phi^2$.</p>
 
-<table>
-  <tbody>
-    <tr>
-      <td>She draws a spectral plane. Essential spectrum along real line in region $</td>
-      <td>x</td>
-      <td>&gt; E$ and some eigenvalues drawn as x’s inside the gap and one above and below the real line on the imaginary axis. 0 is an eigenvalue. We have two explicit eigenfunctions $\xi_0$ and $\xi_1$.</td>
-    </tr>
-  </tbody>
-</table>
+<p>She draws a spectral plane. Essential spectrum along real line in region $|x| &gt; E$ and some eigenvalues drawn as x’s inside the gap and one above and below the real line on the imaginary axis. 0 is an eigenvalue. We have two explicit eigenfunctions $\xi<em>0$ and $\xi</em>1$.</p>
 
 <p>$M(E)$ is the generalzied null space of $L(E)$. We have the following equivalence:</p>
 
-<script type="math/tex; mode=display">% <![CDATA[
-\sigma(L(E)) \subset R, {\mbox{dim}} M(E) = 4 \iff  \frac{d}{dE} \| \phi(E) \|_2^2 &gt; 0. %]]></script>
+<p>$$\sigma(L(E)) \subset R, {\mbox{dim}} M(E) = 4 \iff  \frac{d}{dE} | \phi(E) |_2^2 &gt; 0.$$</p>
 
 <p>These conditions imply the orbital stability of $\Phi$.</p>
 
@@ -195,125 +175,117 @@ Here $\sigma_3$ is the Pauli matrix and $V$ is a certain matrix involving $V_1 =
 <p>$w(x,\sigma, t), ~ j=0,1$ normalized as before.</p>
 
 <p><strong>(H1):</strong>
-<script type="math/tex">% <![CDATA[
-\frac{d}{dE} \| \phi(E) \|<em>2^2 |</em>{E=E_0} &gt; 0 %]]></script></p>
+$$\frac{d}{dE} | \phi(E) |<em>2^2 |</em>{E=E_0} &gt; 0$$</p>
 
 <p><strong>(H2):</strong> $\epsilon^2 = E_1$ sufficiently small</p>
 
-<p><strong>(H3):</strong> $M(E + \frac{v_1^2}{4}) \notin \sigma_p (L(E_0))$ (Nobody knows how to prove no embedded eignevalues.)</p>
+<p><strong>(H3):</strong> $M(E + \frac{v<em>1^2}{4}) \notin \sigma</em>p (L(E_0))$ (Nobody knows how to prove no embedded eignevalues.)</p>
 
 <p><strong>Proposition:</strong> $\exists ~! ~ \psi \in C(R, H^1)$ such that ….</p>
 
-<table>
-  <tbody>
-    <tr>
-      <td><strong>Theorem:</strong> For $\epsilon^{-1-\delta} \leq t \leq \delta \epsilon^{-2}</td>
-      <td>\ln \epsilon</td>
-      <td>$</td>
-    </tr>
-  </tbody>
-</table>
+<p><strong>Theorem:</strong> For $\epsilon^{-1-\delta} \leq t \leq \delta \epsilon^{-2} | \ln \epsilon |$</p>
 
-<p><script type="math/tex"> \psi (t) = w (\cdot, \sigma(t)) + \psi_+ (t) + \psi_{-} (t) + h(t)</script></p>
+<p>$$ \psi (t) = w (\cdot, \sigma(t)) + \psi<em>+ (t) + \psi</em>{-} (t) + h(t)$$
 <ol>
-	<li>$\sigma(t) = (\beta(t), E_0, b(t), v_0), ~V_0 = \epsilon \kappa$ where $\kappa$ is an explicit constant and
+    <li>$\sigma(t) = (\beta(t), E<em>0, b(t), v</em>0), ~V<em>0 = \epsilon \kappa$ where $\kappa$ is an explicit constant and
 $$
-|\beta(t) - \beta_0  (t)|, |b(t) - v_0 t| \leq C \epsilon^2 t.
+|\beta(t) - \beta</em>0  (t)|, |b(t) - v<em>0 t| \leq C \epsilon^2 t.
 $$</li>
-	<li>$\Psi_{\pm} (x,t) = ….ack too fast to type…
-$$\Psi_{\pm}$$</li>
+    <li>$\Psi</em>{\pm} (x,t) = ….ack too fast to type…
+$$\Psi<em>{\pm}$$</li>
 </ol>
-<p>is expressed as an explicit phase times a function $S^{\pm}$ which solves cubic NLS emerging from data built using thre reflection, transmission coefficients and $\phi_0 (y)$.
+is expressed as an explicit phase times a function $S^{\pm}$ which solves cubic NLS emerging from data built using thre reflection, transmission coefficients and $\phi</em>0 (y)$.
 3. error estimates in terms of $\epsilon.$</p>
 
 <hr />
 
 <h1 id="edrisstiti:lossofsmoothnessin3deulerequations">Edriss Titi: Loss of smoothness in 3d Euler Equations</h1>
+
 <p>(joint work with Claude Bardos)</p>
 
-<p>Overview:</p>
+<p>Overview:
 <ol>
-	<li>Background
+    <li>Background
 <ul>
-	<li>Euler</li>
-	<li>Classical</li>
-	<li>Nonuniqueness: De Lellis - Sh…</li>
+    <li>Euler</li>
+    <li>Classical</li>
+    <li>Nonuniqueness: De Lellis - Sh…</li>
 </ul>
 </li>
-	<li>Shear flow
+    <li>Shear flow
 <ul>
-	<li>DiPerna Majda example: weak limit of Euler solutions whose limit is not a solution</li>
-	<li>Illposedness of Euler in C^{0,\alpha}</li>
+    <li>DiPerna Majda example: weak limit of Euler solutions whose limit is not a solution</li>
+    <li>Illposedness of Euler in C^{0,\alpha}</li>
 </ul>
 </li>
-	<li>Vortex sheets induced by 3d shear flows
+    <li>Vortex sheets induced by 3d shear flows
 <ul>
-	<li>Examples</li>
-	<li>Differences between 2d and 3d Kelvin-Helmholtz problems</li>
-	<li>Comments on numerics</li>
+    <li>Examples</li>
+    <li>Differences between 2d and 3d Kelvin-Helmholtz problems</li>
+    <li>Comments on numerics</li>
 </ul>
 </li>
 </ol>
 <h2 id="eulerequations">Euler equations</h2>
-<p>Euler equations on the 3-torus. $\omega$ is the vorticity. Recast using Biot-Savart.</p>
+Euler equations on the 3-torus. $\omega$ is the vorticity. Recast using Biot-Savart.</p>
 
 <p>Vorticity stretching term distinguishes 2d and 3d.</p>
 
-<p>Classical Wellposedness:</p>
+<p>Classical Wellposedness:
 <ul>
-	<li>global existence and uniquenes for initial data $\omega_0 \in L^\infty$.
+    <li>global existence and uniquenes for initial data $\omega_0 \in L^\infty$.
 This result is due to Yudovich (1963). Some extension….</li>
-	<li>For data in $C^{1,\alpha}$, Euler equations are short time well-posed and the solution conserves energy. [Lictenstein (1925)]</li>
-	<li>The same result holds the context of Sobolev spaces $H^s, ~ s &gt; \frac{5}{2}$. (Basically same result in more modern spaces)</li>
+    <li>For data in $C^{1,\alpha}$, Euler equations are short time well-posed and the solution conserves energy. [Lictenstein (1925)]</li>
+    <li>The same result holds the context of Sobolev spaces $H^s, ~ s &gt; \frac{5}{2}$. (Basically same result in more modern spaces)</li>
 </ul>
-<p><strong>Question:</strong> Does there exist a regular solution (say in $C^{1,\alpha}$) of the 3d Euler equation that becomes singular in a finite time (blows up problem)? This is in osome sense as difficult as the millenium problem. There are different opinions….</p>
+<strong>Question:</strong> Does there exist a regular solution (say in $C^{1,\alpha}$) of the 3d Euler equation that becomes singular in a finite time (blows up problem)? This is in osome sense as difficult as the millenium problem. There are different opinions….</p>
 
 <p>“I spoke with Necas about this…near end of his life…on Wendesday’s he thinks it blows up and on Thursdays he thinks no…so he has bad dreams about it…”</p>
 
-<p>DeLellis-Szekelyhidi: There exists a set of initial data $u_0 \in L^2 (\Omega)$ (not explicitly constructed, Baire argument) for which the Cauchy problem has, for the same inital data, an infinite family of weak solutiosn of the 3d Euler equations: a residual set in the space $C(R; L^2_{weak} (\Omega))$.</p>
+<p>DeLellis-Szekelyhidi: There exists a set of initial data $u<em>0 \in L^2 (\Omega)$ (not explicitly constructed, Baire argument) for which the Cauchy problem has, for the same inital data, an infinite family of weak solutiosn of the 3d Euler equations: a residual set in the space $C(R; L^2</em>{weak} (\Omega))$.</p>
 
 <p>These are also in $L^\infty$ so they have finite energy. (Built on Shnirelman and others….). This is a breakthrough…but it is not so physical. Maybe a selection mechanism….for NS we don’t have such a result. Leray solutions are not known to be unique. Any result like this for NS would be extremely important….connect it with turbulence. The lack of uniqueness, according to Leray, relates to turbulence.
-&lt;h2 id="shearflows:"&gt;Shear flows:&lt;/h2&gt;
-<script type="math/tex">u(x,t) = (u_1 (x_2), 0, u_3 (x_1 - t u_1 (x_2))).</script></p>
+<h2 id="shearflows:">Shear flows:</h2>
+$$u(x,t) = (u<em>1 (x</em>2), 0, u<em>3 (x</em>1 - t u<em>1 (x</em>2))).$$</p>
 
-<p>For $u_1, u_3 \in C^1$, the above shear flow is a classical solution of the Euler equations with pressure $p=0$. Yudovich used these to show the existence of solutions with exponentially growing high regularity norms.</p>
+<p>For $u<em>1, u</em>3 \in C^1$, the above shear flow is a classical solution of the Euler equations with pressure $p=0$. Yudovich used these to show the existence of solutions with exponentially growing high regularity norms.</p>
 
 <p>This example due to DiPerna-Majda (1987).</p>
 
 <p><strong>Theorem (DiPerna-Lions):</strong> Norm explosion in $W^{1,p}$ for Euler, for any $p \geq 1$.</p>
 
 <p>Idea of the proof:
-$ \partial_{x_2} u_3 (x_1 - t u_1 (x_2))=…$</p>
+$ \partial<em>{x</em>2} u<em>3 (x</em>1 - t u<em>1 (x</em>2))=…$</p>
 
-<p><strong>Theorem:</strong> The shear flow is a weak solution of the Euler equations in the sense of distribtuions in $R^3$, provided $u_1, u_3 \in L^2_{loc} (R^3)$. On the periodic box, we can do same thing and in this case we have finite energy.</p>
+<p><strong>Theorem:</strong> The shear flow is a weak solution of the Euler equations in the sense of distribtuions in $R^3$, provided $u<em>1, u</em>3 \in L^2_{loc} (R^3)$. On the periodic box, we can do same thing and in this case we have finite energy.</p>
 
 <p>Why do I stress the finite energy? This relates to the Onsager conjecture.</p>
 
 <p><strong>Theorem</strong> [Ill-posedness of the Euler equations in $C^{0,\alpha}$]:</p>
 
-<p>The shear flow with $C^{1,\alpha}$ components $u_1, u_3$. However, for $u_1, u_3 \in C^{0,\alpha}$ then the above shear flow is always in $C^{0, \alpha^2}$ which is a much larger space. We instantly lose the $C^{0, \alpha}$. There exists a shear flow which starts in $C^{0, \alpha}$ which, at any positive time, is not in $C^{0, \beta}$ for any $\beta &gt; \alpha^2$.</p>
+<p>The shear flow with $C^{1,\alpha}$ components $u<em>1, u</em>3$. However, for $u<em>1, u</em>3 \in C^{0,\alpha}$ then the above shear flow is always in $C^{0, \alpha^2}$ which is a much larger space. We instantly lose the $C^{0, \alpha}$. There exists a shear flow which starts in $C^{0, \alpha}$ which, at any positive time, is not in $C^{0, \beta}$ for any $\beta &gt; \alpha^2$.</p>
 
 <p>This family of solutions is compactly supported in space and time.</p>
 
 <p><strong>Other spaces and optimal spaces:</strong></p>
 
-<p>There are many layers of spaces between these H”older spaes. He writes a tower of inclusions between $C^{1,\alpha } \subset C^{0, \alpha}$. In fact, there is well-posedness
+<p>There are many layers of spaces between these H&quot;older spaes. He writes a tower of inclusions between $C^{1,\alpha } \subset C^{0, \alpha}$. In fact, there is well-posedness
 [Pak and Park] vs. failure of wp in $B^1_{\infty, infty}$ (Zygmund class) and failure in certain Triebel-Lizorkin spaces.</p>
 
 <p><strong>Weak limit of oscillating initial data:</strong></p>
 
 <p>DiPerna-Majda example…</p>
 
-<p>Shear flow with vorticity interface. Vortex sheet flows are irrotational off an interface. To build such solutions he takes $u_1, u_3$ as (parametrized) Heaviside functions.</p>
+<p>Shear flow with vorticity interface. Vortex sheet flows are irrotational off an interface. To build such solutions he takes $u<em>1, u</em>3$ as (parametrized) Heaviside functions.</p>
 
 <p>…wow…this talk is coming pretty fast, slides are changing…I stop typing and start to just try to keep up.
-&lt;h2 id="numericalinvestigationofblowupforthe3deuler"&gt;Numerical investigation of blowup for the 3d Euler&lt;/h2&gt;
+<h2 id="numericalinvestigationofblowupforthe3deuler">Numerical investigation of blowup for the 3d Euler</h2>
 John Gibbon gave a talk a few years ago on the history of these investigations. Tom Hou and Bob Kerr are competing and disagreeing in this direction….is there a singularity…maybe not?</p>
 
 <p><strong>Question:</strong> Does the soluton of the following PDE blow up?
-<script type="math/tex">
+$$
 \partial_t u - \nu \Delta u = |\nabla u |^4?
-</script></p>
+$$</p>
 
 <p>What would you try numerically to determine if it blows up or not? You can even collapse it to the corresponding 1d problem?</p>
 
@@ -323,129 +295,122 @@ Yudovich explored the DiPerna-Lions shear flow examples to see that norms measur
 <hr />
 
 <h1 id="benoitgrberthttp:www.math.sciences.univ-nantes.frgrebert:hamiltonianinterpolationforapproximationofpdes."><a href="http://www.math.sciences.univ-nantes.fr/~grebert/">Benoit Grébert</a>: Hamiltonian Interpolation for Approximation of PDEs.</h1>
+
 <p>(joint work [<a href="http://www.irisa.fr/ipso/perso/faou/publis/beaHPDE7.pdf">Grébert-Faou</a>] with <a href="http://www.irisa.fr/ipso/perso/faou/">Erwan Faou</a>)</p>
 
 <p><strong>Aim:</strong></p>
 
-<p>Take a PDE with solution u. Consider a numerical approximation $u^n$ built with a <em>symplectic integrator</em> which approximates $u(nh)$. We build a hamiltonian $H_h$ such that
-<script type="math/tex">u^n = \Phi_{Hh}^{nh}(u_0) + very ~small.</script></p>
+<p>Take a PDE with solution u. Consider a numerical approximation $u^n$ built with a <em>symplectic integrator</em> which approximates $u(nh)$. We build a hamiltonian $H<em>h$ such that
+$$u^n = \Phi</em>{Hh}^{nh}(u_0) + very ~small.$$</p>
 
 <p>I am concerned with the <strong>long time behavior of the numerical trajectory</strong>.</p>
 
 <p>My concern right now is not in estimating the quality of the approximation. Instead, I want to understand the <em>numerical flow</em>.</p>
 
-<p><strong>Outline:</strong></p>
+<p><strong>Outline:</strong>
 <ol>
-	<li>Finite dimensional Context (ODE)</li>
-	<li>PDE Context</li>
-	<li>Ideas of the proof (time permitting)</li>
+    <li>Finite dimensional Context (ODE)</li>
+    <li>PDE Context</li>
+    <li>Ideas of the proof (time permitting)</li>
 </ol>
 <h2 id="finitedimensionalcontext">Finite Dimensional Context</h2>
-<p>We go back to Moser’s theorem. A discrete symplectic map close to the identity can be approximated by a Hamiltonian flow. Consider an analytic symplectic map
-<script type="math/tex">
+We go back to Moser’s theorem. A discrete symplectic map close to the identity can be approximated by a Hamiltonian flow. Consider an analytic symplectic map
+$$
 R^{2n} \ni (p,q) \longmapsto \Psi(p,q) \in R^{2n}
-</script>
-with $\Psi = Id + O(\epsilon)$. Then $\exists~ H_\epsilon$ such that
-<script type="math/tex">\Psi = \Phi_{H\epsilon}^\epsilon + O(e^{-\frac{1}{c\epsilon}}).</script>
+$$
+with $\Psi = Id + O(\epsilon)$. Then $\exists~ H<em>\epsilon$ such that
+$$\Psi = \Phi</em>{H\epsilon}^\epsilon + O(e^{-\frac{1}{c\epsilon}}).$$
 ([Moser 1968], [Benettin-Giorgilli 1994])</p>
 
 <p>Numerical Context: Suppose I have a Hamiltonian ODE system
-<script type="math/tex"> (\dot{p}, \dot{q}) = X_H (p,q)
-</script>
+$$ (\dot{p}, \dot{q}) = X<em>H (p,q)
+$$
 and an associated numerical discrete-time-step symplectic integrator
-<script type="math/tex">
-(p_n, q_n)= \Psi_h^n (p_0, q_0).
-</script>
-We then have that $\Psi<em>{h} = \Phi</em>{Hh} + O(e^{-1/ch}).$ We obtain that $H_h (p_n, q_n) = H_h (p_0, q_0) + n e^{-1/ch}$. So, we are observing that the modified energy is essentially conserved for exponentially long times.</p>
+$$
+(p</em>n, q<em>n)= \Psi</em>h^n (p<em>0, q</em>0).
+$$
+We then have that $\Psi<em>{h} = \Phi</em>{Hh} + O(e^{-1/ch}).$ We obtain that $H<em>h (p</em>n, q<em>n) = H</em>h (p<em>0, q</em>0) + n e^{-1/ch}$. So, we are observing that the modified energy is essentially conserved for exponentially long times.</p>
 
-<p><strong>Backward Error Analysis</strong></p>
+<p><strong>Backward Error Analysis</strong>
 <ul>
-	<li><a href="http://www.springerlink.com/content/l687gym3wxgx5f07/">[Hairer-Lubich 1997]</a></li>
-	<li>[Reich 1999]</li>
+    <li><a href="http://www.springerlink.com/content/l687gym3wxgx5f07/">[Hairer-Lubich 1997]</a></li>
+    <li>[Reich 1999]</li>
 </ul>
 <h2 id="pdecontext">PDE Context</h2>
-<p><script type="math/tex"> H = H_0 + P</script>
-Here we imagine $H_0$ is the linear part and P is the nonlinear part. As an example, consider the cubic NLS on $T^d$. We can treat other equations as well. Let’s recall the <em>Hamiltonian formalism</em> in the Fourier variables:</p>
+$$ H = H<em>0 + P$$
+Here we imagine $H</em>0$ is the linear part and P is the nonlinear part. As an example, consider the cubic NLS on $T^d$. We can treat other equations as well. Let’s recall the <em>Hamiltonian formalism</em> in the Fourier variables:</p>
 
 <p>Expand $u$ to get
-<script type="math/tex">
-u = \sum \xi_j e^{ijx}, ~ {\overline{u}}= \sum \eta_j e^{-ijx}.
-</script>
+$$
+u = \sum \xi<em>j e^{ijx}, ~ {\overline{u}}= \sum \eta</em>j e^{-ijx}.
+$$
 We can then write, for each $j \in Z^d$,
-<script type="math/tex">
+$$
 {\dot{\xi}} = -i \frac{\partial H}{\partial \eta}
-</script>
-<script type="math/tex">
+$$
+$$
 {\dot{\eta}} = i \frac{\partial H}{\partial \xi}.
-</script>
+$$
 For the cubic NLS case, we obtain
-<script type="math/tex">
-H = \sum |j|^2 \xi_j \eta_j + \sum^* \xi_{k_1} \xi_{k_2} \eta_{l_1} \eta_{l_2}
-</script>
-where $\sum^*$ is the sum over all the parameters subject to the constraint $k_1 + k_2 = l_1 + l_2$.</p>
+$$
+H = \sum |j|^2 \xi<em>j \eta</em>j + \sum^* \xi<em>{k</em>1} \xi<em>{k</em>2} \eta<em>{l</em>1} \eta<em>{l</em>2}
+$$
+where $\sum^*$ is the sum over all the parameters subject to the constraint $k<em>1 + k</em>2 = l<em>1 + l</em>2$.</p>
 
 <p>The problem we face here is that the linear part is unbounded, and we have infinitely many dimensions as first obstructions in passing from the ODE to the PDE context.</p>
 
 <p><strong>Splitting Method:</strong>
-<script type="math/tex">\Phi_{P+H0 } \thicksim \Phi_p^h \circ \Phi_{H0}^h =^? \Phi_{Hh}^h.</script></p>
+$$\Phi<em>{P+H0 } \thicksim \Phi</em>p^h \circ \Phi<em>{H0}^h =^? \Phi</em>{Hh}^h.$$</p>
 
 <p>First naive idea: Use the Baker-Campbell-Haussdorf formula. We can then expand as a Lie series…
 to write
-<script type="math/tex">\Phi_p^h \circ \Phi_{H0}^h = e^{h\mathcal{L}p}e^{h\mathcal{L}H0} = e^{h\mathcal{Hh}}
-</script>
-with $H_h = H_0 + P + \frac{h}{2}{ P, H_0 } + \dots.
+$$\Phi<em>p^h \circ \Phi</em>{H0}^h = e^{h\mathcal{L}p}e^{h\mathcal{L}H0} = e^{h\mathcal{Hh}}
+$$
+with $H<em>h = H</em>0 + P + \frac{h}{2}{ P, H_0 } + \dots.
 $$</p>
 
 <p>To proceed, we will need conditions $small = h^N C(N,, | num sol |_H^N)$ NOT FAIR! So we need to work harder.</p>
 
 <p><strong>First Idea:</strong>
-Replace $hH_0$ by $A_0$ by cutting off to low frequencies. We can splt and impose the CFL condition.
+Replace $hH<em>0$ by $A</em>0$ by cutting off to low frequencies. We can splt and impose the CFL condition.
 Midpoint + split. He considers different cutoffs.</p>
 
-<p>We then consider $\Phi_p^h \circ \Phi_{A_0}^1$.</p>
+<p>We then consider $\Phi<em>p^h \circ \Phi</em>{A_0}^1$.</p>
 
 <p><strong>Second Idea:</strong> Use the Wiener Algebra. Space of functions with Fourier coefficients in $l^1$.</p>
 
 <hr />
 
-<p><strong>Theorem (<a href="http://www.irisa.fr/ipso/perso/faou/publis/beaHPDE7.pdf">Grébert-Faou</a>):</strong> For the approximation scheme $\Phi_p^h \circ \Phi_{A_0}^1$ there exists a (polynomial) modified energy $H_h$ such that</p>
+<p><strong>Theorem (<a href="http://www.irisa.fr/ipso/perso/faou/publis/beaHPDE7.pdf">Grébert-Faou</a>):</strong> For the approximation scheme $\Phi<em>p^h \circ \Phi</em>{A<em>0}^1$ there exists a (polynomial) modified energy $H</em>h$ such that</p>
 
-<script type="math/tex; mode=display">
-\| \Phi_p^h \circ \Phi_{A_0}^1 (\xi, \eta) - \Phi_{Hh}^h(\xi, \eta) \|_{l^1} \leq h^{N+1} (cN)^N
-</script>
+<p>$$
+| \Phi<em>p^h \circ \Phi</em>{A<em>0}^1 (\xi, \eta) - \Phi</em>{Hh}^h(\xi, \eta) |_{l^1} \leq h^{N+1} (cN)^N
+$$</p>
 
 <p>uniformly for $|(\xi, \eta)|_{l^1} \leq M.$</p>
 
 <p>So, assuming that the numerical trajectory is bounded in $l^1$ (as opposed to the stronger claim that it is bounded in $H^k$ for $k$ large) then
-<script type="math/tex">
-H_h (u^n) = H_h (u_0) + Cn h^{N+1}.
-</script></p>
+$$
+H<em>h (u^n) = H</em>h (u_0) + Cn h^{N+1}.
+$$</p>
 
 <hr />
 
-<p>Of course, I have to explain: what is $N$? This is related to a regularization condition. We know that $N = \frac{r-2}{r_0 - 2}$ where $r_0$ is the degree of $P$ (so 4 for cubic NLS). The parameter $r$ is determined by the condition:
-$ \forall ~ j = 1, \dots, r$ and for any $j$-tuple of integers $(k_1, \dots, k_j) \in Z^d$, we have
-<script type="math/tex">|\lambda_{k1} \pm \lambda_{k2} \pm \dots \pm \lambda_{kj}| \leq 2 \pi.</script></p>
+<p>Of course, I have to explain: what is $N$? This is related to a regularization condition. We know that $N = \frac{r-2}{r<em>0 - 2}$ where $r</em>0$ is the degree of $P$ (so 4 for cubic NLS). The parameter $r$ is determined by the condition:
+$ \forall ~ j = 1, \dots, r$ and for any $j$-tuple of integers $(k<em>1, \dots, k</em>j) \in Z^d$, we have
+$$|\lambda<em>{k1} \pm \lambda</em>{k2} \pm \dots \pm \lambda_{kj}| \leq 2 \pi.$$</p>
 
-<table>
-  <tbody>
-    <tr>
-      <td>CFL: $</td>
-      <td>\lambda_k</td>
-      <td>\leq C$.</td>
-    </tr>
-  </tbody>
-</table>
+<p>CFL: $|\lambda_k | \leq C$.</p>
 
 <p>He describes some examples where $N = 3, 4$ and $N=7$.</p>
 
 <p>For cubic NLS, we end up obtaining
-<script type="math/tex">Hh = \frac{1}{h} A_0 + Z_1 + h Z_2 + \dots
-</script>
+$$Hh = \frac{1}{h} A<em>0 + Z</em>1 + h Z<em>2 + \dots
+$$
 where
-<script type="math/tex">
-Z_1 = \sum^* \frac{e^{i(\lambda_{k1} \pm \lambda_{k2} \pm \dots \pm \lambda_{kj})}}{e^{i(\lambda_{k1} \pm \lambda_{k2} \pm \dots \pm \lambda_{kj})} - 1}.
-</script>
+$$
+Z</em>1 = \sum^* \frac{e^{i(\lambda<em>{k1} \pm \lambda</em>{k2} \pm \dots \pm \lambda<em>{kj})}}{e^{i(\lambda</em>{k1} \pm \lambda<em>{k2} \pm \dots \pm \lambda</em>{kj})} - 1}.
+$$
 You can now see how the zero divisor issue emerges and is resolved.</p>
 
 <hr />
@@ -485,5 +450,5 @@ You can now see how the zero divisor issue emerges and is resolved.</p>
 
 </body>
 </html>
-<!--  GitHub Powered! | Generated 2015-05-05 03:19:02 -0400 -->
+<!--  GitHub Powered! | Generated 2015-05-05 03:25:21 -0400 -->
 

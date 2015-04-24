@@ -15,10 +15,8 @@
 
   
   <meta name="description" content="<!-- -->
-
 "/>
   <meta property='og:description' content="<!-- -->
-
 "/>
   
 
@@ -109,19 +107,19 @@
 
 <p><a rel="attachment wp-att-985" href="http://blog.math.toronto.edu/colliand/2012/03/13/ias-workshop-on-symplectic-dynamics-2-tuesday/mathhall/"><img class="alignnone size-medium wp-image-985" src="http://blog.math.toronto.edu/colliand/files/2012/03/mathhall-214x300.jpg" alt="This image taken from IAS web site." width="214" height="300" /></a></p>
 
-<p> </p>
+<p>&nbsp;</p>
 
 <p><a href="http://www.math.ias.edu/wsd2">Workshop web page</a>
-&lt;h2 id="tuesday:2012-03-13"&gt;Tuesday: 2012-03-13&lt;/h2&gt;</p>
+<h2 id="tuesday:2012-03-13">Tuesday: 2012-03-13</h2>
 <ul>
-	<li>9:00 - 10:00    Laszlo Szekelyhidi, University of Leipzig, “The h-principle for the Euler equations”  <a href="https://www.math.ias.edu/files/hofer/szekelyhidiab.pdf">abstract</a></li>
-	<li>10:15 - 11:15  Camilo de Lellis, University of Zurich, “The h-principle for the Euler equations Part 2”  <a href="https://www.math.ias.edu/files/hofer/delellisab.pdf">abstract</a></li>
-	<li>11:30 - 12:30  Vladimir Sverak, University of Minnesota, “On the long-time dynamics of some infinite-dimensional Hamiltonian systems”  <a href="https://www.math.ias.edu/files/hofer/sverakab.pdf">abstract</a></li>
-	<li>2:30 - 3:30       Antoine Choffrut, University of Leipzig, “On the local structure of the set of stationary flows to the 2D incompressible Euler equations”  <a href="https://www.math.ias.edu/files/hofer/choffrutab.pdf">abstract</a></li>
-	<li>4:30 - 5:30       Thomas Kappeler, University of Zurich, “Symplectic techniques for integrable PDEs”  <a href="https://www.math.ias.edu/files/hofer/kappelerab.pdf">abstract</a></li>
+    <li>9:00 - 10:00    Laszlo Szekelyhidi, University of Leipzig, “The h-principle for the Euler equations”  <a href="https://www.math.ias.edu/files/hofer/szekelyhidiab.pdf">abstract</a></li>
+    <li>10:15 - 11:15  Camilo de Lellis, University of Zurich, “The h-principle for the Euler equations Part 2”  <a href="https://www.math.ias.edu/files/hofer/delellisab.pdf">abstract</a></li>
+    <li>11:30 - 12:30  Vladimir Sverak, University of Minnesota, “On the long-time dynamics of some infinite-dimensional Hamiltonian systems”  <a href="https://www.math.ias.edu/files/hofer/sverakab.pdf">abstract</a></li>
+    <li>2:30 - 3:30       Antoine Choffrut, University of Leipzig, “On the local structure of the set of stationary flows to the 2D incompressible Euler equations”  <a href="https://www.math.ias.edu/files/hofer/choffrutab.pdf">abstract</a></li>
+    <li>4:30 - 5:30       Thomas Kappeler, University of Zurich, “Symplectic techniques for integrable PDEs”  <a href="https://www.math.ias.edu/files/hofer/kappelerab.pdf">abstract</a></li>
 </ul>
 <h1 id="laszloszekelyhidihttp:www.math.uni-leipzig.deszekelyhidiwelcome.html:theh-principlefortheeulerequations"><a href="http://www.math.uni-leipzig.de/~szekelyhidi/Welcome.html">Laszlo Szekelyhidi</a>: <em>The h-principle for the Euler equations</em></h1>
-<p><img src="http://www.math.uni-leipzig.de/~szekelyhidi/Welcome_files/DSC_0175.jpg" alt="Lazlo Szekelyhidi" width="220" height="194" /></p>
+<img src="http://www.math.uni-leipzig.de/~szekelyhidi/Welcome_files/DSC_0175.jpg" alt="Lazlo Szekelyhidi" width="220" height="194" /></p>
 
 <p>(chalk talk; joint work w. Camillo De Lellis)</p>
 
@@ -129,16 +127,15 @@
 
 <p>Euler</p>
 
-<script type="math/tex; mode=display">\partial_t v + \nabla \cdot (v \otimes v) + \nabla p = 0; \nabla \cdot v = 0.</script>
+<p>$$\partial_t v + \nabla \cdot (v \otimes v) + \nabla p = 0; \nabla \cdot v = 0.$$</p>
 
 <p>The spatial dimension $n=2,3$, certainly $&gt;1$. We will speak about weak solutions $v \in L^2_{loc} (T^n \times [0,T])$ and we throw all derivatives onto test functions.</p>
 
-<p>Why look at weak solutions? The equations tell you conservation of mass and momentum. The derivation is done from a continuum analysis so this formulation is natural. For $n=3$, another reason is the relationship with turbulence (<strong>K41, O49</strong>). The story starts with <em>anomalous dissiipation</em>. The observation is that if you consider $NS_\nu$ with small $\nu$ then formally, the dissipation rate
-<script type="math/tex">% <![CDATA[
-
+<p>Why look at weak solutions? The equations tell you conservation of mass and momentum. The derivation is done from a continuum analysis so this formulation is natural. For $n=3$, another reason is the relationship with turbulence (<strong>K41, O49</strong>). The story starts with <em>anomalous dissiipation</em>. The observation is that if you consider $NS<em>\nu$ with small $\nu$ then formally, the dissipation rate
+$$
 \nu \int |\nabla v|^2 dx &gt; \epsilon.
- %]]></script>
-This is observed in experiments as $\nu \rightarrow 0$. If you plot $\log k$ vs. $\log E(k)$ there are three different regimes: a low frequency regime related to the geometry of the domain, an inertial range with slope $-5/3$ and then a rapid dissipation at high frequencies. Bob Kohn once said that a log-log plot always looks linear. ….discussion with Peter and Camillo….”Bob Kohn is not here so let’s leave him alone.”  <strong>K41</strong> looked at ensemble averages and he derived the $-5/3$ scaling law. <strong>O49</strong> was thinking of a single solution. He said that if we beleive in this kind of log-log picture then in the intermediate regime we are far from dissipation so the nonlinear term is responsible for the $-5/3$ decay. Is it possible to see a single solution that displays this type of decay. If you translate this point of view into a regularity statement and look for $ v \in L^\infty_t C^\alpha_x$ then when $\alpha &gt; 1/3$ we have energy conservation and for $\alpha &lt; 1/3$ then you have anomalous dissipation possible. Klainerman: Is this $1/3$ easy to see? Discussion: Yes, it is just scaling, look at Fourier coefficients….</p>
+$$
+This is observed in experiments as $\nu \rightarrow 0$. If you plot $\log k$ vs. $\log E(k)$ there are three different regimes: a low frequency regime related to the geometry of the domain, an inertial range with slope $-5/3$ and then a rapid dissipation at high frequencies. Bob Kohn once said that a log-log plot always looks linear. ….discussion with Peter and Camillo….”Bob Kohn is not here so let’s leave him alone.”  <strong>K41</strong> looked at ensemble averages and he derived the $-5/3$ scaling law. <strong>O49</strong> was thinking of a single solution. He said that if we beleive in this kind of log-log picture then in the intermediate regime we are far from dissipation so the nonlinear term is responsible for the $-5/3$ decay. Is it possible to see a single solution that displays this type of decay. If you translate this point of view into a regularity statement and look for $ v \in L^\infty</em>t C^\alpha_x$ then when $\alpha &gt; 1/3$ we have energy conservation and for $\alpha &lt; 1/3$ then you have anomalous dissipation possible. Klainerman: Is this $1/3$ easy to see? Discussion: Yes, it is just scaling, look at Fourier coefficients….</p>
 
 <p><strong>Eyink, Constantin-E-Titi</strong> solved the $\alpha &gt; 1/3$ part of Onsager’s conjecture. There is basically nothing known in the $\alpha &lt; 1/3$.</p>
 
@@ -149,7 +146,7 @@ This is observed in experiments as $\nu \rightarrow 0$. If you plot $\log k$ vs.
 <p><strong>Theorem  (Scheffer-Shnirelman):</strong> There exists a nontrivial weak solution with compact support in time.</p>
 
 <p>This solution can be thought of as having initial data zero, then it is not zero and after a while, it is zero again. (This solution is far from regularity $1/3$.)
-&lt;h2 id="h-principlegromov"&gt;h-principle (Gromov)&lt;/h2&gt;
+<h2 id="h-principlegromov">h-principle (Gromov)</h2>
 This theorem can be viewed as a statement of the form of the h-principle. This principle should be viewed as a different tpe of statement related to Hadamard ill-posedness.</p>
 
 <p><strong>Theorem (Nash-Kuiper):</strong> Any strictly short smooth embedding of (compact) $M^n \rightarrow R^{n+1}$ can be uniformly approximated by $c^1$ isometric embeddings.</p>
@@ -158,33 +155,32 @@ This theorem can be viewed as a statement of the form of the h-principle. This p
 
 <p>Berti: What is short? Answer: Distances in the image are shorter than distances in the domain. So, Lipschitz with constant less than 1.</p>
 
-<p>Two conditions: A topological global condition, an embedding. A local condition, isometric.</p>
+<p>Two conditions: A topological global condition, an embedding. A local condition, isometric.
 <ul>
-	<li>global: embedding</li>
-	<li>local: isometric</li>
+    <li>global: embedding</li>
+    <li>local: isometric</li>
 </ul>
-<p>General statement. If you can satisfy the global constraint, you can twist it satisfy the local statement. Another example is Gromov’s theorem
+General statement. If you can satisfy the global constraint, you can twist it satisfy the local statement. Another example is Gromov’s theorem
 saying 2 forms can be converted into symplectic forms.</p>
 
 <p>An idea of the proof of this statement (Nash): $M^n \rightarrow R^{n+2}$. This is basically about a single chart so let’s look instead at $\Omega \subset R^n$ and we consider the embedding $\Omega \rightarrow R^{n+2}$. We have
-<script type="math/tex">
+$$
 \nabla u^T \nabla u = g
-</script>
+$$
 and strictly short means $g - \nabla u^T \nabla u &gt;0$. We can make wrinkles. Wrinkling is written as a spiral
-<script type="math/tex">\tilde{u} (x) = u(x) + \frac{a(x)}{\lambda} (\sin (\lambda x \cdot \xi) \zeta (x) + \cos (\lambda x \cdot \xi) \eta (x)),</script>
+$$\tilde{u} (x) = u(x) + \frac{a(x)}{\lambda} (\sin (\lambda x \cdot \xi) \zeta (x) + \cos (\lambda x \cdot \xi) \eta (x)),$$
 where $\zeta, \eta$ are unit normal to $u(\omega)$. This looks like a “telephone cord”. What happens in orthogonal directions? How does this affect the metric? This is something you can calculate:
-<script type="math/tex">
+$$
 \nabla \tilde{u}^T \nabla \tilde{u} = \nabla u^T \nabla u + a^2 (x) \zeta \otimes \zeta + O(\frac{1}{\lambda}).
-</script>
+$$
 This means I have a lot of freedom to change the metric in a fixed given direction. This allows me to write  $g - \nabla u^T \nabla u $ as a sum of terms $\sum a_j^2 (x) \xi^j \otimes \xi^j.$ It is important here that the $\xi$ does not depend upon $x$. This allows me to achieve a reduction in the difference</p>
 
-<script type="math/tex; mode=display">\| g - \nabla u^T \nabla u \|_0 = O(\frac{1}{\lambda}),</script>
+<p>$$| g - \nabla u^T \nabla u |_0 = O(\frac{1}{\lambda}),$$</p>
 
-<script type="math/tex; mode=display">\| u - \tilde{u} \|_0 =  O(\frac{1}{\lambda}), </script>
+<p>$$| u - \tilde{u} |_0 =  O(\frac{1}{\lambda}), $$</p>
 
-<p><script type="math/tex">% <![CDATA[
-\| u - \tilde{u} \|<em>1 \thicksim \| a \|</em>0 \thicksim \| g - \nabla u^T \nabla u \|_0^{1/2}. %]]></script>
-&lt;h2 id="lipschitzisometries"&gt;Lipschitz isometries&lt;/h2&gt;
+<p>$$| u - \tilde{u} |<em>1 \thicksim | a |</em>0 \thicksim | g - \nabla u^T \nabla u |_0^{1/2}.$$
+<h2 id="lipschitzisometries">Lipschitz isometries</h2>
 $\Omega \rightarrow R^n$</p>
 
 <p><strong>Kirchlein</strong> Baire Category Method.</p>
@@ -199,33 +195,18 @@ $\Omega \rightarrow R^n$</p>
 
 <p><strong>Example.</strong> The original system (O). (Tartar-DiPerna ideas)</p>
 
-<p><script type="math/tex">\sum_{i=1}^n A_i \partial_i z = 0, ~in D’</script>
-<script type="math/tex"> z(x) \in K, ~a.e. ~x</script></p>
+<p>$$\sum<em>{i=1}^n A</em>i \partial_i z = 0, ~in D’$$
+$$ z(x) \in K, ~a.e. ~x$$</p>
 
 <p>and we want to move to same relaxed condition (R) but with $z(x) \in K^{\Lambda}$, which he refers to as the convex hull of $K$. The principle is that most (in the sense of Baire Category) solutions of the relaxed setting R are solutions of the original problem O.</p>
 
-<table>
-  <tbody>
-    <tr>
-      <td>Question: What is the set $K^\Lambda$? This is the “wave cone”. Let $z: R^n \rightarrow R^d$ here. $\Lambda = [ \hat{z}: \exists \xi \in S^{n-1} ~s.t.~ \sum_i A_i \xi_i \hat{z} = 0]$. So, these are the directions in which we can oscillate while maintaining the conservation law and keeping the constitutive relations intact. So, that is $\Lambda$ and then the $\Lambda$-convex hull is like this. $z \notin K^\Lambda$ if $\exists ~ f ~ \Lambda$-convex so that $f(z) &gt; 0, f</td>
-      <td>_K \leq 0$. You can separate. This general point of view was developed by <strong>Tartar, DiPerna</strong>.</td>
-    </tr>
-  </tbody>
-</table>
+<p>Question: What is the set $K^\Lambda$? This is the “wave cone”. Let $z: R^n \rightarrow R^d$ here. $\Lambda = [ \hat{z}: \exists \xi \in S^{n-1} ~s.t.~ \sum<em>i A</em>i \xi<em>i \hat{z} = 0]$. So, these are the directions in which we can oscillate while maintaining the conservation law and keeping the constitutive relations intact. So, that is $\Lambda$ and then the $\Lambda$-convex hull is like this. $z \notin K^\Lambda$ if $\exists ~ f ~ \Lambda$-convex so that $f(z) &gt; 0, f|</em>K \leq 0$. You can separate. This general point of view was developed by <strong>Tartar, DiPerna</strong>.</p>
 
 <p>Klainerman: what is the “h”? Answer: In this setting “h” stands for homotopy but that is not so present in this discussion. My view of the weak version of the h-principle is that there are a lot of solutions which have less regularity. De Lellis: Gromov woud say that you can take your short map and homotopize it while maintaining that it is an isometry, except at the endpoint.
-&lt;h2 id="applicationtoeuler"&gt;Application to Euler&lt;/h2&gt;
+<h2 id="applicationtoeuler">Application to Euler</h2>
 Now, you can write the Euler equations in this form by renaming the nonlinearity as a new variable. He shows how to do this by renaming some variables, interprets the associated $K$ and $K^\Lambda$.</p>
 
-<table>
-  <tbody>
-    <tr>
-      <td><strong>Theorem (DL-Sz):</strong> Let $\overline{e}$ be a given function on $T^n \times [0,T]$ and let $(\overline{v}, \overline{u}, \overline{q})$ be smooth strict subsolution. Then $\exists ~ v_k \in L^\infty$, a sequence of weak solutions of Euler such that $v_k \rightharpoonup \overline{v}$ in $L^\infty$ and $\frac{</td>
-      <td>v_k</td>
-      <td>^2}{2} = \overline{e}$ a.e. $(x,t)$.</td>
-    </tr>
-  </tbody>
-</table>
+<p><strong>Theorem (DL-Sz):</strong> Let $\overline{e}$ be a given function on $T^n \times [0,T]$ and let $(\overline{v}, \overline{u}, \overline{q})$ be smooth strict subsolution. Then $\exists ~ v<em>k \in L^\infty$, a sequence of weak solutions of Euler such that $v</em>k \rightharpoonup \overline{v}$ in $L^\infty$ and $\frac{|v_k|^2}{2} = \overline{e}$ a.e. $(x,t)$.</p>
 
 <p>This is the “local part” of the h-principle. Given one subsolution, I can construct a solution by adding these waves. More or less, what Scheffer-Shnirelman have done is to take 0 as the subsolution.</p>
 
@@ -242,28 +223,28 @@ Now, you can write the Euler equations in this form by renaming the nonlinearity
 <p>Questions:</p>
 
 <p>Sverak: If you take a sequence of smooth solutions onverging to your data, is there any relation to your solution? Answer: It depends how it converges. Sverak: The best you can with continuous. Answer: I’m not sure.
-&lt;h1 id="camilodelellishttp:user.math.uzh.chdelellis:theh-principlefortheeulerequationspart2"&gt;<a href="http://user.math.uzh.ch/delellis/">Camilo de Lellis</a>: <em>The h-principle for the Euler equations Part 2</em>&lt;/h1&gt;
+<h1 id="camilodelellishttp:user.math.uzh.chdelellis:theh-principlefortheeulerequationspart2"><a href="http://user.math.uzh.ch/delellis/">Camilo de Lellis</a>: <em>The h-principle for the Euler equations Part 2</em></h1>
 (continuation of previous talk; chalk talk)</p>
 
 <p>I’ll start by mentioning some related results in the literature.</p>
 
-<p>Survey article: <strong>D-Sz</strong> posted on web in 2011 contains all this literature.</p>
+<p>Survey article: <strong>D-Sz</strong> posted on web in 2011 contains all this literature.
 <ul>
-	<li><strong>Wiedeman:</strong> Global existence of weak solutions for any $L^2$ initial data in $R^3$. This would have been a fantastic theorem if it had not been too many solutions. This is the global analog of what was outlined before. Kappeler: ARe they adminssible? Answer: No. We are not anywhere near the blowup problem.</li>
-	<li><strong>Sz-Wiedemann:</strong> You can approximate any measure-valued solutions (a la DiPerna-Majda) with exact solutions.</li>
-	<li><strong>Sz-Wiedemann:</strong> The set of “bad” initial data is $L^2$-dense.</li>
+    <li><strong>Wiedeman:</strong> Global existence of weak solutions for any $L^2$ initial data in $R^3$. This would have been a fantastic theorem if it had not been too many solutions. This is the global analog of what was outlined before. Kappeler: ARe they adminssible? Answer: No. We are not anywhere near the blowup problem.</li>
+    <li><strong>Sz-Wiedemann:</strong> You can approximate any measure-valued solutions (a la DiPerna-Majda) with exact solutions.</li>
+    <li><strong>Sz-Wiedemann:</strong> The set of “bad” initial data is $L^2$-dense.</li>
 </ul>
-<p>These techniques can also be applied to other equations.</p>
+These techniques can also be applied to other equations.
 <ul>
-	<li>Incompressible porous medium equations. Some class of active scalar equations. <strong>Caddoba-Faoco-Grancedo</strong>, <strong>Shydkoy</strong>, <strong>Sz</strong>.</li>
-	<li>Compressible Euler. <strong>D-Sz</strong>, <strong>Chiararoli</strong>, <strong>Chiadaroli-D</strong>. (Higher dimensional conservation laws have a striking nonuniqueness, contrast with the entropy conditions in 1d)</li>
+    <li>Incompressible porous medium equations. Some class of active scalar equations. <strong>Caddoba-Faoco-Grancedo</strong>, <strong>Shydkoy</strong>, <strong>Sz</strong>.</li>
+    <li>Compressible Euler. <strong>D-Sz</strong>, <strong>Chiararoli</strong>, <strong>Chiadaroli-D</strong>. (Higher dimensional conservation laws have a striking nonuniqueness, contrast with the entropy conditions in 1d)</li>
 </ul>
-<p>The fact that there exist $C^1$ isometric embeddings uniformly approximating any short smooth embedding was surprising.</p>
+The fact that there exist $C^1$ isometric embeddings uniformly approximating any short smooth embedding was surprising.</p>
 
 <p><strong>Theorem (D-Sz 2011):</strong> For any given $e: [0,1] \rightarrow R^+$ smooth. Then there exists a $C^0$ solution of incompressible Euler in $T^3 \times [0,1]$ such that
-<script type="math/tex">
+$$
 e(t) = \frac{1}{2} \int \frac{|v|^2}{2} (x,t) dx.
-</script></p>
+$$</p>
 
 <p>We are moving towards the lower part of the conjecture of Onsager. I can’t claim this is saying anything about turbulence, but it does speak to the issues of dynamics of solutions viewed on Fourier coefficients.</p>
 
@@ -288,26 +269,26 @@ e(t) = \frac{1}{2} \int \frac{|v|^2}{2} (x,t) dx.
 <p>There are always successive one dimensional layers in any convex integration, in any h-principle appliation. To improve these constructions and obtain the $C^0$ statement we need to replace these constructions by higher dimensional generalizations. This is a direction suggested also by Gromov in his book.</p>
 
 <p>…slowing down on typing….I’m just going to watch this.
-&lt;h1 id="vladimirsverakhttp:math.umn.edusverak:onthelong-timedynamicsofsomeinfinite-dimensionalhamiltoniansystems"&gt;<a href="http://math.umn.edu/~sverak/">Vladimir Sverak</a>: <em>On the long-time dynamics of some infinite-dimensional Hamiltonian systems</em>&lt;/h1&gt;
+<h1 id="vladimirsverakhttp:math.umn.edusverak:onthelong-timedynamicsofsomeinfinite-dimensionalhamiltoniansystems"><a href="http://math.umn.edu/~sverak/">Vladimir Sverak</a>: <em>On the long-time dynamics of some infinite-dimensional Hamiltonian systems</em></h1>
 <img src="http://www.math.umn.edu/pacim/faculty%20photo/sverak2.jpg" alt="Vladimir Sverak" />
-&lt;h2 id="mainexamples"&gt;2 main examples&lt;/h2&gt;</p>
+<h2 id="mainexamples">2 main examples</h2>
 <ol>
-	<li>$w_t + u \nabla w =0, ~ w = \curl u, \nabla \cdot u = 0, x \in T^2</li>
-	<li>$NLS_3 (T^2)$</li>
+    <li>$w<em>t + u \nabla w =0, ~ w = \curl u, \nabla \cdot u = 0, x \in T^2</li>
+    <li>$NLS</em>3 (T^2)$</li>
 </ol>
-<p>Thanks to Shnirelman, Kuksin, Choffrut, Keel, Polacik (slide changed fast might be incomplete).</p>
+Thanks to Shnirelman, Kuksin, Choffrut, Keel, Polacik (slide changed fast might be incomplete).</p>
 
 <p>Speculative picutre in Fourier space.</p>
 
 <p>There is an interesting possibilty that on the macroscopc scale the dynamics might be simpler than in finite dimensional cases. Why? If you look at the dynamics on the Fourier space, at time $t=0$, we impose some nice initial data and as tiem evolves, some part of the solution moves toward infinite frequency. Everything in this direction is very hard to establish. There are some obstructions to this behavior. For example, KAM and complete integrability block this phenomena. We consider here “generic solutions”. Even though the initial data might be very complicated, we might end up with complexity moving into the high Fourier modes and what remains will be dictated by the conservation laws. This should be contrasted with finite-d systems. If one truncates the PDE in a naive way, we will initially see the same type of picture (motion toward infinite frequencies) and then we will hit the frequency cutoff and there will eventually be a thermalization. The “complexity” has “nowhere to go”.</p>
 
-<p>Let’s look at defocusing $NLS_3$. We have, for this equation, three basic conserved quantities:</p>
+<p>Let’s look at defocusing $NLS_3$. We have, for this equation, three basic conserved quantities:
 <ul>
-	<li>Energy</li>
-	<li>Momentum</li>
-	<li>Mass</li>
+    <li>Energy</li>
+    <li>Momentum</li>
+    <li>Mass</li>
 </ul>
-<p>Variational principal. We can think of the equation as a variatonal principal: minimize E subject to the mass=m and momentum=p constraints. We can compare this situation to 2D Euler. (In 3D there is the possibility that everything goes to infinity.) The $L^2$ norm and momentum provide constraints and the minimization principle gives you some nontrivial solutions even in the linear case.</p>
+Variational principal. We can think of the equation as a variatonal principal: minimize E subject to the mass=m and momentum=p constraints. We can compare this situation to 2D Euler. (In 3D there is the possibility that everything goes to infinity.) The $L^2$ norm and momentum provide constraints and the minimization principle gives you some nontrivial solutions even in the linear case.</p>
 
 <p>The most optimisitic scenario for the transfer to high frequencies is that for a generic solution over a long period of time, the solution will spend most of its time (in some weak topology) near this manifold of minimizers of $E$ subject to the constraints given by parameters $p,m$. The natural “phase space” for solutions is $H^1$ and we view the manifold $M(p,m) subset H^1$. Ergodicity.</p>
 
@@ -321,53 +302,43 @@ e(t) = \frac{1}{2} \int \frac{|v|^2}{2} (x,t) dx.
 
 <p>These are the “end states” which solutions approach in the weak topology.</p>
 
-<p><strong>Question:</strong> Does every $\psi \in \Omega_+ (\psi_0)$ have this property?</p>
+<p><strong>Question:</strong> Does every $\psi \in \Omega<em>+ (\psi</em>0)$ have this property?</p>
 
-<p>Heuristics: If $\psi \in \Omega_+ (\psi_0)$ then the high frequency part has already separated.</p>
+<p>Heuristics: If $\psi \in \Omega<em>+ (\psi</em>0)$ then the high frequency part has already separated.</p>
 
 <p>Interpretation:</p>
 
 <p>The solutions do not quite approach $M(p,m)$. there is probably some escape….ack slide changed.
-&lt;h2 id="dincompressibleeuler"&gt;2D incompressible Euler&lt;/h2&gt;
+<h2 id="dincompressibleeuler">2D incompressible Euler</h2>
 the situation is quite similar. The difference between 2D Euler and NLS is that, in some sense, 2D Euler is a Poisson system instead of a Hamiltonian system. The system is a Hamiltonian system on symplectic leaves. Formally, 2D Euler should be viewed as a family of Hamiltonian systems and the orbit takes place on the leaf.</p>
 
 <p>Fourier representation. Stream function. Energy. Conserved quantities associated with vorticity transport.</p>
 
 <p>Natural “phase space”…. $L^\infty (T^2)$ with a weak * topology. <strong>Yudovich</strong> has shown the evolution is well-posed in $L^\infty (T^2)$. We have the necessary well-posedness pieces in place. Importantly for us, in this context of developing fine structures in teh flow, we have the stability result: If the data converges weak start then the same is true at later times. this follows from the proof of Yudovich.</p>
 
-<p>Analogy with NLS. He draws a table.</p>
+<p>Analogy with NLS. He draws a table.
 <ul>
-	<li>Phase space: $H^1$ ….  $L^\infty$</li>
-	<li>Weakly continuous: Momentum, mass …. $ E = \int -\frac{1}{2} \omega.$</li>
-	<li>Lower semicontinues: Energy…..  ack slide changed.</li>
+    <li>Phase space: $H^1$ ….  $L^\infty$</li>
+    <li>Weakly continuous: Momentum, mass …. $ E = \int -\frac{1}{2} \omega.$</li>
+    <li>Lower semicontinues: Energy…..  ack slide changed.</li>
 </ul>
-<p>Fourier picture. Variational principle, related to the notion of “mixing” introduced by <strong>A. Shnirelman</strong>). We minimize the energy subject to the constraints associated to the weakly continuous quantities. This produces a steady state solution (whih depends on $f_0$).</p>
+Fourier picture. Variational principle, related to the notion of “mixing” introduced by <strong>A. Shnirelman</strong>). We minimize the energy subject to the constraints associated to the weakly continuous quantities. This produces a steady state solution (whih depends on $f_0$).</p>
 
 <p>More geometric picture. We know that a good topology is the weak * topology on $L^\infty$. We can therefore study the weak * closure of the orbit.</p>
 
-<table>
-  <tbody>
-    <tr>
-      <td>Example: Data that looks like $\omega_0 = \chi_A - \chi_B.$ Here $B = T^2 \backslash A, ~</td>
-      <td>A</td>
-      <td>=</td>
-      <td>B</td>
-      <td>$.</td>
-    </tr>
-  </tbody>
-</table>
+<p>Example: Data that looks like $\omega<em>0 = \chi</em>A - \chi_B.$ Here $B = T^2 \backslash A, ~ |A| = |B|$.</p>
 
 <p><strong>Onsager 1947</strong>, <strong>Montgomery-Johce, 1970s</strong>, <strong>Miller, Robert 1990s</strong>, <strong>Turkington 1990s</strong>, closely related to <strong>Shnirelman’s</strong> notion of “mixing”.</p>
 
 <p>Looks similar to Ising model, except that the interaction is long-range. “Most-probable” configuration for a given energy $E$? But we specify here the number of configuration cells that have sign +1, and how many have -1. We can then do the usual statistical mechanics calculations.</p>
 
-<p>He draws another analogy diagram.</p>
+<p>He draws another analogy diagram.
 <ul>
-	<li>NLS …. 2D Euler</li>
-	<li>$C^N$…..Ising config</li>
-	<li>Classical Maxwell Boltzmann microcannical ensemble picture……fermions (generalized) with long range interaction.</li>
+    <li>NLS …. 2D Euler</li>
+    <li>$C^N$…..Ising config</li>
+    <li>Classical Maxwell Boltzmann microcannical ensemble picture……fermions (generalized) with long range interaction.</li>
 </ul>
-<p>Full ergodicity seems….ack.</p>
+Full ergodicity seems….ack.</p>
 
 <p>A more geometric picture for Euler (a sketch).</p>
 
@@ -381,31 +352,31 @@ the situation is quite similar. The difference between 2D Euler and NLS is that,
 
 <p>An example where transfer to high frequencies was proved: Landau damping.</p>
 
-<p>The only situation where this was rigorously proved wiath the Vlasov-Poisson system.</p>
+<p>The only situation where this was rigorously proved wiath the Vlasov-Poisson system.
 <ul>
-	<li>Landau 1946</li>
-	<li>Caglioti-Maffei</li>
-	<li>Hwang-Velazquez 2008</li>
-	<li>Mouhot-Villani 2009</li>
+    <li>Landau 1946</li>
+    <li>Caglioti-Maffei</li>
+    <li>Hwang-Velazquez 2008</li>
+    <li>Mouhot-Villani 2009</li>
 </ul>
-<p>Is there an analog of Landau dampoing possible for 2D Euler?</p>
+Is there an analog of Landau dampoing possible for 2D Euler?
 <ol>
-	<li>Linear Landau damping: Yes (<strong>Sverak</strong>)</li>
-	<li>Nonlinear case: probably yes, but seems more difficult than the Vlasov-Poisson case.</li>
+    <li>Linear Landau damping: Yes (<strong>Sverak</strong>)</li>
+    <li>Nonlinear case: probably yes, but seems more difficult than the Vlasov-Poisson case.</li>
 </ol>
-<p>Is there an analog for this in the 2d NLS case? This seems more difficult in the NLS case. Transfer to high frequencies for dispersive equations:</p>
+Is there an analog for this in the 2d NLS case? This seems more difficult in the NLS case. Transfer to high frequencies for dispersive equations:
 <ul>
-	<li>2d NLS: “I-team”</li>
-	<li>Various model situations: Bourgain,…</li>
+    <li>2d NLS: “I-team”</li>
+    <li>Various model situations: Bourgain,…</li>
 </ul>
-<p>Questions:
+Questions:
 1. Can you formulate a stability statement related to your question about the “end states” in the Schrodinger setting? Answer: I expect there should be stability statements around the energy minimizers subject to mass and momentum constraints.
 2. Do you expect corresponding statements for the focusing problem (when you don’t expect blowup)? Yes, but there will be a weak convergence to soliton instead of the “breather” energy minimizers.</p>
 
 <p>In discussion after the talk, Sverak suggested that these minimizers are not localized onto single Fourier modes and instead appear to be some kind of “breather” solution. These objects should have variational stability properties resembling corresponding statements about solitons and built along the motif of Arnold Stability results as appearing in the book by <strong>Khesin</strong>.</p>
 
 <p>T. Oh reported to me that some studies like those suggested in this talk appear in work of <a href="http://arxiv.org/abs/1009.5737">Chatterjee-Kirkpatrick</a>.
-&lt;h1 id="antoinechoffruthttp:www.math.uni-bonn.depeoplechoffrut:onthelocalstructureofthesetofstationaryflowstothe2dincompressibleeulerequations"&gt;<a href="http://www.math.uni-bonn.de/people/choffrut/">Antoine Choffrut</a>: <em>On the local structure of the set of stationary flows to the 2D incompressible Euler equations</em>&lt;/h1&gt;
+<h1 id="antoinechoffruthttp:www.math.uni-bonn.depeoplechoffrut:onthelocalstructureofthesetofstationaryflowstothe2dincompressibleeulerequations"><a href="http://www.math.uni-bonn.de/people/choffrut/">Antoine Choffrut</a>: <em>On the local structure of the set of stationary flows to the 2D incompressible Euler equations</em></h1>
 <img src="http://www.mat.uniroma1.it/people/garroni/Choffrut.jpg" alt="Antoine Choffrut" width="326" height="326" /></p>
 
 <p><a href="http://arxiv.org/abs/1012.2736">arXiv</a></p>
@@ -418,21 +389,14 @@ the situation is quite similar. The difference between 2D Euler and NLS is that,
 
 <p>Consider a (potato shaped) domain $\Omega$. The Euler equation $ \partial_t u + (u \cdot \nabla) u _ \nabla p =0, \nabla \cdot u =0, u \cdot N =0 (\partial \Omega).$</p>
 
-<p>In 2D, we introduce $u = (u^1, u^2)$ and the vorticity $w =\partial_x u^2 - \partial_y u^1$ and we can derive the vorticity equation
-<script type="math/tex"> \partial_t w + u \cdot \nabla w = 0.</script></p>
+<p>In 2D, we introduce $u = (u^1, u^2)$ and the vorticity $w =\partial<em>x u^2 - \partial</em>y u^1$ and we can derive the vorticity equation
+$$ \partial_t w + u \cdot \nabla w = 0.$$</p>
 
 <p>How do you recover $u$ from $w$? and vice versa? Introduce, in 2D, the stream function $u = \nabla^\perp \psi$.</p>
 
-<table>
-  <tbody>
-    <tr>
-      <td>$\psi</td>
-      <td>_{\partial \Omega} =$ locally constant. We have $\Delta \psi = w$.</td>
-    </tr>
-  </tbody>
-</table>
+<p>$\psi|_{\partial \Omega} =$ locally constant. We have $\Delta \psi = w$.</p>
 
-<p>Kelvin: A curve $c_0$ at time $t =0$ evolves along the flow to a curve $c_t$ at a later time. We obtain that $\int_{\Gamma_i} \frac{\partial \psi}{\partial N} = \gamma_i$. $\Delta \psi = w$ and some  boundary conditions….</p>
+<p>Kelvin: A curve $c<em>0$ at time $t =0$ evolves along the flow to a curve $c</em>t$ at a later time. We obtain that $\int<em>{\Gamma</em>i} \frac{\partial \psi}{\partial N} = \gamma_i$. $\Delta \psi = w$ and some  boundary conditions….</p>
 
 <p>I can rewrite the vorticity equation as $\partial_t w + {\psi, w } = 0$ where the bracket is defined as the area of the parelellogram determined by $\nabla w$ and $\nabla \psi$.</p>
 
@@ -450,27 +414,17 @@ the situation is quite similar. The difference between 2D Euler and NLS is that,
 
 <p>Characterization of coadjoint orbits.</p>
 
-<table>
-  <tbody>
-    <tr>
-      <td>Transport $\implies A(0) =</td>
-      <td>[x \cdot w (x) &lt; c ]</td>
-      <td>=</td>
-      <td>[x: w \circ \zeta (x) &lt; c]</td>
-      <td>$</td>
-    </tr>
-  </tbody>
-</table>
+<p>Transport $\implies A(0) = | [x \cdot w (x) &lt; c ]| = |[x: w \circ \zeta (x) &lt; c]|$</p>
 
-<p>Correspondence.</p>
+<p>Correspondence.
 <ul>
-	<li>Steady states ………  F</li>
-	<li>Orbits …………. A</li>
+    <li>Steady states ………  F</li>
+    <li>Orbits …………. A</li>
 </ul>
-<p>Steady states can be characterized as conditional critical points of
-<script type="math/tex">
+Steady states can be characterized as conditional critical points of
+$$
 E(w) = \frac{1}{2} \int_\Omega | \nabla \psi |^2
-</script> (restricted to an orbit.)</p>
+$$ (restricted to an orbit.)</p>
 
 <p>Recall $\Delta \phi = w$.
 Calculating the first variation leads us to $\delta E = \int \nabla \psi \cdot \nabla \phi = - \int \psi { \alpha, w} = 0 $ (using a permutation property.) Since this is true for all $\alpha$, we find that ${\psi, w} = 0$. Similar ideas come up in the Arnold stability theorem.</p>
@@ -480,100 +434,100 @@ Calculating the first variation leads us to $\delta E = \int \nabla \psi \cdot \
 <p>Clairaut, Noether, Lie group with (left) invariant metric.</p>
 
 <p>That was the Lagrangian formulation on the tangent space. The real action takes place in the cotangent bundle where we have a Hamiltonian formalism.
-&lt;h1 id="thomaskappelerhttp:www.math.uzh.chindex.phpprofessurkey1113:symplectictechniquesforintegrablepdes"&gt;<a href="http://www.math.uzh.ch/index.php?professur&amp;key1=113">Thomas Kappeler</a>: <em>Symplectic techniques for integrable PDEs</em>&lt;/h1&gt;
+<h1 id="thomaskappelerhttp:www.math.uzh.chindex.phpprofessurkey1113:symplectictechniquesforintegrablepdes"><a href="http://www.math.uzh.ch/index.php?professur&amp;key1=113">Thomas Kappeler</a>: <em>Symplectic techniques for integrable PDEs</em></h1>
 <img src="http://www.math.uzh.ch/fileadmin/math/user/tk/bilder/tk.jpg" alt="Thomas Kappeler" /></p>
 
 <p>(pdf slides)</p>
 
 <p>Aim: Survey of recent results on integraple PDEs obtained by symplectic techniques. The model equation is the $NLS_3^{\pm}(T)$.</p>
 
-<p>Topics:</p>
+<p>Topics:
 <ul>
-	<li>Phase portrait/ space of orbits; construction of normal coordinates</li>
-	<li>Asymptotic properties of solutions</li>
-	<li>KAM theorem</li>
+    <li>Phase portrait/ space of orbits; construction of normal coordinates</li>
+    <li>Asymptotic properties of solutions</li>
+    <li>KAM theorem</li>
 </ul>
-<p>NLS as a Hamiltonian system.</p>
+NLS as a Hamiltonian system.</p>
 
 <p>Phase space: $L^2_C$. Pairs of functions. More generally, a function space.</p>
 
 <p>There is a canonical Poisson bracket</p>
 
-<script type="math/tex; mode=display"> {F,G}(\phi) = -i \int_0^1 \partial_1 F \partial_2 G - \partial_2 F \partial_1 G) \phi dx. </script>
+<p>$$ {F,G}(\phi) = -i \int<em>0^1 \partial</em>1 F \partial<em>2 G - \partial</em>2 F \partial_1 G) \phi dx. $$</p>
 
 <p>Defocusing NLS. Focusing NLS.</p>
 
 <p>Defocusing NLS as an integrable PDE on T. <strong>Grebert-Kappeler-Poschel</strong> “The defocusing NLS equation and its normal form” to appear in EMS.</p>
 
 <p>Focusing NLS as integrable PDE: only few results.
-&lt;h2 id="part1.reviewofnffordefocusingnls."&gt;Part 1. Review of NF for defocusing NLS.&lt;/h2&gt;
+<h2 id="part1.reviewofnffordefocusingnls.">Part 1. Review of NF for defocusing NLS.</h2>
 <strong>Theorem (GKP):</strong> There exists a canonical map (closely related to the Fourier transform) which reveals that defocusing NLS may be viewed as a system of infintely many coupled oscillators.</p>
 
 <p>Steps of proof:</p>
 
-<p>Local part. We have to construct these coordinates $x_n (\phi)$ and $y_n (\phi)$. How to build these coordinates?</p>
+<p>Local part. We have to construct these coordinates $x<em>n (\phi)$ and $y</em>n (\phi)$. How to build these coordinates?</p>
 
 <p>Global part. We have a global chart.
-&lt;h3 id="zakharov-shabatoperatorzs"&gt;Zakharov-Shabat operator (ZS)&lt;/h3&gt;</p>
+<h3 id="zakharov-shabatoperatorzs">Zakharov-Shabat operator (ZS)</h3>
 <ul>
-	<li>Lax pair for NLS</li>
-	<li>Periodic spectrum of $L(\phi)$ on [0,2].</li>
+    <li>Lax pair for NLS</li>
+    <li>Periodic spectrum of $L(\phi)$ on [0,2].</li>
 </ul>
-<p><strong>Counting Lemma:</strong> He describes the spectrum with a picture on the board. Floquet theory.</p>
+<strong>Counting Lemma:</strong> He describes the spectrum with a picture on the board. Floquet theory.
 <ul>
-	<li>characteristic function</li>
-	<li>two-sheeted spectral curve</li>
+    <li>characteristic function</li>
+    <li>two-sheeted spectral curve</li>
 </ul>
-<p><strong>von Neumann-Wigner 1929</strong></p>
+<strong>von Neumann-Wigner 1929</strong></p>
 
-<p>The eigenvalues come in pairs. Asymptotically, they are like $n\pi + l_n^2$.
-&lt;h3 id="constructionofactionsangles"&gt;Construction of actions/angles&lt;/h3&gt;</p>
+<p>The eigenvalues come in pairs. Asymptotically, they are like $n\pi + l<em>n^2$.
+<h3 id="constructionofactionsangles">Construction of actions/angles</h3>
 <ul>
-	<li>Choose cycles $a_n$</li>
-	<li>Cycles induce (i) actions and (ii) 1-forms.</li>
-	<li>1-forms induce angles.</li>
+    <li>Choose cycles $a</em>n$</li>
+    <li>Cycles induce (i) actions and (ii) 1-forms.</li>
+    <li>1-forms induce angles.</li>
 </ul>
 <h3 id="birkhoffcoordinates">Birkhoff coordinates</h3>
-<p>Euclidean versions of these action angle coordinates.</p>
+Euclidean versions of these action angle coordinates.</p>
 
-<p>Important features of construction</p>
+<p>Important features of construction
 <ul>
-	<li>same cycles $a_n$ were used to define $I_n$ and the 1-forms $\beta_n$.</li>
-	<li>Cycles/1-forms are defined on the spectral curve and not on phase space.</li>
+    <li>same cycles $a<em>n$ were used to define $I</em>n$ and the 1-forms $\beta<em>n$.</li>
+    <li>Cycles/1-forms are defined on the spectral curve and not on phase space.</li>
 </ul>
 <h2 id="part2.normalformforfnls">Part 2. Normal Form for fNLS</h2>
 <ul>
-	<li>There do not exist global Birkhoff coordinates.</li>
-	<li>The associated Zakharov-Shabat operator $L$ is not necessarily self-adjoint.</li>
-	<li>Symmetries of $spec_p (L(\phi))$.</li>
-	<li>$spec_p (L(\phi))$ can be described.</li>
+    <li>There do not exist global Birkhoff coordinates.</li>
+    <li>The associated Zakharov-Shabat operator $L$ is not necessarily self-adjoint.</li>
+    <li>Symmetries of $spec</em>p (L(\phi))$.</li>
+    <li>$spec_p (L(\phi))$ can be described.</li>
 </ul>
-<p>We believe that one can characterize the (local) existence of Birkhoff coordinates near $\phi \iff$ spectral properties of the Zakharov-Shabat operator.
-&lt;h3 id="standardpotentials"&gt;Standard Potentials&lt;/h3&gt;
+We believe that one can characterize the (local) existence of Birkhoff coordinates near $\phi \iff$ spectral properties of the Zakharov-Shabat operator.
+<h3 id="standardpotentials">Standard Potentials</h3>
 Describes how to carry out the construction. The focusing case requires local constructions.</p>
 
 <p>The discussion here is very precise and I don’t think I can convey more than is available on the slides.</p>
 
 <p>…
-&lt;h2 id="part4.kamfordefocusingnls"&gt;Part 4. KAM for defocusing NLS&lt;/h2&gt;</p>
+<h2 id="part4.kamfordefocusingnls">Part 4. KAM for defocusing NLS</h2>
 <ul>
-	<li>Defocusing NLS is integrable on all of $L^2$.</li>
-	<li>Question: KAM on $L^2$, not only near equilibrium point 0?</li>
-	<li>Defocusing NLS frequencies can be expressed using the Birkhoff coordinates.</li>
+    <li>Defocusing NLS is integrable on all of $L^2$.</li>
+    <li>Question: KAM on $L^2$, not only near equilibrium point 0?</li>
+    <li>Defocusing NLS frequencies can be expressed using the Birkhoff coordinates.</li>
 </ul>
-<p><strong>Proposition:</strong>
+<strong>Proposition:</strong>
 Can check the Kolmogorov and Melnikov conditions and then conclude by analyticity.
-&lt;h3 id="nearresonances"&gt;Near resonances&lt;/h3&gt;</p>
+<h3 id="nearresonances">Near resonances</h3>
 <ul>
-	<li>$\omega_j - \omega_{-j} = O(1)$ for $ j \rightarrow \pm \infty$ jeopardizes measure estimate of standard KAM theorem for integrable PDE.</li>
-	<li>Ways to overcome difficulties:</li>
-	<li><strong>Craig-Wayne-Bourgain</strong> method. <strong>Bourgain, IMRN 95</strong></li>
-	<li><strong>Kuksin-Poschel</strong>, <strong>Berti</strong></li>
-	<li>Restrict the perturbations <strong>Geng-You CMP 06, JDE 05</strong></li>
+    <li>$\omega<em>j - \omega</em>{-j} = O(1)$ for $ j \rightarrow \pm \infty$ jeopardizes measure estimate of standard KAM theorem for integrable PDE.</li>
+    <li>Ways to overcome difficulties:</li>
+    <li><strong>Craig-Wayne-Bourgain</strong> method. <strong>Bourgain, IMRN 95</strong></li>
+    <li><strong>Kuksin-Poschel</strong>, <strong>Berti</strong></li>
+    <li>Restrict the perturbations <strong>Geng-You CMP 06, JDE 05</strong></li>
 </ul>
-<p><strong>Kappeler-Liang JDE 12</strong></p>
+<strong>Kappeler-Liang JDE 12</strong></p>
 
-<p> </p>
+<p>&nbsp;</p>
 
     </div>
 
@@ -608,5 +562,5 @@ Can check the Kolmogorov and Melnikov conditions and then conclude by analyticit
 
 </body>
 </html>
-<!--  GitHub Powered! | Generated 2015-05-05 03:19:02 -0400 -->
+<!--  GitHub Powered! | Generated 2015-05-05 03:25:21 -0400 -->
 
