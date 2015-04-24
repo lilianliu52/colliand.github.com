@@ -9,12 +9,17 @@ id: /service
 icons: true
 ---
 
-### Department of Mathematics, University of Toronto
 
-* 	Member, Library Committee
-* 	Member, Outreach Committee
-* 	Member, Computer Committee
-*	Associate Chair (Research), 2010 -- 2013.
+
+
+### Education Technology
+
+* 	Founder/CEO, [Crowdmark](http://crowdmark.com): an education technology company that provides an online collaborative grading platform.
+*	Cofounder, [Toronto math wiki](http://wiki.math.toronto.edu/TorontoMathWiki/index.php/Main_Page)
+* 	Cofounder, [Escalator.utoronto.ca](http://welcome.escalator.utoronto.ca/home/)
+*	Cofounder, [Huron Street Public School Website](https://tdsb-huron.escalator.utoronto.ca/home/)
+*	Cofounder, [Huron Astronomy Club](https://tdsb-huron.escalator.utoronto.ca/home/astroclub/)
+*	Cofounder, [KBasix CMS](https://share.math.toronto.edu)
 
 ### Professional
 
@@ -32,19 +37,17 @@ icons: true
 	* 	Member, [Math-NSERC Liaison Committee](http://nmlc.math.ca/blog/ Math-NSERC)
 	* 	Member, [ Association of Women in Mathematics](https://sites.google.com/site/awmmath/awm/membership)
 
+
+
 ### University of Toronto
 
+* Department of Mathematics
+	* 	Member, Library Committee
+	* 	Member, Outreach Committee
+	* 	Member, Computer Committee
+	*	Associate Chair (Research), 2010 -- 2013.
 * 	Member, Connaught Innovation Award Review Committee
 * 	Member, Connaught Physical Sciences and Engineering Review Panel (2010 - 2012)
-
-### Education Technology
-
-* 	Founder/CEO, [Crowdmark](http://crowdmark.com): an education technology company that provides an online collaborative grading platform.
-*	Cofounder, [Toronto math wiki](http://wiki.math.toronto.edu/TorontoMathWiki/index.php/Main_Page)
-* 	Cofounder, [Escalator.utoronto.ca](http://welcome.escalator.utoronto.ca/home/)
-*	Cofounder, [Huron Street Public School Website](https://tdsb-huron.escalator.utoronto.ca/home/)
-*	Cofounder, [Huron Astronomy Club](https://tdsb-huron.escalator.utoronto.ca/home/astroclub/)
-*	Cofounder, [KBasix CMS](https://share.math.toronto.edu)
 
 ### Outreach
 

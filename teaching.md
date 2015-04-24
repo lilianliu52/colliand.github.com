@@ -31,7 +31,7 @@ icons: true
 * [Yannis Angelopoulos, PhD 2015](http://www.math.toronto.edu/cms/angelopoulos-ioannis/) (postdoc at Princeton 2015-2016)
 *	[Brian Pigott, PhD 2011](http://www.math.toronto.edu/bpigott/Brian_Pigott.html), [Thesis](https://tspace.library.utoronto.ca/handle/1807/31899) (now at [Wofford College](http://www.wofford.edu/mathematics/)).
 *	[Geordie Richards, PhD 2012](http://www.math.rochester.edu/people/faculty/grichar5/), [Thesis](https://tspace.library.utoronto.ca/handle/1807/32973) (now at [Rochester](http://www.math.rochester.edu/)).
-*	Ian Zwiers, PhD 2010, [Thesis](http://www.math.ubc.ca/~zwiers/content/Zwiers-CubicNLSRingBlowup_thesisVersion.pdf) (now at [AECL](http://www.aecl.ca/en/home/default.aspx)).
+*	[Ian Zwiers, PhD 2010](https://www.linkedin.com/pub/ian-zwiers/59/97b/45), [Thesis](http://www.math.ubc.ca/~zwiers/content/Zwiers-CubicNLSRingBlowup_thesisVersion.pdf) (now at [AECL](http://www.aecl.ca/en/home/default.aspx)).
 
 ### Current Postdocs
 
@@ -40,7 +40,7 @@ icons: true
 ### Former Postdocs
 
 
-* [ Pieter Blue](http://www.maths.ed.ac.uk/~pblue/)
+* [Pieter Blue](http://www.maths.ed.ac.uk/~pblue/)
 * [Daniel Egli](http://www.math.toronto.edu/cms/egli-daniel/ )
 * [Magdalena Czubak](http://www.math.binghamton.edu/czubak/research/index.html)
 * [Tadahiro Oh](http://www.maths.ed.ac.uk/~toh/)
