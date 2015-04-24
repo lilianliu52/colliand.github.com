@@ -1,6 +1,12 @@
 ---
+author: James Colliander
+title: Blog
+excerpt: James Colliander's Blog
 layout: default
-title: J. Colliander
+permalink: /blog/
+published: true
+id: /blog
+icons: true
 ---
 
 <div id="home">
