@@ -8,7 +8,7 @@ comments: false
 ---
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/0.4.0/mermaid.full.js"></script>
-<link rel="stylesheet" href="{{site.baseurl}}/css/mermaid.forest.css">
+<link rel="stylesheet" href="{{site.url}}/css/mermaid.forest.css">
 
 <script>
         var mermaid_config = {
