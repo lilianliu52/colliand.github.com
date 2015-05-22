@@ -1,11 +1,15 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
+---
+layout: post
+title:  "Learn how to use Gantt Chart"
+date:   2015-05-20 
+categories: support flowcharts
+robots: noindex
+---
 
-    <script src="https://cdn.rawgit.com/knsv/mermaid/0.4.0/dist/mermaid.full.js"></script>
-    <link rel="stylesheet" href="{{site.baseurl}}/css/mermaid.css">
-    <script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/0.4.0/mermaid.full.js"></script>
+<link rel="stylesheet" href="{{site.baseurl}}/css/mermaid.forest.css">
+
+<script>
         var mermaid_config = {
             startOnLoad:true
         }
@@ -43,114 +47,71 @@
                 }]
             ]
         };
-    </script>
-   
-</head>
-    <body>
-    <h1>scale tests</h1>
-    <h2>less then a day</h2>    
-        <div class="mermaid">
-            gantt
-            dateFormat  YYYY-MM-DD H:mm
-            title Adding GANTT diagram functionality to mermaid
+</script>
 
-            section Design
-            Design jison grammar            :done, crit, des1, 2014-01-06 1:30,4h
-            Create example text             :done, after des1,6h
-        </div>
-    <h2>less then a week</h2>
-    <div class="mermaid">
-        gantt
-        dateFormat  YYYY-MM-DD
-        title Adding GANTT diagram functionality to mermaid2
-        section Design
-        Design jison grammar            :done, crit, des1, 2014-01-06,2d
-        Create example text             :done, after des1,3d
-    </div>
-    <h2>less then a month</h2>
-    <div class="mermaid">
-        gantt
+ 
+### Gantt Experiment
+ 
+<div class="mermaid">
+gantt
         dateFormat  YYYY-MM-DD
         title Adding GANTT diagram functionality to mermaid
 
-        section Design
-        Design jison grammar            :done, crit, des1, 2015-01-05,2d
-        Create example text             :done, after des1, 2w
-    </div>
-    <h2>less then a year</h2>
-    <div class="mermaid">
-        gantt
-        dateFormat  YYYY-MM-DD
-        title Adding GANTT diagram functionality to mermaid
+        section Changing?
+        Completed task            :done,    des1, 2014-01-06,2014-01-08
+        Active task               :active,  des2, 2014-01-09, 3d
+        Future task               :         des3, after des2, 5d
+        Future task2               :         des4, after des3, 5d
 
-        section Design
-        Design1:done, crit, des1, 2014-01-22,4w
-        Design2:after des1, 3w
-        Design3:3w
-        Design4:3w
-        Design5:18d
-        Design6:2w
-        Implementation1:3w
-        Implementation2:3w
-    </div>
-    <h1>Other tests</h1>
-    <div class="mermaid">
-        gantt
-        dateFormat  YYYY-MM-DD
-        title Adding GANTT diagram functionality to mermaid
-
-        section Design
-        Design jison grammar            :done, crit, des1, 2014-01-06, 2014-01-09
-        Create example text             :done, des2, 2014-01-06, 3d
-        Bounce gantt example with users :active, crit, des3, after des2, 5d
-
-        section Implementation
-        update build script             :2014-01-06,24h
-        Implement parser and jison      :after des1, 2d
-        Create tests for parser         :active, 3d
-        Future task in critical line                 :crit, 5d
-        Create tests for renderer       :2d
-        Add to mermaid core bore tore gore bore lore             :1d
+        section Critical tasks
+        Completed task in the critical line :crit, done, 2014-01-06,24h
+        Implement parser and jison          :crit, done, after des1, 2d
+        Create tests for parser             :crit, active, 3d
+        Future task in critical line        :crit, 5d
+        Create tests for renderer           :2d
+        Add to mermaid                      :1d
 
         section Documentation
-        Describe gantt syntax               :active,a1, 2014-01-10, 3d
+        Describe gantt syntax               :active, a1, after des1, 3d
         Add gantt diagram to demo page      :after a1  , 20h
-        Add another diagram to demo page    :after a1  , 48h
-    </div>
-    Text before. Bla b la bla. Look at the diagram below:
-    <div class="mermaid">
+        Add another diagram to demo page    :doc1, after a1  , 48h
+
+        section Last section
+        Describe gantt syntax               :after doc1, 3d
+        Add gantt diagram to demo page      : 20h
+        Add another diagram to demo page    : 48h
+</div>
+
+<div class="mermaid">
         gantt
         title A Gantt Diagram
         dateFormat  YYYY-MM-DD
         section Section
-        A task           :a1, 2014-01-01, 3d
+        A task           :a1, 2015-01-01, 3d
         Another task     :after a1  , 20d
         section Another
-        Task in sec      :2014-01-12  , 12d
+        Task in sec      :2015-01-12  , 12d
         section Another2
-        anther task      : 24d
+        anther task      : 40d
         section Another3
         anther task      : 24d
         section Another4
-        anther task      : 24d
+        anther task      : 33d
         section Another5
         anther task      : 24d
         section Another6
-        anther task      : 24d
+        anther task      : 41d
         section Another7
         anther task      : 24d
         section Another8
         anther task      : 24d
         section Another9
-        anther task      : 24d
-    </div>
-    As you can see, bla bla bla.
-    <div class="mermaid">
-        gantt
-        title A Gantt Diagram
-        dateFormat  YYYY-MM-DD
-        section Section
-        A task           :a1, 2014-01-01, 3h
-    </div>
-    </body>
-</html>
+        anther task      : 31d
+        anther task      : 2d
+        section Another10
+        anther task      : 36d
+        section Another11
+        anther task      : 36d
+        section Another12
+        anther task      : 37d
+</div>
