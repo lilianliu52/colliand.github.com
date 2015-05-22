@@ -1,9 +1,10 @@
 ---
-layout: post
+layout: page
 title:  "Learn how to use Gantt Chart"
 date:   2015-05-20 
 categories: support flowcharts
 robots: noindex
+comments: false
 ---
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/0.4.0/mermaid.full.js"></script>

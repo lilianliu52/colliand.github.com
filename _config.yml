@@ -1,6 +1,7 @@
 name: James Colliander
 description: "Math, Research, Education"
 url: http://colliand.com
+baseurl: /
 
 markdown: kramdown
 
