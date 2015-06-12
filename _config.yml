@@ -1,7 +1,6 @@
 name: James Colliander
 description: "Math, Research, Education"
 url: http://colliand.com
-baseurl: /
 
 markdown: kramdown
 
@@ -10,6 +9,8 @@ exclude: ["Gemfile", "Gemfile.lock"]
 destination: ../colliand-built
 
 permalink: /:year/:month/:day/:title/
+
+timezone: America/Vancouver
 
 #disqus widget
 disqus:
@@ -36,3 +37,4 @@ scholar:
   details_link:   Details
 
   query: "@*"
+
