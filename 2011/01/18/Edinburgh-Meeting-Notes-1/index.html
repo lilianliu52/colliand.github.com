@@ -126,18 +126,14 @@ in Edinburgh, Scotland.</p>
 <h2 id="freesurfacewaterwaves">Free surface water waves</h2>
 <p>Euler’s equations of hydrodynamics, incompressible and irrotational flow. This is therefore given as a potential flow. The irrotational assumption is really an oceanographers assumption. Of course, there is vorticity but we follow the models of oceanographers.</p>
 
-<p>The fluid domain is $-h &lt; y &lt; \eta (x,t)$. So, the domain is changing. Free surface boundary conditions hold on $y = \eta (x,t)$.
-&lt;h3 id="zakharovshamiltonian"&gt;Zakharov’s Hamiltonian&lt;/h3&gt;</p>
+<p>The fluid domain is $-h &lt; y &lt; \eta (x,t)$. So, the domain is changing. Free surface boundary conditions hold on $y = \eta (x,t)$.</p>
+<h3 id="zakharovshamiltonian">Zakharov’s Hamiltonian</h3>
 <ul>
 	<li>The energy functional</li>
 </ul>
-<p><script type="math/tex"> H = K+P </script>
-<script type="math/tex">
-K = \int_x \int_{-h}^{\eta(x)} \frac{1}{2} |\nabla \phi|^2 dy dx.
-</script>
-<script type="math/tex">
-P = \int_x \frac{g}{2} \eta^2 dx.
-</script></p>
+<p><script type="math/tex">H = K+P</script>
+<script type="math/tex">K = \int_x \int_{-h}^{\eta(x)} \frac{1}{2} |\nabla \phi|^2 dy dx.</script>
+<script type="math/tex">P = \int_x \frac{g}{2} \eta^2 dx.</script></p>
 
 <p>This could also include surface tension effects.</p>
 <ul>
@@ -200,9 +196,9 @@ $$</li>
 
 <p><strong>Rk:</strong> Notice this is a mathematician imposing a period rather than the physics making that selection. More can be said in this direction, but let’s proceed this way.</p>
 
-<p><strong>Rk:</strong> These (time independent) traveling wave patterns can be imagined to emerge in transient interactions in seas. The nonlinear actions create large amplitudes and this might be related to the phenomena of <em>freak waves</em>.
-&lt;h3 id="equationsfortravelingwaves."&gt;Equations for traveling waves.&lt;/h3&gt;
-Periodic traveling wave patterns are <em>critical points</em> of the Hamltonian on the variety $I = const$, with Lagrange multiplier $c \in {\mathbb{R}^{d-1}}.$</p>
+<p><strong>Rk:</strong> These (time independent) traveling wave patterns can be imagined to emerge in transient interactions in seas. The nonlinear actions create large amplitudes and this might be related to the phenomena of <em>freak waves</em>.</p>
+<h3 id="equationsfortravelingwaves.">Equations for traveling waves.</h3>
+<p>Periodic traveling wave patterns are <em>critical points</em> of the Hamltonian on the variety $I = const$, with Lagrange multiplier $c \in {\mathbb{R}^{d-1}}.$</p>
 
 <p>This leads to a bifurcation problem.</p>
 
@@ -230,17 +226,17 @@ Periodic traveling wave patterns are <em>critical points</em> of the Hamltonian 
 <ul>
 	<li>Head-on collisions of solitons.</li>
 </ul>
-<p>The numerics reveal some inelasticity in the collision. We’d like to understand those. If we make the amplitude of the solitons bigger, the dispersive ripples are more visible.
-&lt;h2 id="thekdvscalinglimit"&gt;The KdV scaling limit&lt;/h2&gt;
-<strong>Titi’s Question:</strong> Can we reduce to the surface equations including rotation?</p>
+<p>The numerics reveal some inelasticity in the collision. We’d like to understand those. If we make the amplitude of the solitons bigger, the dispersive ripples are more visible.</p>
+<h2 id="thekdvscalinglimit">The KdV scaling limit</h2>
+<p><strong>Titi’s Question:</strong> Can we reduce to the surface equations including rotation?</p>
 <blockquote><strong>Craig’s Answer:</strong> Yes and No. You can make a rotation depending purely on y and impose that. Then it is reducible. But this is rather artificial. There is stuff that happens in the middle which is not a surface effect. Therefore, this problem requires a more complete analysis of the Euler equation and will not collapse to a system on the surface.</blockquote>
 
 <hr />
 
 <h1 id="sergeynazarenkowarwick:assumptionstechniquescahllengesinwaveturbulence">Sergey Nazarenko (Warwick): Assumptions, Techniques, Cahllenges in Wave Turbulence</h1>
-<p>This is not so much about new result. Instead, this is an attempt by a physicist trying to explain wave turbulence ideas being explored by physicists to mathematicians. My view is that there is a lot of interesting work to be done. Lots of open problems….
-&lt;h2 id="whatiswaveturublence"&gt;What is wave turublence?&lt;/h2&gt;
-He shows a picture of a relatively calm seashore from Nice. He emphasizes there is a wide range fo scales in these problems. <strong>WT is a statistical system of nonlinear waves</strong>.</p>
+<p>This is not so much about new result. Instead, this is an attempt by a physicist trying to explain wave turbulence ideas being explored by physicists to mathematicians. My view is that there is a lot of interesting work to be done. Lots of open problems….</p>
+<h2 id="whatiswaveturublence">What is wave turublence?</h2>
+<p>He shows a picture of a relatively calm seashore from Nice. He emphasizes there is a wide range fo scales in these problems. <strong>WT is a statistical system of nonlinear waves</strong>.</p>
 
 <p>Examples:</p>
 <ul>
@@ -284,9 +280,9 @@ He shows a picture of a relatively calm seashore from Nice. He emphasizes there 
 
 <p>Set of wave modes: amplitudes and phases.</p>
 
-<p>N-mode joint probability density function. Some notation….probability…sectors in the wave modes setting.
-&lt;h3 id="randomphaserpandrandomphaseamplituderpasystems"&gt;Random Phase (RP) and Random Phase Amplitude (RPA) systems&lt;/h3&gt;
-RP:</p>
+<p>N-mode joint probability density function. Some notation….probability…sectors in the wave modes setting.</p>
+<h3 id="randomphaserpandrandomphaseamplituderpasystems">Random Phase (RP) and Random Phase Amplitude (RPA) systems</h3>
+<p>RP:</p>
 
 <p>All phases are independent random variables such that uniformly distributed on $S^1$.</p>
 
@@ -400,9 +396,9 @@ RP:</p>
 </ul>
 <p>Linear wave equation. WKB ansatz. Hamiltoninan equations for the amplitude and phase. Characteristics of JH; nonlinear ODE; Liouville equation (linear).</p>
 
-<p>Linear wave –&gt; WKB –&gt; HJ equation –&gt; Liouville Equation
-&lt;h2 id="thinkofpolygonalbilliardsnotnecessarilyconvex."&gt;Think of polygonal billiards, not necessarily convex.&lt;/h2&gt;
-We want to understand the influence of a source (transfmitting at frequency $\omega$) at one location on the wave amplitude at another point. He writes this as a green’s function $G(r, r_0, \omega)$.</p>
+<p>Linear wave –&gt; WKB –&gt; HJ equation –&gt; Liouville Equation</p>
+<h2 id="thinkofpolygonalbilliardsnotnecessarilyconvex.">Think of polygonal billiards, not necessarily convex.</h2>
+<p>We want to understand the influence of a source (transfmitting at frequency $\omega$) at one location on the wave amplitude at another point. He writes this as a green’s function $G(r, r_0, \omega)$.</p>
 
 <p>Small wavelength limit, so low frequency waves.</p>
 
@@ -464,15 +460,11 @@ We want to understand the influence of a source (transfmitting at frequency $\om
 	<li>examples</li>
 </ul>
 <p><script type="math/tex">% <![CDATA[
-
-u_t = \sigma \int_\Omega J(x-y) [u(y,t) - u(x,t)]dy + f(u) dx ~ \forall x \in \Omega, t&gt;0.
- %]]></script>
+u_t = \sigma \int_\Omega J(x-y) [u(y,t) - u(x,t)]dy + f(u) dx ~ \forall x \in \Omega, t&gt;0. %]]></script>
 Typically, $f(u) = u - u^3$. This should be contrasted with the Allen-Cahn equation</p>
 
 <script type="math/tex; mode=display">% <![CDATA[
-
-u_t = \sigma \Delta u + f(u) dx ~ \forall x \in \Omega, t&gt;0.
- %]]></script>
+u_t = \sigma \Delta u + f(u) dx ~ \forall x \in \Omega, t&gt;0. %]]></script>
 
 <p>There are no spatial derivatives. Therefore, there are now boundary conditions. Instead, this is some kind of integral dynamical equation. It is similar to the <a href="http://en.wikipedia.org/wiki/John_W._Cahn">Cahn</a>-Allen equation.</p>
 
@@ -533,5 +525,5 @@ $$
 
 </body>
 </html>
-<!--  GitHub Powered! | Generated 2015-05-22 03:19:30 -0400 -->
+<!--  GitHub Powered! | Generated 2015-06-12 14:09:48 -0700 -->
 

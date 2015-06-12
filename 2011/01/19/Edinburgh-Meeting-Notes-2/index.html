@@ -135,26 +135,20 @@ $$</li>
 	<li><a href="http://www.math.polytechnique.fr/~kuksin/rfpdef/kuk_pia.pdf">[SK, AP] 2008, JMPA</a></li>
 	<li><a href="http://www.math.polytechnique.fr/~kuksin/rfpdef/eff_eq.pdf">[SK] 2010, GAFA</a></li>
 </ul>
-<p>We introduce the slow time $\tau = \epsilon t$.
-&lt;h2 id="perturbationsoflinearhamiltonianpdes"&gt;Perturbations of linear Hamiltonian PDEs&lt;/h2&gt;
-<script type="math/tex">
-\frac{\partial u}{\partial \tau} + i \epsilon^{-1} (- \Delta u + V(x)u ) = \Delta u - \gamma_R |u|^{2p}u - i \gamma_I |u|^{2q} u + (random force).
-</script>
+<p>We introduce the slow time $\tau = \epsilon t$.</p>
+<h2 id="perturbationsoflinearhamiltonianpdes">Perturbations of linear Hamiltonian PDEs</h2>
+<p><script type="math/tex">\frac{\partial u}{\partial \tau} + i \epsilon^{-1} (- \Delta u + V(x)u ) = \Delta u - \gamma_R |u|^{2p}u - i \gamma_I |u|^{2q} u + (random force).</script>
 Both of the parameters $\gamma &gt; 0$ and satisfy $\gamma_R^2 + \gamma_I^2 =1$. The parameters $p,q$ are natural numbers, possibly 0. WE weill look at the case $d=1$ on $x \in [0,\pi]$ with Dirichlet boundary conditions.</p>
 
 <p>Some more information about the random force,
-<script type="math/tex">
-(random force) = \frac{d}{d\tau} \sum_{j=1}^\infty b_j \beta_j (\tau) e_j (x)
-</script>
+<script type="math/tex">(random force) = \frac{d}{d\tau} \sum_{j=1}^\infty b_j \beta_j (\tau) e_j (x)</script>
 Here the $\beta_j$  are complex valued standard, independent random variables.</p>
 
 <p>We will work in the Sobolev space $H^2$.</p>
 
 <p><strong>Theorem 1:</strong> If $u_0 \in H^1$ then $\exists ~! ~ u^\epsilon (\tau, x)$ such that
 <script type="math/tex">% <![CDATA[
-
-E ( \|u\|<em>1^2 + \int</em>0^\tau \| u(s)\|_2^2 ds) &lt; \infty.
- %]]></script></p>
+E ( \|u\|<em>1^2 + \int</em>0^\tau \| u(s)\|_2^2 ds) &lt; \infty. %]]></script></p>
 
 <p>Let $u_0^\omega \in H^1$ be a random.</p>
 <ul>
@@ -166,22 +160,20 @@ E ( \|u\|<em>1^2 + \int</em>0^\tau \| u(s)\|_2^2 ds) &lt; \infty.
 <p><strong>Bogolyubov-Krylov:</strong> A stationary measure <em>almost always</em> exists.</p>
 
 <p><strong>Theorem 2 (Hairer, Odasso, AS):</strong> If $b_j \neq 0 ~ \forall ~j$ then $\exists ~ !$ stationary measure $\mu^\epsilon.$ For any solution $u(\tau)$, we have
-<script type="math/tex">
-\mbox{dist} (\mathcal{P}(u(\tau)), \mu^\epsilon) \rightarrow 0 ~\mbox{as}~ \tau \rightarrow 0.
-</script></p>
+<script type="math/tex">\mbox{dist} (\mathcal{P}(u(\tau)), \mu^\epsilon) \rightarrow 0 ~\mbox{as}~ \tau \rightarrow 0.</script></p>
 
-<p>The measure $\mu_\epsilon$ depends upon the force but not on the data.
-&lt;h2 id="fouriertranform"&gt;Fourier Tranform&lt;/h2&gt;
-For the operator $A = - \Delta + V(x)$ consider the eignefunctions $\phi_1, \phi_2, \dots$ with associated eigenvalues $\lambda_1, \lambda_2, \dots$. Assume that</p>
+<p>The measure $\mu_\epsilon$ depends upon the force but not on the data.</p>
+<h2 id="fouriertranform">Fourier Tranform</h2>
+<p>For the operator $A = - \Delta + V(x)$ consider the eignefunctions $\phi_1, \phi_2, \dots$ with associated eigenvalues $\lambda_1, \lambda_2, \dots$. Assume that</p>
 <ol>
 	<li>$\lambda_1 &gt;0$</li>
 	<li>$\lambda \cdot s \neq 0 ~ \forall s \in {\mathbb{Z}}^\infty, ~ 0 &lt;|s| &lt; \infty.$</li>
 </ol>
 <p>For any $u \in H^1$, we can expand $u$ w.r.t. the basis and denote the associated coefficients by $v_1, v_2, \dots$. The <em>Fourier transform</em> is the map $u \longmapsto v$ and the inverse goes the other way.</p>
 
-<p>We can pass from $v_j$  to polar coordinates $I_j, \phi_j$. He recasts the dynamics w.r.t the polar coordinate variables and started speaking about averaging lemmas.
-&lt;h2 id="effectiveequations"&gt;Effective Equations&lt;/h2&gt;
-These objects are somehow analogs of the kinetic equations in the theory of weak turbulence….some notation….I want to understand this better….an average of the nonlinear potential energy term. This is a semilinear heat equation with a nonlocal heat equation. The term proportional to $\gamma_I$ does not influence the effective equation. This equation <em>really</em> takes complete control when $\epsilon$ is very small.</p>
+<p>We can pass from $v_j$  to polar coordinates $I_j, \phi_j$. He recasts the dynamics w.r.t the polar coordinate variables and started speaking about averaging lemmas.</p>
+<h2 id="effectiveequations">Effective Equations</h2>
+<p>These objects are somehow analogs of the kinetic equations in the theory of weak turbulence….some notation….I want to understand this better….an average of the nonlinear potential energy term. This is a semilinear heat equation with a nonlocal heat equation. The term proportional to $\gamma_I$ does not influence the effective equation. This equation <em>really</em> takes complete control when $\epsilon$ is very small.</p>
 
 <p>The advance obtained here uses randomness in the forcing. “I expect that the effective equation is relevant even without the randomness but I don’t know how to prove it.”</p>
 
@@ -290,17 +282,16 @@ These objects are somehow analogs of the kinetic equations in the theory of weak
 <h2 id="mathematicalproblemstatement">Mathematical problem statement</h2>
 <p>Consider an evolution problem for which the initial state is treated as a random variable with some given probability density function. For simplicity assume finite-d phase space. The uncertainty in the initial conditions will generally lead to unpredictability over long time intervals. Weather prediction is a nice example.</p>
 
-<p>To counterbalance this increase in uncertainty, we collect observations at discrete times subject to some random measurement errors. We wish to find a trajectory that makes optimal use of the available information in terms of initial data, observations and model dynamics. The task of data assimilation is to combine the model, the measurements and then we want to make the optimal prediction.
-&lt;h2 id="theoreticalsolution"&gt;Theoretical solution&lt;/h2&gt;
-i) Model dynamics</p>
+<p>To counterbalance this increase in uncertainty, we collect observations at discrete times subject to some random measurement errors. We wish to find a trajectory that makes optimal use of the available information in terms of initial data, observations and model dynamics. The task of data assimilation is to combine the model, the measurements and then we want to make the optimal prediction.</p>
+<h2 id="theoreticalsolution">Theoretical solution</h2>
+<p>i) Model dynamics</p>
 
 <p>Lift the dynamics to the level of the Liouville equation on the probability distribution function.</p>
 
 <p>ii) Data assimilation</p>
 
 <p>Assimilate data using Bayes’ theorem
-<script type="math/tex">\pi (x|y) \thicksim \pi(y|x) X \rho_{pr} (x).
-</script></p>
+<script type="math/tex">\pi (x|y) \thicksim \pi(y|x) X \rho_{pr} (x).</script></p>
 
 <table>
   <tbody>
@@ -311,13 +302,13 @@ i) Model dynamics</p>
   </tbody>
 </table>
 
-<p>Under Bayes’ theorem, we always reuce uncertainty.
-&lt;h2 id="ensembleprediction..."&gt;Ensemble Prediction…&lt;/h2&gt;
-ack….slides are changing fast.</p>
+<p>Under Bayes’ theorem, we always reuce uncertainty.</p>
+<h2 id="ensembleprediction...">Ensemble Prediction…</h2>
+<p>ack….slides are changing fast.</p>
 
-<p><strong>Particle filter</strong>. We give better weight to points that are closer to the observed data. If we repeat this a few times, there will be very few particles contributing to the final answer.
-&lt;h2 id="assimilationasacontinuousdeformationofprobability:mckean-vlasov"&gt;Assimilation as a continuous deformation of probability: McKean-Vlasov&lt;/h2&gt;
-We can think of Bayes theorem as an optimal transportation problem.</p>
+<p><strong>Particle filter</strong>. We give better weight to points that are closer to the observed data. If we repeat this a few times, there will be very few particles contributing to the final answer.</p>
+<h2 id="assimilationasacontinuousdeformationofprobability:mckean-vlasov">Assimilation as a continuous deformation of probability: McKean-Vlasov</h2>
+<p>We can think of Bayes theorem as an optimal transportation problem.</p>
 
 <p>Crisan-Xiong 2010 did something similar in the context of continuous time filter problem.</p>
 
@@ -372,5 +363,5 @@ We can think of Bayes theorem as an optimal transportation problem.</p>
 
 </body>
 </html>
-<!--  GitHub Powered! | Generated 2015-05-22 03:19:30 -0400 -->
+<!--  GitHub Powered! | Generated 2015-06-12 14:09:48 -0700 -->
 
