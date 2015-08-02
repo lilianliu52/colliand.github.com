@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+        }
+    });
+  </script>
+
+  <title>Edinburgh Meeting Notes 2</title>
+  <meta name="description" content="">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="/2011/01/19/Edinburgh-Meeting-Notes-2/">
+  <link rel="alternate" type="application/rss+xml" title="James Colliander" href="/feed.xml" />
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/">James Colliander</a>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+
+      <div class="trigger">
+         <a class="page-link" href="/blog/">Blog</a>
+          <a class="page-link" href="/research/">Research</a>
+         <a class="page-link" href="/teaching/">Teaching</a>
+ <!--        
+          
+          <a class="page-link" href="/blog/">Blog</a>
+          
+        
+          
+          <a class="page-link" href="/pages/calculus.html">Calculus</a>
+          
+        
+          
+          <a class="page-link" href="/categories/">Categories</a>
+          
+        
+          
+          <a class="page-link" href="/pages/cm/cm-testing-stories.html">Crowdmark Testing Stories</a>
+          
+        
+          
+          <a class="page-link" href="/epics/">Epics</a>
+          
+        
+          
+        
+          
+          <a class="page-link" href="/pages/flowchart.html">flowchart</a>
+          
+        
+          
+          <a class="page-link" href="/pages/gantt.html">Learn how to use Gantt Chart</a>
+          
+        
+          
+          <a class="page-link" href="/index.html">About</a>
+          
+        
+          
+          <a class="page-link" href="/pages/index.html">Pages</a>
+          
+        
+          
+          <a class="page-link" href="/pages/cm/index.html">Pages</a>
+          
+        
+          
+        
+          
+          <a class="page-link" href="/research/">Research</a>
+          
+        
+          
+          <a class="page-link" href="/pages/schedule.html">Schedule</a>
+          
+        
+          
+          <a class="page-link" href="/syllabus/">Syllabus</a>
+          
+        
+          
+          <a class="page-link" href="/tags/">Tags</a>
+          
+        
+          
+          <a class="page-link" href="/teaching/">Teaching</a>
+          
+        
+          
+          <a class="page-link" href="/pages/topics.html">Topics</a>
+          
+         -->
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Edinburgh Meeting Notes 2</h1>
+    <p class="post-meta">Jan 19, 2011</p>
+  </header>
+
+
+
+  <article class="post-content">
+    <!-- Processed by MultiMarkdown -->
+
+<!--#include virtual="${Base_URL}/templates/head.html" -->
+<!--#include virtual="${Base_URL}/templates/header.html" -->
+<h1 class="page-title"><a href="http://www.math.polytechnique.fr/~kuksin/">Sergei Kuksin (École Polytechnique)</a>: Nonlinear Schrödinger Equation</h1>
+<p>We consider Hamiltonian PDE. This is of course very interesting. In physics, there is a class of pdes which is also of interest:</p>
+
+<p>Hamiltonian PDE = small damping + small forcing</p>
+
+<p>Why is it so important?</p>
+<ol>
+	<li>This class contains a very important equation: Navier-Stokes.
+$$
+\dot{u} + (u\cdot \nabla) u + \nabla p = \epsilon \Delta u + force; ~ \nabla \cdot u = 0.
+$$
+We are interested in cases $d = 2,3.$ For $d=3$, this problem seems impossible. So, let’s collapse to the 2d case.</li>
+	<li>Nonlinear Schrödinger equation with some damping and forcing
+$$
+\dot{u} + i \Delta u - i |u|^2 u = \epsilon \Delta u + force.
+$$
+Similarly, we might want to study the PKdV equation
+$$
+\dot{u} + u_{xxx} + u u_x = \epsilon u_{xx} + force.
+$$</li>
+</ol>
+<p>We are interested in the small viscosity $\epsilon \ll 1$ and $t \rightarrow \infty$ extremes. At least we want to study $t \gtrsim \epsilon^{-1}$.</p>
+
+<p>Two papers on my web page:</p>
+<ul>
+	<li><a href="http://www.math.polytechnique.fr/~kuksin/rfpdef/kuk_pia.pdf">[SK, AP] 2008, JMPA</a></li>
+	<li><a href="http://www.math.polytechnique.fr/~kuksin/rfpdef/eff_eq.pdf">[SK] 2010, GAFA</a></li>
+</ul>
+<p>We introduce the slow time $\tau = \epsilon t$.</p>
+<h2 id="perturbationsoflinearhamiltonianpdes">Perturbations of linear Hamiltonian PDEs</h2>
+<p><script type="math/tex">\frac{\partial u}{\partial \tau} + i \epsilon^{-1} (- \Delta u + V(x)u ) = \Delta u - \gamma_R |u|^{2p}u - i \gamma_I |u|^{2q} u + (random force).</script>
+Both of the parameters $\gamma &gt; 0$ and satisfy $\gamma_R^2 + \gamma_I^2 =1$. The parameters $p,q$ are natural numbers, possibly 0. WE weill look at the case $d=1$ on $x \in [0,\pi]$ with Dirichlet boundary conditions.</p>
+
+<p>Some more information about the random force,
+<script type="math/tex">(random force) = \frac{d}{d\tau} \sum_{j=1}^\infty b_j \beta_j (\tau) e_j (x)</script>
+Here the $\beta_j$  are complex valued standard, independent random variables.</p>
+
+<p>We will work in the Sobolev space $H^2$.</p>
+
+<p><strong>Theorem 1:</strong> If $u_0 \in H^1$ then $\exists ~! ~ u^\epsilon (\tau, x)$ such that
+<script type="math/tex">% <![CDATA[
+E ( \|u\|<em>1^2 + \int</em>0^\tau \| u(s)\|_2^2 ds) &lt; \infty. %]]></script></p>
+
+<p>Let $u_0^\omega \in H^1$ be a random.</p>
+<ul>
+	<li>Let $\mathcal{P}(u_0^\omega) = \mu$ denote the measure in H^1</li>
+	<li>Calculate $u^\omega (\tau)$.</li>
+</ul>
+<p><strong>Definition:</strong> A measure $\mu$ is called a stationary measure if $\forall ~ \tau$ we have $\mathcal{P} (\mu_\tau ) = \mu.$</p>
+
+<p><strong>Bogolyubov-Krylov:</strong> A stationary measure <em>almost always</em> exists.</p>
+
+<p><strong>Theorem 2 (Hairer, Odasso, AS):</strong> If $b_j \neq 0 ~ \forall ~j$ then $\exists ~ !$ stationary measure $\mu^\epsilon.$ For any solution $u(\tau)$, we have
+<script type="math/tex">\mbox{dist} (\mathcal{P}(u(\tau)), \mu^\epsilon) \rightarrow 0 ~\mbox{as}~ \tau \rightarrow 0.</script></p>
+
+<p>The measure $\mu_\epsilon$ depends upon the force but not on the data.</p>
+<h2 id="fouriertranform">Fourier Tranform</h2>
+<p>For the operator $A = - \Delta + V(x)$ consider the eignefunctions $\phi_1, \phi_2, \dots$ with associated eigenvalues $\lambda_1, \lambda_2, \dots$. Assume that</p>
+<ol>
+	<li>$\lambda_1 &gt;0$</li>
+	<li>$\lambda \cdot s \neq 0 ~ \forall s \in {\mathbb{Z}}^\infty, ~ 0 &lt;|s| &lt; \infty.$</li>
+</ol>
+<p>For any $u \in H^1$, we can expand $u$ w.r.t. the basis and denote the associated coefficients by $v_1, v_2, \dots$. The <em>Fourier transform</em> is the map $u \longmapsto v$ and the inverse goes the other way.</p>
+
+<p>We can pass from $v_j$  to polar coordinates $I_j, \phi_j$. He recasts the dynamics w.r.t the polar coordinate variables and started speaking about averaging lemmas.</p>
+<h2 id="effectiveequations">Effective Equations</h2>
+<p>These objects are somehow analogs of the kinetic equations in the theory of weak turbulence….some notation….I want to understand this better….an average of the nonlinear potential energy term. This is a semilinear heat equation with a nonlocal heat equation. The term proportional to $\gamma_I$ does not influence the effective equation. This equation <em>really</em> takes complete control when $\epsilon$ is very small.</p>
+
+<p>The advance obtained here uses randomness in the forcing. “I expect that the effective equation is relevant even without the randomness but I don’t know how to prove it.”</p>
+
+<hr />
+
+<h1 id="j.collianderhttp:www.math.toronto.edu:numericalsimulationsofradialsupercriticaldefocusingwaves"><a href="http://www.math.toronto.edu/">J. Colliander</a>: Numerical Simulations of Radial Supercritical Defocusing Waves</h1>
+<p><a href="http://www.math.toronto.edu/colliand/talks/2011_01_Colliander_Edinburgh_Final.pdf">My slides</a></p>
+
+<hr />
+
+<h1 id="f.bouchetens-lyonhttp:perso.ens-lyon.frfreddy.bouchet:invariantmeasures"><a href="http://perso.ens-lyon.fr/freddy.bouchet/">F. Bouchet (ENS-Lyon)</a>: Invariant measures</h1>
+<p>Collaborators:</p>
+<ul>
+	<li>A. Venaille</li>
+	<li>E. Simonnet</li>
+	<li>H. Morita</li>
+	<li>M. Corvellec</li>
+</ul>
+<p>Physical phenomena. I am interested in self-organization in turbulent flows. Examples: stripes and spots on Jupiter. Ocean currents. Height differences in ocean surface. Stable jets.</p>
+
+<p>I will mainly speak about the 2d Navier-Stokes equation with random forcing. This is not such a good model for these phenomena. There are others that are quite similar that might be better to describe the phenomena listed above like the quasigeostrophic and shallow water layer models.</p>
+
+<p>Equilibrium will be related to 2D Euler. For 2D, we have the vorticity-stream formulation. Steady solutions to the Euler equation satisfying $\omega = f(\psi)$ or, equivalently, ${\bf{u}} \cdot \nabla \omega = 0,$ play a crucial role in describing the dynamics. Degeneracy: what is the selection mechanism leading to $f$? The main advance is that $f$ can be predicted using equilibrium statistical mechanics ideas.</p>
+
+<p>Outline:</p>
+<ol>
+	<li>Invariant measures of the 2D Euler equation
+<ul>
+	<li>Equilibrium stat mech</li>
+	<li>applications of equilibrium stat mec</li>
+	<li>invariant measures of the 2d euler equation</li>
+</ul>
+</li>
+	<li>Irreversible relaxation of the 2D Euler equations
+<ul>
+	<li>irreversibility in fluid mechanics</li>
+	<li>…..slide switched….ack</li>
+</ul>
+</li>
+	<li>2D stochastic Navier-Stokes equation: non-equilibrium phase transitions</li>
+</ol>
+<p>Statisitical mechanics for 2d and geopphysical flows.</p>
+
+<p>Statistical equilibrium. very old idea. famous contributions</p>
+<ul>
+	<li>Onsager 1949</li>
+	<li>Joyce-Montgomery 1970</li>
+	<li>Caglioti Marhioro plvirenti lions 1990</li>
+	<li>Robert-Sommeria 1991</li>
+	<li>Miller 1991</li>
+	<li>Eyink-Spohn 1994</li>
+</ul>
+<p>Robert-Sommeria-Miller (RSM) theory:</p>
+
+<p>The most probable vorticity field. We want to measure the number of microscopic fields $\omega$ which correspond to a probabiility $\rho$. The number of such configuarations is quantified by the Boltzmann-Gibbs Entropy. This is the mixing entropy. Microcanonical RSM variational problem. Critical points are startionary flows of the QG model.</p>
+
+<p>Microcanonical measures for Hamiltonian systems:</p>
+<ul>
+	<li>Hamilton’s equations</li>
+	<li>Liouville Theorem</li>
+	<li>Define the microcanonical measures which are the natural invariant measures taking into account the constraints in the dynamics.</li>
+</ul>
+<p>Detailed Liouvilles thEorem for 2D Euler:</p>
+
+<p>Lee 1952, Kraichnan JFM 1975, Robert 2000</p>
+
+<p>We want to take into account the casimirs and the constraints. He describes a limiting process based on galerkin approximations. Mean field behavior? Large deviations? Sanov theorem?</p>
+
+<p>……lots of discussion…..ideas vs. proofs…..nontribvial…what’s going on? Audience is confusing me…speaker seems clear.</p>
+
+<p>Young measures….entropy…</p>
+
+<p>The claim is that the theory he and his collaborators hav developed explains the emergence and stabiltiy of coherent structures like the great spot on Jupiter. Similar statements about ocean structures.</p>
+
+<p>Are microcanonical measures invariant measures for the 2D Euler dynamics? Is the setof invariant Young measures for the 2D Euler dynamics larger than the set of microcanonical measures?</p>
+
+<p>Two conjectures:</p>
+<ul>
+	<li>Weak perturbations of the 2D Euler equations close to steady states converge to invariant Young measures.</li>
+	<li>The 2D Euler equations converge to invariant Young measures.</li>
+</ul>
+<p>Wave breaking is an irreversible mechanism in fluids that does not require viscosity.</p>
+
+<hr />
+
+<h1 id="sebastianreichhttp:users.math.uni-potsdam.desreich:dataassimilation"><a href="http://users.math.uni-potsdam.de/~sreich/">Sebastian Reich</a>: Data Assimilation</h1>
+<h2 id="dataassimilation">Data Assimilation</h2>
+<p>Nature              Physical Laws</p>
+
+<p>Measurements        Model</p>
+<pre><code>        Data
+
+        Optimal prediction</code></pre>
+<p>He drew arrows between these frameworks of understanding and highlights the assembly of processing at the data assimilation level.</p>
+
+<p>Sequential Data Assimilation in a nutshell.</p>
+
+<p>Model + Observations $\longmapsto$ Prediction</p>
+
+<p>Ingredients of Data Assimilation:</p>
+<ol>
+	<li>Mathematical and numerical model. solutions and their undertainties caused by approximation errors as well as state and parameter undertainties.</li>
+	<li>Data/observations with measurements as well as approximation (forward operators) errors –&gt; Inverse problems</li>
+	<li>Numerical approximations to the data assimilation problem within a statistical (Bayesian) framework, assessment of the induced predictions and their uncertainties.</li>
+</ol>
+<h2 id="mathematicalproblemstatement">Mathematical problem statement</h2>
+<p>Consider an evolution problem for which the initial state is treated as a random variable with some given probability density function. For simplicity assume finite-d phase space. The uncertainty in the initial conditions will generally lead to unpredictability over long time intervals. Weather prediction is a nice example.</p>
+
+<p>To counterbalance this increase in uncertainty, we collect observations at discrete times subject to some random measurement errors. We wish to find a trajectory that makes optimal use of the available information in terms of initial data, observations and model dynamics. The task of data assimilation is to combine the model, the measurements and then we want to make the optimal prediction.</p>
+<h2 id="theoreticalsolution">Theoretical solution</h2>
+<p>i) Model dynamics</p>
+
+<p>Lift the dynamics to the level of the Liouville equation on the probability distribution function.</p>
+
+<p>ii) Data assimilation</p>
+
+<p>Assimilate data using Bayes’ theorem
+<script type="math/tex">\pi (x|y) \thicksim \pi(y|x) X \rho_{pr} (x).</script></p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Here $\pi(x</td>
+      <td>y)$ is the know conditional PDF (likelihood) for observing $y$ given a state $x$. Given an actual measurement, we can correct and proceed.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Under Bayes’ theorem, we always reuce uncertainty.</p>
+<h2 id="ensembleprediction...">Ensemble Prediction…</h2>
+<p>ack….slides are changing fast.</p>
+
+<p><strong>Particle filter</strong>. We give better weight to points that are closer to the observed data. If we repeat this a few times, there will be very few particles contributing to the final answer.</p>
+<h2 id="assimilationasacontinuousdeformationofprobability:mckean-vlasov">Assimilation as a continuous deformation of probability: McKean-Vlasov</h2>
+<p>We can think of Bayes theorem as an optimal transportation problem.</p>
+
+<p>Crisan-Xiong 2010 did something similar in the context of continuous time filter problem.</p>
+
+<p>Otto 2001 for an application in gradient flow dynamics.</p>
+
+<p>We started with an ODE, spoon fed the measurement data to update the dynamics, and encounter a more complicated dynamical description of the system. We encounter a McKean-Vlasov system, a modified Liouville equation, which is closed by an elliptic PDE.</p>
+
+<p>Numerical filter implementations will now rely on appropriate approximations to the lliptic PDE. We use the ensemble of solutions to define an appropriate statistical model and then solve via numerics or by quadrature.</p>
+
+<p>Obvious choices for the numerical version of $\rho$ include a Gaussian PDF parameterized by the ensemble mean and covariance matri (ensemble Kalmna filter) or Gaussian mxture modes.</p>
+
+<hr />
+
+<h1 id="n.faou:2dsubmarines">N. Faou: 2d Submarines</h1>
+<p>2D Euler equation on 2-torus….I was a bit tired and did not type notes during this talk.</p>
+
+<hr />
+
+<!--#include virtual="${Base_URL}/templates/footer.html" -->
+<p> </p>
+
+  </article>
+
+
+
+
+
+</div>
+
+      </div>
+    </div>
+  
+  </body>
+
+</html>

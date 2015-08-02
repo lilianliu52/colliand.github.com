@@ -1,0 +1,625 @@
+---
+layout: post
+author: James Colliander
+published: true
+tags : [Notes, France]
+comments: false
+---
+
+<!-- -->
+
+
+<!--?xml version="1.0" encoding="UTF-8" ?-->
+
+<!--   Created by James Colliander on 2011-09-04.   Copyright (c) 2011 University of Toronto. All rights reserved.     -->
+
+I am at a <a href="http://www.math.sciences.univ-nantes.fr/handdy/content/workshop-handdy-2011">workshop</a> on <a href="http://fr.wikipedia.org/wiki/%C3%8Ele_de_Berder">Île de Berder</a>. The post below contains the notes I am taking during the talks. I apologize (especially to the speakers) for misquotations and typos but I hope the notes might be useful.
+
+<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/%C3%8Ele_Berder_%2801%29.jpg/280px-%C3%8Ele_Berder_%2801%29.jpg" alt="Île de Berder" />
+
+<hr />
+
+
+
+<hr />
+
+<strong>Tuesday 2011-09-06</strong>
+<h1 id="rafikimekrazhttp:perso.crans.orgimekraz:nonresonantnormalformforperturbedquantumharmonicoscillatorhttp:www.math.sciences.univ-nantes.frhanddysitesfr.handdyfilesimekraz-harmo-zoll-beamer30.pdf"><a href="http://perso.crans.org/imekraz/">Rafik Imekraz</a>: <a href="http://www.math.sciences.univ-nantes.fr/handdy/sites/fr.handdy/files/imekraz-harmo-zoll-beamer30.pdf">Non resonant normal form for perturbed quantum harmonic oscillator</a></h1>
+Study high sobolev norms of solutions $\psi$ solving a NLS with harmonic trap and a nice smooth bounded potential. There is also a compact operator $M$ which is introduced to avoid the resonance. The natural Sobolev spaces are those naturally associated to the linear operator (without the compact operator).
+
+Almost global existence. $\exists ~M$ with small operator norm and for data of size $\epsilon$ in $H^s$ then the solution stays small in that norm for times on the order of $\epsilon^{-3}$.
+
+Earlier results on NLS and NLW on $S^1$. Delort-Szeftel 2007, Bambusi-Delort-Grébert-Szeftel on Zoll Manifolds.
+
+In his thesis he replaced the $x^2$ by $x^{2p}$, e.g. the quartic oscillator.
+
+When $V=0$, we have the usual Hermite eigenfunctions.
+
+This PDE can be given a Hamiltonian formulation. The operator $M$ is given as a Fourier multiplier on the eigenbasis with $m_j \rightarrow 0$.
+
+Normal Form Procedure:
+
+$H_0 + P $ transforms into $H_0 + Z + R$ with $Z$ in normal form and $R$ a negligible error term.
+
+Spectral key points. $H_0$ has a nonresonance condition. We will say that the spectrum is nonresonant. Definition introduced initially by Bambusi, used by Delort, Brebert, Imkeraz, Paturel, Szeftel. The condition involves infinitely many eigenvalues.
+
+Delort-Szeftel argument. The spectrum is not explicit when $V \neq 0$. However, there is a 2005 theorem by Klein-Korotyaev-Pokrovski:
+$$V \in BC^\infty(\mathbb{R}, \mathbb{R}) \cap L^1 (\mathbb{R}) \implies |\lambda_j - 2j -1| \leq \frac{C}{j^\delta}.$$
+Same assumption on a Zoll manifold.
+
+We have a multilinear estimate. Technical proof with a commutator lemma. Uses smoothness and $L^p$ estimates on eigenfunctions by Yajima-Zhang 2001. It is not necessary to know the eigenfunctions explicitly.
+
+<strong>Conclusion:</strong> A normal form procedure is possible to deduce almost global existence for
+$$
+i \partial_t \psi = ( - \partial_x^2 + x^2 + V(x) + M) \psi \pm |\psi|^2 \psi.
+$$
+
+Is it possible to say something when $M=0$? Does there exist a $V$ which has a nonresonant spectrum? We give a partial answer. Yes, there exists such a $V$ but without the regularity we’d like to impose. The function $V$ will be continuous and bounded but we don’t know if it is possible to create a more regular $V$ which remains nonresonant. The lack of regularity seems to preclude the multilinear analysis.
+
+Chelkak-Kargaev-Korotyaev 2004
+
+<strong>Q</strong>: Does the proof of almost global existence imply global well-posedness with polynomial-in-time bounds on the high Sobolev norms?
+
+There was some discussion but the answer was not clear. It turns out the question was naive because there are examples showing blowup.
+
+<hr />
+
+
+
+<hr />
+
+<h1 id="massimilianobertihttp:www.dma.unina.itberti:quasiperiodicsolutionsofhamiltonianpdeshttp:www.math.sciences.univ-nantes.frhanddycontentworkshop-handdy-2011"><a href="http://www.dma.unina.it/berti/">Massimiliano Berti</a>: <a href="http://www.math.sciences.univ-nantes.fr/handdy/content/workshop-handdy-2011">Quasiperiodic solutions of Hamiltonian PDEs</a></h1>
+Hamiltonian PDES.
+
+Goal: existence of qp solutions of pdes. techniques, based on nash-moser implicit function theorem and KAM theory. Techniques apply to NLW, NLS and 1d derivative-NLW.
+
+Perspectives: water waves?
+
+Model case:
+
+$$u_{tt} - \Delta u + V(x) u = \epsilon f(\omega t, x, u)$$
+<ul>
+	<li>$x \in T^d$, periodic boundary conditions</li>
+	<li>$\epsilon$ small</li>
+	<li>$V(x) \in C^k (T^d; R)$</li>
+	<li>$f \in C^k$</li>
+</ul>
+NLW is a Lagrangian equation on an infinite dimensional phase space.
+
+The problem is to construct qp solutions of the NLW for $\epsilon \neq 0$.
+
+QP Definition:
+$u(\omega t, x)$ where $u(\phi, x): T^\nu \times T^d \rightarrow R$
+
+Linear equation.
+
+superposition principle….harmonic oscillator with frequence $\sqrt{\lambda_j}$ when $\lambda_j &gt;0$. For $\lambda_j &lt; 0$, we have a harmonic repulsor.
+
+There are infinite dimensional spaces of qp solutions of the linear equation. We want to see if these persist for the nonlinear equation when $\epsilon &gt;0$ is small.
+
+The embedding $T^\nu \ni \phi \longmapsto u(\phi, x)$ solves the “NLW”
+$$
+(\omega \cdot \partial_\phi)^2 u - \Delta u + V(x) u = \epsilon f(\phi, x, u).
+$$
+in a Sobolev space $H^s (T^\nu \times T^d )$.
+
+This can be approached as a bifurcation problem. Let $F(\epsilon, u)= (\omega \cdot \partial_\phi)^2 u - \Delta u + V(x) u - \epsilon f(\phi, x, u).$ We know there are zeros when $\epsilon =0$ and we want to branch off these via the implicit function theorem. The standard hypotheses of the implicit function theorem are not satisfied.
+
+We need to make a diophantine assumption to proceed. We use Newton Method + “smoothing” following the Nash-Moser IFT.
+
+Newton tangent method for zeros of $F(u) = 0 + “smoothing”$:
+$$
+u_{n+1} = u_n - S_n (D_u F)^{-1} (u_n) F(u_n),
+$$
+where $S_n$ is a regularizing operator.
+
+Advantage: Quadratic scheme!
+$$\| u_{n+1} - u_n \|<em>s \leq C(n) \| u</em>{n1} - u_{n-1} \|_s^2.
+$$
+This is convergent even when the constants $C(n)$ are exploding.
+
+However, there are also disadvantages. We are studing a linearized equation on an approximate solution. Linear differential operator with non-constant coefficients. It is not diagonal in Fourier basis. We know the eigenfunctions exist and are orthonormal in $L^2$ but we don’t have much explicit control. This is a “singular” perturbation problem.
+
+<strong>Literature:</strong>
+
+Kuksin 89; Wayne 90: Dirichlet b.c., $f$ analytic, KAM theory. Eigenvalues of $- \partial_x^2$ are simple so the KAM nonresonance conditions are satified (so-called 2nd Melnikov conditions)
+
+Craig-Wayne 93: Periodic case. Eigenvalues have multiplicity 2. Lyapunov-Schmidt, f analytic, Newton-Method, periodic solution. Extended to PDE nonresonant of Lyapunov center theorem. …breath mention by Bourgain.
+
+Berti-Bolle DMJ 06, Advances 08. Berti (book) 08. Extend to PDE the Weinstein-Moser and Fadell-Rabinowitz theorems.
+
+In the space dimension $d \geq 2$, main difficulties:
+<ul>
+	<li>eigenvalues of $-\Delta + V(x)$ appear in clusters of increasing size. For example all the lattice points on spheres have the same linear frequency.</li>
+	<li>Feldman-Knonner-Trubowitz. The eignefunctions of $-Delta + V(x)$ are NOT localized with respect to exponentials. This means that there are strong interactions between the eigenmodes. In this frame, it is often convenient to work with pseudo-PDE involving Fourier multipliers. (Bourgain, Kuksin-Elliason)</li>
+	<li>Bourgain 95-98 f analytic.</li>
+	<li>Bourgain’s question 97: for differentialble nonlinearities? See Berti book.</li>
+	<li>Berti-Procesi DMJ 11, General Riemannian manifolds. General Lie group: products of eigenfuctions can be represented as a sum over eigenfunctions. Related to Birkhoff normal form results by Bambusi, Delort, Grébert, Szeftel.</li>
+</ul>
+QP solutions for $d \geq 2$:
+<ul>
+	<li>Newton Method. Bourgain Annals 98 ($d=2$); Annals 05; Wang 11 Supercritical (completely resonant) NLS-NLW, no parameters.</li>
+	<li>KAM Method: Kuksin-Eliasson Annals 10. analytic NLS w Fourier multipliers.</li>
+	<li>Procesi-Xu 11, Procesi-Procesi 11, any dimension, Birkhoff normal form for completely resonant NLS.</li>
+</ul>
+New results for qp solutions in $d \geq 2$:
+<ul>
+	<li>Berti-Biasco CMP 2011</li>
+	<li>Bambusi-Berti-Magistrelli JDE 2011.</li>
+</ul>
+<strong>Techniques:</strong>
+<ul>
+	<li>Optimal Nash-Moser iterative scheme: different from the analytic Newton iteration.</li>
+	<li>For measure estimates, we use simpler techniques that Bourgain avoiding semi-algrebraic sets.</li>
+</ul>
+Very interesting technical discussion highlighting the favorable constellation effects when the frequencies are in tight resonance.
+
+Granville: More “torsion” of a manifold there are less integers nearby. (This seems interesting…look up and discuss with Andrew.)
+
+<hr />
+
+
+
+<hr />
+
+<strong>Wednesday 2011-09-07</strong>
+<h1 id="frdricbernicothttp:math.univ-lille1.frbernicot:bilinearstrichartzinequalitiesandspace-timeresonanceshttp:www.math.sciences.univ-nantes.frhanddysitesfr.handdyfilesberder2011bernicot.pdf"><a href="http://math.univ-lille1.fr/~bernicot/">Frédéric Bernicot</a>: <a href="http://www.math.sciences.univ-nantes.fr/handdy/sites/fr.handdy/files/berder2011bernicot.pdf">Bilinear Strichartz inequalities and space-time resonances</a></h1>
+(joint work with P. Germain)
+
+Linear Strichartz inequalities for Schrodinger. $L^2$ admissibility pairs. History: Strichartz 77, Ginibre-Velo 89, Keel-Tao 98. Extensions to compact manifolds with loss of derivatives.
+
+What about bilinear Strichartz inequalities? Suppose $f \longmapsto e^{it \Delta} f = u, g \longmapsto v$. We’d like to know:
+
+$$ \| vw \|<em>{L^p L^q (R^{1+d})} \leq \|f \|</em>2 \| g \|_2. $$
+
+In previous works on this topic, these were typically studied with $p, q$ both equal to 2. We are interested in the cases where p and q are not equal to 2.
+
+Applications: some large time behavior results; some stability results.
+
+Time resonant set; space resonant set; their intersection is called the spacetime resonant set.
+
+Take advantage of geometric properties of the resonant set to prove boundedness properties for solutions.
+
+Some related works could be mentioned:
+<ul>
+	<li><a href="http://www.ams.org/journals/tran/1996-348-08/S0002-9947-96-01645-5/home.html">Kenig-Ponce-Vega 1996: Quadratic forms for the 1-D semilinear Schrödinger equation </a></li>
+	<li><a href="http://arxiv.org/abs/math/0005001">Tao 2000: Multilinear weighted convolution of $L^2$ functions, and applications to non-linear dispersive equations </a></li>
+	<li><a href="http://www.ams.org/journals/tran/2001-353-08/S0002-9947-01-02760-X/home.html">Colliander-Delort-Kenig-Staffilani 2001:Bilinear estimates and applications to 2d NLS </a></li>
+</ul>
+The detailed study discussed here also resonates with the paper of <a href="http://arxiv.org/abs/0809.5091">Bejenaru-Herr-Tataru 2009:A convolution estimate for two-dimensional hypersurfaces</a>.
+
+<hr />
+
+
+
+<hr />
+
+<h1 id="emanuelehaushttp:www.mat.unimi.itpersona.phpz1id_persona836:asymptoticstabilityofthesynchronousresonanceforanelasticsatellitewithinternalfrictionhttp:www.math.sciences.univ-nantes.frhanddysitesfr.handdyfilesberder2011haus.pdf"><a href="http://www.mat.unimi.it/persona.php?z=1;id_persona=836">Emanuele Haus</a>: <a href="http://www.math.sciences.univ-nantes.fr/handdy/sites/fr.handdy/files/berder2011haus.pdf">Asymptotic stability of the synchronous resonance for an elastic satellite with internal friction</a></h1>
+(joint work with <a href="http://www.mat.unimi.it/users/bambusi/">D. Bambusi</a>)
+
+Synchronous resonance: the satellite always shows the same face to the planet. For example, the moon does this.
+Why does this happen? Tidal effect. The satellite is deformed and stretched towards the planet. If the satellite is not in a circular synchronous orbit, the direction of the stretching changes inside the satellite –&gt; dissipation. Our aim is to stydy the system of coupled equations and prove asymptotic stability of the synchronous resonance. We want to model the orbital, rotational and internal degrees of freedom.
+
+Internal friction –&gt; circular orbit + 1:1 resonance is a (local) attractor.
+
+Spherical case was done earlier by D. Bambusi.
+
+<hr />
+
+
+
+<hr />
+
+<h1 id="j.colliander:normalformsandtheupside-downi-methodhttp:www.math.sciences.univ-nantes.frhanddysitesfr.handdyfiles2011-09-04_colliander_berder_final.pdf">J. Colliander: <a href="http://www.math.sciences.univ-nantes.fr/handdy/sites/fr.handdy/files/2011-09-04_Colliander_Berder_Final.pdf">Normal Forms and the Upside-Down $I$-method</a></h1>
+(joint <a href="http://arxiv.org/abs/1010.2501">work</a> with <a href="http://herald.kaist.ac.kr/news/articleView.html?idxno=59">Soonsik Kwon</a> and <a href="http://www.math.princeton.edu/~hirooh/">Tadahiro Oh</a>)
+
+<hr />
+
+
+
+<hr />
+
+<h1 id="rmicarleshttp:www.math.univ-montp2.frcarles:interactionofcoherentstatesforhartreeequationshttp:www.math.sciences.univ-nantes.frhanddysitesfr.handdyfilesberder2011carles.pdf"><a href="http://www.math.univ-montp2.fr/~carles/">Rémi Carles</a>: <a href="http://www.math.sciences.univ-nantes.fr/handdy/sites/fr.handdy/files/berder2011carles.pdf">Interaction of coherent states for Hartree equations</a></h1>
+This talk will involve semiclassical analysis and the equation might not be Hamiltonian.
+
+Schrodinger equation in semiclassical regime ($\epsilon \ll 1$):
+$$
+i \epsilon \partial_t \psi^\epsilon + \frac{\epsilon^2}{2} \Delta \psi^\epsilon = V(x) \psi^\epsilon.
+$$
+We study semiclassical wave packets (coherent states),
+$$
+\psi^\epsilon (0, x) = \frac{1}{\epsilon^{d/4}} a ( \frac{x-x_0}{\sqrt{\epsilon}}) e^{i p_0\cdot (x-q_0)/\epsilon}, ~ a \in S(R^d).
+$$
+The potential $V$ is smooth, real-valued and at most quadratic: $ V \in C^\infty, \partial_x^\alpha V \in L^\infty, ~\forall |\alpha| \geq 2.
+$$
+(No sign assumptions)
+The associated Hamiltonian flow is globally well-posed but might involve exponential growth.
+
+Classical action: $ S(t) = \int_0^t (\frac{1}{2} |p(s)|^2 - V(q(s))) ds. $
+
+Equation for $\psi^\epsilon$ is equivalent, via algebraic manipulations to
+$$
+i \partial_t u^\epsilon + \frac{1}{2 } \Delta u^\epsilon = {\mathcal{V}}^\epsilon u^\epsilon.
+$$
+where $ {\mathcal{V}}^\epsilon =$…ack slide switch.
+
+Ehrenfest time. Validity of the approximation with $V$ is not a polynomial. The difference between the appoximation and the original solution solves an inhomogenous Schrodinger equation. This is studied via energy estimates.
+
+He carries ont a derivation of the ansatz from “scratch” by comparing things at different levels of $\epsilon^j$. The analysis “explains” why this is a reasonable choice.
+
+Hartree equation. Same equation as before with additional term $(K * |\psi^\epsilon|^2) \psi^\epsilon$. Here we need $K \in W^{\infty, \infty}$. The ansatz is adjusted by adding in a new prefactor $\epsilon^\alpha$. The importance of the nonlinearity emerges differently depending upon the value of $\alpha$.
+
+Two initial coherent states. When $\alpha = 0$, the Hamiltonian flow is affected by nonlinear effects. Modified $\epsilon$-dependent actions.
+
+Hmmm…..I should recast interction Morawetz in the semiclassical setting and see if an interesting estimate emerges in the semiclassical limt.
+
+Main Result: The exact solution can be approximated by two coherent states but there is a required phase drift between the coherent states. There is a corollary about the Wigner measures. The Wigner measure does not see the nonlinear effect except when $\alpha =0$.
+
+<hr />
+
+
+
+<hr />
+
+<h1 id="tiphainejzquelhttp:www.math.univ-toulouse.fr1-17731-fiche-professionnelle.phpidfiche406:homoclinicorbitswithmanyloopsnearao2iomegaresonantfixedpointforhamiltoniansystemshttp:www.math.sciences.univ-nantes.frhanddysitesfr.handdyfilesberder2011jezequel.pdf"><a href="http://www.math.univ-toulouse.fr/1-17731-Fiche-professionnelle.php?idFiche=406">Tiphaine Jézéquel</a>: <a href="http://www.math.sciences.univ-nantes.fr/handdy/sites/fr.handdy/files/berder2011jezequel.pdf">Homoclinic orbits with many loops near a $O^2 i\omega$ resonant fixed point for hamiltonian systems</a></h1>
+(joint work w. Patrick Bernard and Eric Lombardi)
+
+$$
+\frac{du}{dt} = L_\epsilon u + Q_\epsilon (u).
+$$
+<ul>
+	<li>$u \in R^4$</li>
+	<li>$t \in R$</li>
+	<li>$u=0$ is a fixed point, i.e. $Q_\epsilon (0) = 0$.</li>
+</ul>
+This implies that the dynamics in a neighborhood of zero. The resonance configuration is captured by the $O^2 i\omega$ resonance. 4 eigenvalues on imaginary axis, 2 above real axis, 2 below.
+
+<strong>Physical Context</strong>
+
+Motivated by study of water waves. 3d gravity-capillary fluid modelled by the Euler equation and we look for 2d traveling wave solutions. The “spatial dynamics method” produces an infinite dimensional equation. Using the center manifold theorem, this problem is reduced to a 4-d invariant manifold. We look for particular soltutions in the manifold. This is the collapse to 4d.
+
+Initial aim: existence of solitary waves. In the R4 setting, this corresponds to a homoclinic connection to 0 in the center manifold. This turned out to be hard. So, we transferred to a different study. We study the existence of generalized solitary waves. This corresponds to a homoclinic connecton to a periodic solution.
+
+Lombardi 2000.
+
+Beautiful pictures. Excellent exposition of the phase space portraits in R4. Pictures are getting even better.
+
+OK, the strategy was nicely described. The last part of the talk begins to show how the nice pictorial overview of the proof strategy is actually implemented. The details look formidable involving KAM, lots of ODE manipulations. She quotes ideas from Moser 1958, Russman 1964.
+
+(I learned later from Tiphaine that she created her figures using <a href="http://en.wikipedia.org/wiki/Adobe_Illustrator">Adobe Illustrator</a>.)
+
+<hr />
+
+
+
+<hr />
+
+Thursday 2011-09-08
+<h1 id="sandrinegrellierhttp:www.univ-orleans.frmapmomembresgrellier:integrableeffectivedynamicsforanonlinearwaveequationhttp:www.math.sciences.univ-nantes.frhanddycontentworkshop-handdy-2011"><a href="http://www.univ-orleans.fr/mapmo/membres/grellier/">Sandrine Grellier</a>: <a href="http://www.math.sciences.univ-nantes.fr/handdy/content/workshop-handdy-2011">Integrable effective dynamics for a nonlinear wave equation</a></h1>
+(joint work with <a href="http://www.math.u-psud.fr/anm_edp/donnees/pgerard.htm">Patrick Gérard</a>; <a href="http://arxiv.org/abs/1110.5719">arXiv preprint</a>)
+
+Consider the half wave equation:
+
+$$i \partial_t u - |D| u = |u|^2 u$$
+
+Here $|D|$ is what you expect. This is a tyo model for NLS on degenerate geometries leading to a lack of dispersion. This equation admist the same kind of conservation laws as NLS:
+<ul>
+	<li>$H(u)$</li>
+	<li>$p(u)$</li>
+	<li>$Q(u)$</li>
+</ul>
+Compared to the $NLS_3^+$, this is a nondispersive equation..
+
+$\Pi_+$ is projection onto Fourier modes $k \geq 0$. $\Pi_-$ is the projection onto modes $k&lt;0$.
+
+The equation is $L^2$ critical but the first iteration of the Duhamel formula is not bounded in $H^s$ for $s&lt; \frac{1}{2}.$ Despite this, we have a Cauchy theory in $H^{1/2}$. There exists a unique solution in $C(R; H^{1/2}(T))$. Persistence of regularity also holds for $s&gt;1/2$. The proof uses some Brezis-Gallouet type logarithmic inequalities. It provides rather bad large time estimates:
+
+$$
+\| u(t) \|<em>{H^s} \leq e^{e^{C</em>s t}}.
+$$
+
+We compare this to the cubic Szegö equation:
+$$
+i \partial_t u_+ + \partial_x u_+ = \Pi_+ (|u|^2 u).
+$$
+Decoupling result: Assume that $\Pi_+ u_0 = u_0$….ack slide changed….
+
+<strong>Theorem:</strong> Let $s&gt;1$. Assume that $\Pi_+ u_0 = u_0 = O(\epsilon)$ in $H^s$. Then, $u =v + O(\epsilon^{3-\alpha})$ on a time scale of size $\epsilon^{-2} \log \epsilon^{-1}$ where $v$ solves the half-wave equation. Furthermore, the solution remains small in $L^\infty$.
+
+<strong>Corollary (Weak Turbulence):</strong> Let $s&gt;1$. There exists a sequence of data $u_0^n$ and a sequence of times $t_n$ such that the data converges to zer in $H^r$ for all $r$ while the $H^s$ size of the solutions at time $t_n$ exceeds a power of $\log \frac{1}{\| u_0^n \|_{H^s}}$.
+
+Contrast this with the 1d cubic NLS. Zakharov-Shabat 1972: no such norm inflation. For 2d cubic, CKSTT 2010 construct small $H^s$ data which grows large.
+
+The proof comes from the “weak turbulent property” of the cubic Szegö equation. If the approximation result in the Theorem held on a longer time interval, we could prove a stronger weak turbulence result for the half-wave problem, more analogous to the corresponding result for Szegö where divergence to infinity has been established.
+
+Quick sketch of the sequential norm inflation property for cubic Szegö. This follows from a rather explicit analysis of solutions of the form constant + pure exponential.
+
+<strong>Sketch of proof:</strong> Analysis similar to what I spoke about yesterday. Nonlinear term is explicitly represented in terms of Fourier coefficients.. The $L^4$ expression is separated into the positive and negative frequency components in $L^4$ plus another term related to the $L^2$ norm and another term.
+
+Removal of trivial resonances with a change of phase, as in Bourgain. Birkhoff normal form transformation. Resonance set is identified and has some algebraic structure so that the resonant quartets can be identified. There is no problem with small divisors here. This leads to a new system after these transformations. Our task is to show that this transformed system is approximated well by the Szegö equation. Smallness in $H^s$ can be shown via bootstrap on a time interval of size $\epsilon^{-2} \log \epsilon^{-1}$.
+
+<strong>Lax Pair and a priori bounds for Szegö:</strong> Hankel operator….Lax 1968, Gérard-Grellier 2010. Peller 1982 shows that the trace of the Hankel operator is equivalent to the $B^1_{1,1}$ norm. This space is an algebra which contains all the $H^s$ spaces and is a subspace of $L^\infty$. The solution stays bounded in $B^1_{1,1}$.
+
+There are many things to understand. We would really like to understand NLS on the Heisenberg group.
+
+Nice discussion at the end of the talk explaining how the half-wave problem is sort of in between the Szegö equation and the NLS on the Heisenberg group.
+
+Dario Bambusi suggested that a normal form iteration method a la Bourgain might allow for an improved approximation result.
+
+<hr />
+
+
+
+<hr />
+
+<h1 id="oanapocovnicuhttp:www.math.u-psud.frpocovnicu:theszegequationseenastheresonantdynamicsofanonlinearwaveequationhttp:www.math.sciences.univ-nantes.frhanddycontentworkshop-handdy-2011"><a href="http://www.math.u-psud.fr/~pocovnicu/">Oana Pocovnicu</a>: <a href="http://www.math.sciences.univ-nantes.fr/handdy/content/workshop-handdy-2011">The Szegö equation seen as the resonant dynamics of a nonlinear wave equation</a></h1>
+Similar to the last talk. My study will be done on the real line, rather than the torus. Why do that? Normal form methods work nicely on the torus. In the setting of the real line, we can still have small divisors. Cutoffs like done in Jim’s talk would create other issues and the approximating result would involve an equation other than the Szegö equation. Instead of using the Normal forms approach, we use the renomalization group (RG) method.
+
+SE: $ i\partial_t u = \Pi_+ (|u|^2 u).$
+
+In the case of the real line, we have one solution with initial data of an explicit form, then we can prove that the Sobolev norms behave like
+$$
+\| u(t) \|_{H^s} \thicksim t^{s-1}.
+$$
+
+<strong>Theorem:</strong> Let $v$ solve the half wave equation with initial data $\epsilon W_0$ where $W_0 \in H^s_+ (R).$
+Let $u$ denote the evolution from the same data under the Szegö equation. Assume that $\| u(t) \|_s \leq C \epsilon (\log \frac{1}{\epsilon^\delta})^\alpha$ for $0 \leq \alpha \leq \frac{1}{2}$ then we have a good approximation….ack slid changed.
+
+Then we have a corollary which transports the weak turbulence property of Szegö over to the half wave equation.
+
+<strong>Remark:</strong> In order to show arbitrarily large growth of the solution, we need a better approximation result for a time of size $\epsilon^{-2 - \beta}$ where $\beta &gt;0$. The point here is that the Szego equation is the resonant subsystem sitting iside the half-wave equation, analogous to the way the Toy Model sits inside cubic NLS on $T^2$.
+
+RG method: Chen-Goldenfeld-Oono 1994, De Ville, Harkin, Holzer, Josic, Kaper; Ziane Temam, Moise, Abou Salem.
+
+How does this method work?
+
+We make a change of variable to remove the $\epsilon$ prefactor in front of the data and to move into the interaction representation. This introduces an equivalent equation with some exponentials and $\epsilon^2$ in front of the nonlinearity. We make a naive perturbation expansion in powers of $\epsilon$ and a Taylor expansion of the nonlinearity in terms of the unknown $w$. We plug and chug to identify powers of $\epsilon$. There are no ad hoc assumptions….we can just try….so it has some flexibility over the Birkhoff normal form.
+
+The manipulations allow us to identify resonance as a vanishing of the phase function inside the Duhamel integral. It gows in time as a secular term and will cause our approximation to break down. We consider then the renomalzation group equation. We define a new approximating object which includes the explicit secular term.
+
+Many resonances in this half-wave equation. The resonant set of the half wave equation ${ \phi (\xi, \xi_1, \xi_2, \xi_3) = 0}$ has non-zero measure for fixed $\xi$. Nice remarks connecting the resonant set to the discussion from Bernicot’s talk.
+
+She has also obtained a second order approximating equation to the half-wave equation. This equation is Szegö plus some 5-linear terms. The approximation degree is tighter ($\thicksim \epsilon^5$) but on the same time interval $\epsilon^{-2} \log {\frac{1}{\epsilon}}.$ This quintic extension of Szegö is not yet understood.
+
+<hr />
+
+
+
+<hr />
+
+<h1 id="zaherhanihttp:www.math.ucla.eduzhani:longtimestronginstabililtyandunboundedorbitshttp:www.math.sciences.univ-nantes.frhanddycontentworkshop-handdy-2011"><a href="http://www.math.ucla.edu/~zhani/">Zaher Hani</a>: <a href="http://www.math.sciences.univ-nantes.fr/handdy/content/workshop-handdy-2011">Long time strong instabililty and unbounded orbits</a></h1>
+Consider cubic NLS on $T^2$. This problem is LWP in $H^s$ for $s&gt;0$ and GWP for $s&gt;2/3$. We are interested in dynamical aspects of global flow. How do the orbits behave in $H^s$? Are all the orbits bounded or doe they grow in time? Such questions are crucial in understanding the frequency dynamics of the energy.
+
+<strong>Upper bounds</strong> on the $H^s$ norm. WE have ocnservation of mass and energy which give a prior bounds on $L^2$ and $H^1$. There are no unbounded orbits in $H^s$ for $s =0, 1$. The 1d analog possesses infinitely many conservation laws that control integer Sobolev norms. Polynomial-in-time bounds have been established by Bourgain, Staffilani, CKSTT&lt; DSPST, Sohinger, CKO. We don’t expect poly bounds to be sharp.
+
+<strong>Lower bounds</strong> Does there exist a global solution fo cubic NLS that satisfies $\sup_{t \in R}  \| u(t) \|_{H^s} = + \infty$?
+
+<strong>Conjecture (Unbounded orbits conjectore):</strong> For $s&gt;0, s \neq 1$ there exist global solutions to cubic NLS on $T^2$ that satisfy  $\sup_{t \in R}  \| u(t) \|_{H^s} = + \infty$.
+
+Think of the solution supported on three frequency scales: low, medium, high.
+
+High frequences need to become larger. Medium frequencies have to decrease to balance the increase at high frequencies. Conservation of mass requires that the low frequencies become larger to compensate for the net loss of mass at medium and high frequencies.
+
+<strong>Theorem (CKSTT 2008):</strong> $\exists$ solution of cubic NLS which is initially small in $H^S$ but at some later time the solution exceeds an arbitrarily large size.
+
+Caution: This does not imply the existence of an unbounded orbit.
+
+Another related result is due to Carles-Faou.
+
+Long-time strong instability: $X$ banach space. $S(t)$ is a continuous dynamical system on $X$. CKSTT result shows long time strong instability near the zero solution. This notion generalizes the CKSTT conclusion around a point other than the zero solution.
+
+<strong>Lemma (H 11):</strong> Suppose $D \subset X$ is dense. If $S(t)$…ack slide changed…
+
+Lemma suggests that to prove existence of unbounded orbits, it is enough to prove that LTS instability holds near a dense subset of $H^s$.
+
+While proving that generic orbits are unbounded seems ambitions, we can formulate a localized version of the lemma. We don’t strive to prove the genericity of unbounded orbits. The localized lemma recasts the lemma above onto a closed subset $F \subset X$.
+
+The proof is a straightforward application of the Baire category theorem. This is the program. It remains open whether this approach applies to NLS. Instead, we will obtain results on some other systems inspired by NLS. We make a first nontrivial step towards the implementation of this program for the cubic nonlinearity.
+
+<strong>Theorem (LTSI near single-frequency data H 11):</strong> NLS exhibits LTSI near $A e^{inx}$ in $H^s$, at least for $s \in (0,1)$.
+
+Consier NLS with a trilinear Hamiltonian. In the limit $R \rightarrow \infty$ the nonlinearity $\mathcal{N}_R \rightarrow |u|^2 u $ and we have the LTSI property for this sytem.
+
+NLS in Fourier space. Recasting NLS in Fourier space following CKSTT. Parallelogram of four frequencies is required to excite activity at a frequency $n$. Resonance corresponds to the requirement that the parallelogram be a rectange. The restriction of the 4-wave interactions to the rectangles is called RFNLS. If the initial data are supported on a subset $\Lambda \subset Z^2$ and for any three vertices $n_1, n_2, n_3 \in \Lambda$ on a rectangle, we will say that $\Lambda$ satisfies the closure property if we are certain that the fourth vertex is also in the rectangle.
+
+A rectangle is a first example of a set which satisfies the closure property. Consider the rectangle (0,0), (N,0), (0,N), (N,N). We can calculate explicitly the associated ODE system. Suppose that at time zero, we have the mass cocnetrated mostly at (N,0) and (0,N) while there is a little bit at (0,0), (N,N). At a later time, the mass moves across to the other diagonal. Thus, the Sobolev norm increases by a factor $2^{s-1/2}$. The CKSTT construction is a concatenation of this idea.
+
+Step 1: Build a set $\Lambda = \Lambda_1 \cup \dots \cup \Lambda_P$ satisfying structural and geometric properties and the norm explosion property.
+
+Step 2. Construct a solution to RFNLS.
+
+Step 3. Approximation result. RFNLS approximates FNLS.
+
+Step 3 is the easiest one in the CKSTT paper. Recall that the passage from FNLS to RFNLS involved throwing away the nonresonant terms. An integration by parts argument allows CKSTT to show that these terms contribute very little to the FNLS dynamics. These observations are the key steps to prove the approximation Step 3.
+
+When the ground solution is changed from zero to a pure single frequency data, we have to show that the complete solution $u(t)$ is approximated well by the ground solution evolution plus the (adapted) CKSTT solution $v(t)$. By galilean invariance, we can assume that $n=0$ and $u_0 = A$ so that $u_g (t,x) = A e^{i |A|^2 t}$ and we would like to limit the interactions between the zero frequency and those in the resonant set $\Lambda$. Nonresonant interactions with the zero mode create problems. He calls this effect a second order resonance. This analysis identifies why the theorem is restricted at this stage to $s \in (0,1)$.
+
+We define the nonlinearity $\mathcal{N}R$ by throwing away all interactions for which $|\omega_4| &gt;  R$. $\mathcal{N}_0$ is the resonant nonlinearity we saw before.
+
+$R$-closure, a natural generalization of the closure property…..wow I like this! There is more flexibility in the CKSTT construction than I realized.
+
+Berti’s Question: How fast is the diffusion? Answer: You have to track it through CKSTT. You will find this is a four tower exponential. Therefore, the rate of growth suggested by the CKSTT example is about $\log \log \log \log t$ which is pretty slow….but does diverge.
+
+Nice discussion afterwards speculating on applications of the Baire Category lemma to the periodic Szegö equation.
+
+<hr />
+
+
+
+<hr />
+
+<h1 id="erwanfaouhttp:www.irisa.fripsopersofaou:2dcubicnls:energycascadesvs.sobolevstabilityofplanewaves"><a href="http://www.irisa.fr/ipso/perso/faou/">Erwan Faou</a>: <a href="http://www.math.sciences.univ-nantes.fr/handdy/sites/fr.handdy/files/berderFaou11.pdf">2d Cubic NLS: Energy cascades vs. Sobolev stability of plane waves</a></h1>
+(reporting on two joint works, one with Rémi Carles another with C. Lubich and Gauckler)
+
+This work was inspired by some numerical simulations.
+
+Cubic NLS on $T^2$. We won’t care if it is focusing or defocusing.
+
+Rewrite the Hamiltonian wrt Fourier coefficients.
+
+When we add a convolution potential (diagonal in Fourier), we can prove stability results for small intial data. Bourgain, Kuksin, Craig-Wayne, Poschel, Eliasson-Kuksin, Bambusi-Grébert, Faou-Grébert. Typical results imply preservation of the actions for a polynomial (or slightly longer) time in terms of the size of $\epsilon$, the data size.
+
+Without potential in $d=1$, there are stability results. Complete integrability.
+
+Without potential in $d=2$. Many small quasiperiodic solutions. CKSTT instability result (which was mentioned in all the talks today!)
+
+Semi-discrete system:
+
+Space approximation.. We use a Fourier pseudo-spectral collocation method. We look for a trigonometric polynomial satisfying NLS at the grid of $K^2$ points. There is an aliasing problem.
+
+Splitting schemes. We use a symplectic integrator.
+
+The numerical is very close to the dynamics of the modified energy. Two instability mechanisms: small divisor issue and the aliasing problem. To avoid the small denominators we use a Courant-Friedrich-Lwey condition $\tau K^2 &lt; C$. The alsiasing is avoided by making sure that the frequencies remain localized. (See Dario’s talk tomorrow on the stabiilty of solitons.)
+
+Numerical tests on NLS. Generic prservation of the actions over extremely long times for small initial data. Typical picture of $\log |\xi_j (t)|^2. The graph consists of horizontal lines. When we start with 5-mode data, we see some more interesting dynamics.
+<h3 id="energycascadewithrmicarles">Energy Cascade (with Rémi Carles)</h3>
+<a href="http://arxiv.org/abs/1010.5173">arXiv: Carles-Faou</a>
+
+<strong>Theorem:</strong> The solution $u$ in Fourier satisfies $u_j (t) = e^{-i t |j|^2} v_j (\epsilon t) + O(\epsilon)$ for $t \leq \frac{T}{\epsilon}$ where $v_j (\tau)$ solves the resonant system RFNLS.
+
+Proof: integration by parts, contained in other works. The work is done in the Wiener algebra.
+
+Quadruplets…rectangles. In dimension 1, there are no rectangles. therefore, the resonant Hamiltonian only depends upon the actions.
+
+We have preservation of the actions in 1d over a time $\epsilon^{-1}$. If you try to reproduce this numerically, it is quite difficult due to the aliasing issue. Prime numbers help to avoid the aliasing issue…interesting.
+
+Simulating energy Cascades. Consider data supported on 5 modes so that it forms a cross. He’s revisiting the construction I displayed in Napoli! Very cool. Dynamics of the extremal modes can be tracked.
+
+Theorem (Carles-Faou 2010): Let $u_0 (x,y) = 1 + 2 \cos x + 2 \co y. Then….ack slide changed.
+
+After n iterations, the mode that is turned on is such that $|j|^2 = 2^n$. For that mode, we have a lower bound on the size of that Fourier coefficient. I ran a long time simulation the other night. The same initial data (the cross) and he tracked the $H^4$ norm. You start at order 0.1 and after time 2000 you reach order 1.
+
+More numerics needed (with R. Belaouar, CMAP) we are trying to do some very long simulations. This is a different mechanism from CKSTT.
+
+He showed a movie which showed a slowly growing island of activity near the origin. Very cool 5 frequency model starting on a “cross”. The example reminded me of the <a href="http://www.dma.unina.it/hamiltonianPDE/mate/2009_05_Napoli_3_Colliander_Final.pdf">cartoon version of the CKSTT construction I exposed in Napoli</a>.
+<h3 id="planewavestabilitywithlubichandgauckler">Plane Wave Stability (with Lubich and Gauckler)</h3>
+<a href="http://www.irisa.fr/ipso/perso/faou/publis/nlspw.pdf">preprint</a>
+
+When the $L^2$ norm lies inside some typical set. quantified preservation of the super actions….too fast for me to type. Orbital stability of the plane wave.
+
+Plane waves stability:
+<ul>
+	<li>Phase invariance</li>
+	<li>$|u_0|^2 is controlled by the $L^2$ norm of the $u_j, j \neq 0$.</li>
+	<li>Change of variables $(u_0, u_j) \longmapsto (a, \theta, v_j)$ …slide change.</li>
+</ul>
+Gauge invariance squeezes out the dependence on $\theta$. Preservation of the $L^2$ norm. The equations close under the change of variables. Even though the change of variables is not symplectic, there is some magic. The system for the $v_j$ turns out to be Hamiltonian. The normal form toolbox is applied and the genericity condition (in measure) is exploited….lots to understand here.
+
+Discussion following the talk among Bambusi, Hani, Faou and me: Why doesn’t this contradict the theorem of Hani? Answer. The plane wave stability time here is limited. Hani’s effect takes place much much later. The FGL result is analogous to Nekoroshev and Hani’s shows diffusion after the stability time. There was a suggestion that there might be a KAM theorem lurking here which would allow the FGL stability type result to persist to infinite time provided that the condition on $\rho$ is implemented more cleverly. Very interesting….
+
+<hr />
+
+
+
+<hr />
+
+Friday 2011-09-09
+<h1 id="dariobambusihttp:www.mat.unimi.itusersbambusi:solitonsinanumericalalgorithmfornlshttp:www.math.sciences.univ-nantes.frhanddysitesfr.handdyfilesbambusiberder11.pdf"><a href="http://www.mat.unimi.it/users/bambusi/">Dario Bambusi</a>: <a href="http://www.math.sciences.univ-nantes.fr/handdy/sites/fr.handdy/files/bambusiberder11.pdf">Solitons in a numerical algorithm for NLS</a></h1>
+(joint work with Erwan Faou and Benoit Grébert)
+
+The point: when you compute you calculate the dynamics of a numerical approximate model of the problem. Solitons can sometimes be destroyed by the algorithm.
+
+Consider focusing NLS on R. There are ground state, particular solutions. We know that these solutions are orbitally stable.
+
+What happens if you try to put on the computer the dynamics of the NLS. We consider a large window and make a space discretization. We have reduced the problem into a finite dimensional system of ODEs. Then, you use a splitting method. You compose a flow associated with the vector field associated with the nonlinearity (called $P$) followed by the linear flow (called $A$).
+
+The Euler method is not a symplectic method. We use an exact method for the nonlinearity and Euler for the linear. The soliton does not persist but is eventually destroyed. Under a CFL condition ($\tau/\mu^2$ is not too large), things improve. If this is too large there is a resonance and bad things can happen. He shows an example with CFL of size 19 which shows the growth of high frequencies. These grow higher and higher and after 3000 steps the soliton is completely lost. On the contrary, if you take a small CFL of size 1.9, then the soliton persists for a long number of iterations.
+
+The question we want to address: Can we explain what is going on analytically here?
+
+<strong>Space Discretization:</strong> Let $\psi (x)$ be substituted by $\psi_j = \psi (\mu j), ~ \mu \ll 1$ discretization. Substitute the Laplacian by the standard discrete version of it. You then find the usual discrete NLS. To put it on a computer, you cut off the number of points. So, instead of sampling at all points $j \in Z$, you wok on a large interval $[-K, K]$ with Dirichlet boundary conditions.
+
+<strong>Time Discretization and preliminaries:</strong> Let $\phi^t_X$ denote the flow map of the vector field $X$. We use a splitting method. Substitute the flow of DNLS by $\phi^\tau_{A+P}$. WE have the soliton manifold $S$ and we have the discrete version of the $H^1$ space:
+$ \| \psi \|<em>{E</em>\mu}^2 = \mu ( \frac{1}{\mu^2} \sum_j |\psi_j - \psi_{j-1}^2 + \sum_j |\psi_j|^2).
+$
+
+<strong>Theorem:</strong>
+
+Assume that
+<ul>
+	<li>$\mu \ll 1$ and $\tau \ll 1$</li>
+	<li>let $r \geq 4$ be an integer such that $\frac{r \tau}{\mu^2} &lt; \pi$.</li>
+</ul>
+initial datum: $\psi$
+
+If $d(\psi, S) \leq C (\mu + \frac{\tau}{\mu^{1/2}} + \frac{1}{\mu^2} e^{-C\mu K})$ then for $|n| \leq C \tau^{2-r}$ one has
+$d(()\phi^\tau_Q \circ \phi^\tau_P)^n, S) $ …ack slide changed.
+
+<strong>Idea of Proof:</strong>
+<ul>
+	<li>Conserved quantities. We know that $\phi_c$ realizes the minimum of the energy subject to a mass constraint. The minimum is unique assuming even in $x$.</li>
+	<li>space discretization (Bambusi-Penati): equal characterization with nearby functionals. space cutoff: idem.</li>
+	<li>time discretization (splitting): there exists a modified energy which is quasiconserved for the algorithm. (Benettin-Girogilli, Faou-grébert).</li>
+</ul>
+finite elements; discrete solitons;
+
+Hamiltonian interpolation. Problem: does there exist $Z$ Hamiltonian such that $\phi^\tau_A \circ \phi^\tau_P - \phi^1_{\tau Z} = 0$? That is, can we show that the composition of two Hamiltonian flows is another Hamiltonian flow. (This seems obvious to me but I think the issue has to do with making this claim valid in the discrete setting.)
+
+<hr />
+
+
+
+<hr />
+
+<h1 id="galinaperelmanhttp:perso-math.univ-mlv.frusersperelman.galina:contractingsphereblowupsolutionsforthe3dcubicnlshttp:www.math.sciences.univ-nantes.frhanddysitesfr.handdyfilesperelman3dnls.pdf"><a href="http://perso-math.univ-mlv.fr/users/perelman.galina/">Galina Perelman</a>: <a href="http://www.math.sciences.univ-nantes.fr/handdy/sites/fr.handdy/files/Perelman3Dnls.pdf">Contracting sphere blow up solutions for the 3D cubic NLS</a></h1>
+(joint work with <a href="http://www.math.brown.edu/~holmer/">J. Holmer</a> and <a href="http://home.gwu.edu/~roudenko/">S. Roudenko</a>)
+
+We consider the cubic focusing NLS in 3D.
+
+conservation of mass, momentum and energy.
+
+virial identity.
+
+$\dot{H}^{1/2}$-critical. Scaling $\psi (t,x) \longmapsto \lambda \psi(\lambda^2 t, \lambda x)$
+
+General facts:
+<ul>
+	<li>global existence and scattering for small $H^{1/2}$ data.</li>
+	<li>Virial identity implies existence of blowup solutions</li>
+	<li>scaling lower bound on the blowup rate.</li>
+	<li>Merle-Raphaël has a more sophisticated blowup rate. The critical norm explodes faster than a power of the $\log (T-t)$.</li>
+</ul>
+<h3 id="blowupscenarios:">Blowup scenarios:</h3>
+<em>*Self-similar blowup: *</em>
+
+Numerical experiments strongly suggest the existence of self-similar blowup solutions. It is expected that this is true however, the profiles are not in the critical space. Therefore, the asymptotic is valid only locally and we need some cutoff that will grow and will account for the explosion of the critical norm.
+
+<a href="http://arxiv.org/abs/0907.4098">Merle-Raphaël-Szeftel</a>: Rigrous justification of the self-similar blwup regime for slightly $L^2$ supercritical NLS.
+
+<em>* Circle blowup solutions (<a href="http://arxiv.org/abs/1007.1217">Holmer-Roudenko</a>, <a href="http://arxiv.org/abs/1002.1267">Zwiers</a>):</em>*
+
+Consider cylindrical coordinates on $R^3$. $Q$ denotes the ground state of the 2D cubic NLS…..dynamic is stable wrt to $H^1$ initial perturbation preserving the cylindrical symmetry. The idea of this construction is inspired by Raphaël who constructed solutions to the quintic NLS on $R^2$. In cylindrical coordinates, the problem resembles the 2D cubic NLS in $(z,r)$ apart from another term from the Laplacian. The extra term should not contribute to the dynamics provided that the explosion takes place away from the origin. This idea is built on the <a href="http://projecteuclid.org.myaccess.library.utoronto.ca/DPubS?service=UI&amp;version=1.0&amp;verb=Display&amp;handle=euclid.dmj/1155045502">ring blowup solution of Raphaël</a>. Should also mention <a href="http://www.springerlink.com/content/81l1824174525h01/">Raphaël-Szeftel</a>.
+
+<em>* Contracting sphere blowup solutions:</em>*
+
+Fibich-Gavish-Wang: numerical results an some heuristic arguments suggest the existence of radial finite time blowup solutions which explode on a contracting sphere. Assuming these exist, the behavior of the thickness scaling parameter and the contracting radius parameter can be calculated using the conservation laws.
+
+<strong>Theorem:</strong> There exists a radial solution $\psi$ to cubic NLS on $R^3$ with $\psi \in C((0,t_0]; H^1)$ which explodes as a contracting sphere with radius $q(t)$ and scaling parameter $\lambda(t)$. with $q \thicksim t^{1/3}$ and $\lambda \thicksim t^{-2/3}$. The blowup rate for the $H^1$ norm is $t^{-2/3}$.
+
+<strong>Remark:</strong> The choice of 3D cubic NLS is for its simplicity. One might expect that the same result holds true for other $L^2$ supercritical and $H^1$ subcritical problems with adjusted behavior for $\lambda$ and $q$. In our calculation, we use the fact that the nonlinearity is $C^\infty$.
+<h3 id="outlineofproof">Outline of Proof</h3>
+Step 1. Construction an arbitrarily good approximate solution (up to any order)
+Step 2. Construct exact solution with small remainder.
+
+….slides moving fast
+
+New parameter is $E = \lambda^{-1}q^{-2}$.
+
+We expect that $q \thicksim t^{1/3}$ and $E \thicksim 1$ so that $\lambda \thicksim t^{-2/3}$.
+
+Build a formal solution….solvability conditions are trivial for even parameter $j$ but for odd $j$ these are nontrivial and allow to determine the coefficients $q_l$.
+
+Build an approximate solution. We cutoff the iteration process used to define the formal solution at some stage. The error of the approximate solution is quantified to be small, like $t^{2N=2}$, after $N$ steps in the formal iteration.
+
+Construction of an exact solution. <strong>Proposition:</strong> There exists a solution of the cubic NLS with is $t^N$-close to the approximate solution $\psi^{(N)}$. Also $\psi \in C([t_1, t_0], H^1 \cap ^{-1} L^2)$.
+
+Main theorem follows from the proposition. Snapshots and a profile extraction, LWP….
+
+How to prove the proposition? Bootstrap arguments based on energy type estimate.
+
+Almost conservation of a quantity $G$. Coercivity of $G$. Control of missing directions: Conservation laws control two of them. Two others are controlled using the equation.
+
+Q: Can you build concentric rings that collapse? Or are the parameters rigidly linked?
+
+Maybe. There is some flexibility in the construction…. <a href="http://en.wikipedia.org/wiki/Matryoshka_doll">Matryoshka Doll Blowup?</a>
+
