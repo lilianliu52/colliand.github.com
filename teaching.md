@@ -24,7 +24,7 @@ icons: true
 ### Current Graduate Students
 
 * [David Reiss](http://www.math.toronto.edu/cms/reiss-david/)
-* [Kyle Thompson](http://www.math.toronto.edu/~k3thomps/index.html)
+<!-- * [Kyle Thompson](http://www.math.toronto.edu/~k3thomps/index.html) -->
 
 ### Former Graduate Students
 

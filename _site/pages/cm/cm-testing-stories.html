@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+        }
+    });
+  </script>
+
+  <title>Crowdmark Testing Stories</title>
+  <meta name="description" content="">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="/pages/cm/cm-testing-stories.html">
+  <link rel="alternate" type="application/rss+xml" title="James Colliander" href="/feed.xml" />
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/">James Colliander</a>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+
+      <div class="trigger">
+         <a class="page-link" href="/blog/">Blog</a>
+          <a class="page-link" href="/research/">Research</a>
+         <a class="page-link" href="/teaching/">Teaching</a>
+ <!--        
+          
+          <a class="page-link" href="/blog/">Blog</a>
+          
+        
+          
+          <a class="page-link" href="/pages/calculus.html">Calculus</a>
+          
+        
+          
+          <a class="page-link" href="/categories/">Categories</a>
+          
+        
+          
+          <a class="page-link" href="/pages/cm/cm-testing-stories.html">Crowdmark Testing Stories</a>
+          
+        
+          
+          <a class="page-link" href="/epics/">Epics</a>
+          
+        
+          
+        
+          
+          <a class="page-link" href="/pages/flowchart.html">flowchart</a>
+          
+        
+          
+          <a class="page-link" href="/pages/gantt.html">Learn how to use Gantt Chart</a>
+          
+        
+          
+          <a class="page-link" href="/index.html">About</a>
+          
+        
+          
+          <a class="page-link" href="/pages/index.html">Pages</a>
+          
+        
+          
+          <a class="page-link" href="/pages/cm/index.html">Pages</a>
+          
+        
+          
+        
+          
+          <a class="page-link" href="/research/">Research</a>
+          
+        
+          
+          <a class="page-link" href="/pages/schedule.html">Schedule</a>
+          
+        
+          
+          <a class="page-link" href="/syllabus/">Syllabus</a>
+          
+        
+          
+          <a class="page-link" href="/tags/">Tags</a>
+          
+        
+          
+          <a class="page-link" href="/teaching/">Teaching</a>
+          
+        
+          
+          <a class="page-link" href="/pages/topics.html">Topics</a>
+          
+         -->
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Crowdmark Testing Stories</h1>
+    <p class="post-meta">May 5, 2015</p>
+  </header>
+
+
+
+  <article class="post-content">
+    <script src="https://cdn.rawgit.com/knsv/mermaid/0.4.0/dist/mermaid.full.js"></script>
+
+<h2 id="setup-x-user-contexts">0. Setup X User Contexts</h2>
+
+<p><strong>Roles</strong></p>
+
+<ul>
+  <li>Student</li>
+  <li>Uploader</li>
+  <li>Grader</li>
+  <li>Facilitator</li>
+  <li>Owner</li>
+</ul>
+
+<p><strong>Browsers</strong></p>
+
+<ul>
+  <li>Chrome</li>
+  <li>Firefox</li>
+  <li>IE</li>
+  <li>Safari</li>
+</ul>
+
+<p><strong>Operating Systems</strong></p>
+
+<ul>
+  <li>Apple</li>
+  <li>Linux</li>
+  <li>Windows</li>
+</ul>
+
+<p><strong>Crowdmark Configuration</strong></p>
+
+<ul>
+  <li>LTI</li>
+  <li>Stand-alone</li>
+</ul>
+
+<p>Our testing should explore the <strong>Roles X Browsers X Operating Systems X Configuration</strong> space of contexts.</p>
+
+<hr />
+<hr />
+
+<h2 id="assigned-assessment-creation-testing-list">1. Assigned Assessment Creation Testing List</h2>
+
+<div class="mermaid">
+graph TB
+    A((Start)) --&gt;|1. Enter Title| B{2. Select Type}
+    B --&gt;|3. Assigned| H(Template)
+    H --&gt;|4. Upload Template| I(Details)
+    I --&gt;|5. Due Date<br />6. Lateness Penalty<br />7. Optional Note| J(Enrollments)
+    J --&gt;|8. Enter Emails| K(Distribute)
+    K --&gt;|9. Click to send| G(10. Dashboard)
+    style A fill:#8bc341,stroke:#333,stroke-width:2px;
+    style G fill:#8bc341,stroke:#333,stroke-width:2px;
+    style B fill:#0091d6,stroke:#333,stroke-width:2px;
+    style H fill:#bd5a9b,stroke:#333,stroke-width:2px;
+    style J fill:#009bc7,stroke:#333,stroke-width:2px;
+  
+</div>
+
+<hr />
+
+<ol>
+  <li>Type <em>title</em> in <code>New Assessment Name</code> Field</li>
+  <li>Select type <code>Assigned</code> (see <code>Administered</code> in Section 2.)</li>
+  <li>Click to start Assigned Wizard</li>
+  <li>Upload <em>assigned template</em></li>
+  <li>Enter <code>Due Date</code></li>
+  <li>Enter <code>Lateness Penalty</code></li>
+  <li>Enter <code>Optional Note</code> to include with assigned email invitations</li>
+  <li>Enter <em>email addresses</em></li>
+  <li>Distribute assigned emails</li>
+  <li>Click to return to Dashboard</li>
+</ol>
+
+<hr />
+<hr />
+
+<h2 id="administered-assessment-creation-testing-list">2. Administered Assessment Creation Testing List</h2>
+
+<div class="mermaid">
+graph TB
+    A((Start)) --&gt;|1. Enter Title| B{2. Select Type}
+    B --&gt;|3. Administered| D(Template)
+    D ---|4. Double-sided?<br />5. Single-sided?<br />6. Upload Template| E(Enrollments)
+    E --&gt;|7. Enter Emails<br />8. Extra Assessments?| F(Generate PDF)
+    F --&gt;|9. Download PDF<br />10. Return to Dashboard| G((Dashboard))
+    style A fill:#8bc341,stroke:#333,stroke-width:2px;
+    style G fill:#8bc341,stroke:#333,stroke-width:2px;
+    style B fill:#0091d6,stroke:#333,stroke-width:2px;
+    style D fill:#bd5a9b,stroke:#333,stroke-width:2px;
+    style E fill:#009bc7,stroke:#333,stroke-width:2px;
+</div>
+
+<hr />
+
+<ol>
+  <li>Type <em>title</em> in <code>New Assessment Name</code> Field</li>
+  <li>Select type <code>Administered</code> (see <code>Assigned</code> in Section 1.)</li>
+  <li>Click to start Administered Wizard</li>
+  <li>Toggle radio button to select <code>double-sided</code></li>
+  <li>Toggle radio button to select <code>single-sided</code> (Repeat entire workflow.)</li>
+  <li>Upload <em>administered template</em></li>
+  <li>Enter <em>email addresses</em></li>
+  <li>Select <em>number</em> of extra assessments</li>
+  <li>Download printable PDF file</li>
+  <li>Click to return to Dashboard</li>
+</ol>
+
+<hr />
+<hr />
+
+<h2 id="how-to-grade-testing-list">3. how to grade testing list</h2>
+
+<div class="mermaid">
+graph TB
+    A(Dashboard) --&gt;|1. Click| B(Start Grading)
+    B --&gt; C&gt;Grading Grid] 
+    C --&gt;|2. Click| E(Grading tips)
+    E --&gt;|Read tips<br />|G(3. Click closes tips)
+    C --&gt;|4. Click| F[Question Tile]
+    F --&gt; H((Grading Interface))
+    H --&gt;|5. Click or 6. z|J(Pen Mode)
+    J --&gt; K(7. Press mouse<br />down to draw)
+    H --&gt;|9. Click or 10. V|L(Comment Mode)
+    H --&gt;|14. Click or 15. x| M(X Mode)
+    H --&gt;|17. Click or 18. c| N(Check Mode)
+    H --&gt;|20. Keypad or 21. numbers| O(Enter Score)
+    J --&gt;|8. double-click|L
+    L --&gt;|11. Click| P(12. Markdown/13. Mathjax<br />comment text)
+    M --&gt;|16. Click| Q(Drop X)
+    N --&gt;|19. Click| R(Drop Checkmark)
+    style A fill:#867cb8,stroke:#333,stroke-width:0px;
+    style B fill:#8bc341,stroke:#333,stroke-width:0px;
+    style E fill:#ccf,stroke:#f66,stroke-width:2px,stroke-dasharray: 5, 5;
+    style H fill:#aa5f9f,stroke:#333,stroke-width:0px;
+    style J fill:#40a8c3,stroke:#333,stroke-width:0px;
+    style M fill:#40a8c3,stroke:#333,stroke-width:0px;
+    style N fill:#40a8c3,stroke:#333,stroke-width:0px;
+    style O fill:#40a8c3,stroke:#333,stroke-width:0px;
+    style L fill:#40a8c3,stroke:#333,stroke-width:0px;
+    
+ 
+</div>
+
+<ol>
+  <li>Click <code>Start Grading</code> Button</li>
+  <li>Click <code>Grading tips</code> button</li>
+  <li>Click to close tips</li>
+  <li>Click <code>Question tile</code> to enter Grading Interface</li>
+  <li>Test Pen Mode entry with <em>z</em></li>
+  <li>Test pen Mode entry with <em>click on pen</em>
+7 Press mouse down to draw in pen mode</li>
+  <li>Test double-click to enter comment box</li>
+  <li>Test Comment Mode entry with <em>click</em></li>
+  <li>Test Comment Mode entry with <em>v</em></li>
+  <li>Click to open text box</li>
+  <li>Enter <em>Markdown</em> to test markdown parsing</li>
+  <li>Enter <em>TeX</em> to test Mathjax parsking</li>
+  <li>Test X mode entry with click</li>
+  <li>Test X mode entry with <em>x</em></li>
+  <li>Test drop of X with click</li>
+  <li>Test Checkmark mode entry with click</li>
+  <li>Test Checkmark mode entry with <em>c</em></li>
+  <li>Test drop of Checkmark with click</li>
+</ol>
+
+<hr />
+<hr />
+
+<h2 id="hover-states-in-grading-interface-testing-list">4. Hover States in Grading Interface testing list</h2>
+
+<div class="mermaid">
+graph TB
+    A&gt;Grading Grid] --&gt;|1. hover| B[Question Tile]
+    A --&gt;|2. hover| C(Grader Avatar)
+    style B stroke:#333,stroke-width:2px;
+ 
+</div>
+
+<hr />
+
+<ol>
+  <li>Confirm email hover tip on grading team <code>avatars</code>.</li>
+  <li>Confirm email hover tip behavior on <code>question tiles</code>. (Graders don’t see anything, facilitators see email hover tip. Depends on whether the assessment containing the tile has been matched to a student’s identity.)</li>
+</ol>
+
+<hr />
+<hr />
+
+<h2 id="add-student-metadata-testing-list">5.  Add student metadata testing list</h2>
+
+<div class="mermaid">
+graph TB
+    A(Dashboard) --&gt;|1. Click| B(Students)
+    B --&gt;|2. Click| D(Upload metadata)
+    D --&gt;|3. Select CSV file| B
+    style A fill:#867cb8,stroke:#333,stroke-width:2px;
+    style B stroke:#333,stroke-width:2px;
+    style D fill:#40a8c3,stroke:#333,stroke-width:2px;
+ 
+</div>
+
+<hr />
+
+<ol>
+  <li>Click to enter <code>Students</code></li>
+  <li>Click the button to Upload metadata</li>
+  <li>Select <em>CSV file with student metatdata</em></li>
+</ol>
+
+<hr />
+<hr />
+
+<h2 id="invite-grading-team-testing-list">6. Invite Grading Team Testing List</h2>
+
+<div class="mermaid">
+graph TB
+    A(Dashboard) --&gt;|1. Click| B(Grading Team)
+    B --&gt;|2. Click| D(+ Invite)
+    D ---|3. Enter Emails<br />4. Select Role<br />5. Click| E(Invite)
+    E --&gt; B
+    style A fill:#867cb8,stroke:#333,stroke-width:2px;
+    style B stroke:#333,stroke-width:2px;
+    style D fill:#40a8c3,stroke:#333,stroke-width:2px;
+    style E fill:#009bc7,stroke:#333,stroke-width:2px;
+</div>
+
+<hr />
+
+<ol>
+  <li>Click to enter <code>Grading Team</code></li>
+  <li>Click <code>+ Invite</code></li>
+  <li>Enter <em>Emails for new team members</em></li>
+  <li>Select <em>role</em> for new team members</li>
+  <li>Click <code>Invite</code></li>
+</ol>
+
+<hr />
+<hr />
+
+<h2 id="saving-of-evaluations-testing-list">7. Saving of Evaluations Testing List</h2>
+
+<p>collisions<br />
+next ungraded<br />
+order of operations<br />
+cancel score<br />
+multiple evaluations??<br />
+deletion of comments 
+deletion of annotations</p>
+
+<hr />
+<hr />
+
+<h2 id="export-scores-file-as-csv-testing-list">8. Export Scores File as CSV Testing List</h2>
+
+<hr />
+<hr />
+<p>## 9. Results Section Testing List</p>
+
+<hr />
+<hr />
+<p>## 10. Delete Assessment Testing List</p>
+
+<hr />
+<hr />
+<p>## 11. Question Setup Testing List</p>
+
+<hr />
+<hr />
+<p>## 12. Send Grades to Students</p>
+
+<hr />
+<hr />
+<p>## 13. Student Upload Assigned Testing List</p>
+
+<hr />
+<hr />
+<p>## 14. Student Receives Scores Email Testing List</p>
+
+<hr />
+<hr />
+<p>## 15. Upload Assessments Testing List</p>
+
+<hr />
+<hr />
+<p>## 16. Fix Scan Errors Testing List</p>
+
+<hr />
+<hr />
+<p>## 17. Resend Assigned Assessment Invitation Email Testing List</p>
+
+<hr />
+<hr />
+<p>## 18. Send Support Message Using Envelope Icon Testing list</p>
+
+<hr />
+<hr />
+<p>## 19. Access Support Knowledge Base with Question Mark Icon Testing List</p>
+
+  </article>
+
+
+
+
+
+</div>
+
+      </div>
+    </div>
+  
+  </body>
+
+</html>

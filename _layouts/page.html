@@ -1,15 +1,14 @@
-{% include header.html %}
+---
+layout: default
+---
+<div class="post">
 
- <div class="page page{{ page.id | replace:"/","-" }}">
-  <div class="row">
-    <div class="col-lg-10 col-offset-1">
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title }}</h1>
+  </header>
 
-      {% capture title %}## {{ page.title }}{% endcapture %}{{ title | markdownify }}
+  <article class="post-content">
+    {{ content }}
+  </article>
 
-      {{ content }}
-
-    </div>
-  </div>
 </div>
-
-{% include footer.html %}
