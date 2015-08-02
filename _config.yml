@@ -19,7 +19,7 @@ github_username: colliand
 # Build settings
 markdown: kramdown
 timezone: America/Vancouver
-highlighter: null
+highlighter: pygments
 exclude: ["Gemfile", "Gemfile.lock"]
 permalink: /:year/:month/:day/:title/
 
