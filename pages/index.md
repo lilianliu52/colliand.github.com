@@ -9,9 +9,9 @@ robots: noindex
 
 
 
-* [flowchart](./flowchart)
-* [calculus](./calculus)
-* [pims-map](./PIMS/pims-map)
-* [gantt](./gantt)
+* [flowchart](./flowchart.html)
+* [calculus](./calculus.html)
+* [pims-map](./PIMS/pims-map.html)
+* [gantt](./gantt.html)
 
 
