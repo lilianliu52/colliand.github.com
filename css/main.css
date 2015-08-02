@@ -14,7 +14,11 @@ html, body { height: 100%; }
 
 body {
   background-color: #FFF;
+<<<<<<< HEAD
   font: 13.34px Helvetica, Arial, sans-serif;
+=======
+  font: 16px Helvetica, Arial, sans-serif;
+>>>>>>> 0a943f18f83c59f6dc450d69ccab3f6fc34374b4
   font-size: small;
   text-align: center;
 }
