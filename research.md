@@ -25,4 +25,4 @@ icons: true
 ### Bibliography
 
 
-
+{% bibliography %}
